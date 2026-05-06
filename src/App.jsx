@@ -49,9 +49,9 @@ const copy = {
     formBudgetOpen: "Proyecto abierto",
     formSubmit: "Enviar",
     formError: "Revisa nombre, email y descripción del proyecto.",
-    formSuccessTitle: "Brief recibido.",
-    formSuccessText: "El siguiente paso sería revisar alcance, calendario, equipo y entregables.",
-    formNewBrief: "Nuevo brief",
+    formSuccessTitle: "Mensaje preparado.",
+    formSuccessText: "Se ha abierto tu correo con la información del proyecto. Solo falta revisar y enviar el email.",
+    formNewBrief: "Nuevo mensaje",
     footer: "Productora audiovisual para televisión, marcas, instituciones y cultura.",
   },
   en: {
@@ -95,9 +95,9 @@ const copy = {
     formBudgetOpen: "Open project",
     formSubmit: "Send",
     formError: "Please review name, email and project description.",
-    formSuccessTitle: "Brief received.",
-    formSuccessText: "The next step would be to review scope, timeline, crew and deliverables.",
-    formNewBrief: "New brief",
+    formSuccessTitle: "Message prepared.",
+    formSuccessText: "Your email client has opened with the project information. Just review it and send the email.",
+    formNewBrief: "New message",
     footer: "Audiovisual production for television, brands, institutions and culture.",
   },
   ca: {
@@ -141,9 +141,9 @@ const copy = {
     formBudgetOpen: "Projecte obert",
     formSubmit: "Enviar",
     formError: "Revisa nom, email i descripció del projecte.",
-    formSuccessTitle: "Brief rebut.",
-    formSuccessText: "El següent pas seria revisar abast, calendari, equip i entregables.",
-    formNewBrief: "Nou brief",
+    formSuccessTitle: "Missatge preparat.",
+    formSuccessText: "S'ha obert el teu correu amb la informació del projecte. Només falta revisar i enviar l'email.",
+    formNewBrief: "Nou missatge",
     footer: "Productora audiovisual per a televisió, marques, institucions i cultura.",
   },
 };
@@ -1428,7 +1428,17 @@ function ContactForm({ t }) {
     }
     setStatus("loading");
     trackEvent("brief_submit", { event_category: "lead", budget_range: form.budget || "not_selected" });
-    window.setTimeout(() => setStatus("success"), 850);
+    const subject = `Nuevo proyecto audiovisual - ${form.name.trim()}`;
+    const body = [
+      `${t.formName}: ${form.name.trim()}`,
+      `${t.formEmail}: ${form.email.trim()}`,
+      `${t.formBudget}: ${form.budget || t.formBudgetOpen}`,
+      "",
+      `${t.formProject}:`,
+      form.project.trim(),
+    ].join("\n");
+    window.location.href = `mailto:produccion@laprodufilms.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.setTimeout(() => setStatus("success"), 350);
   }
 
   if (status === "success") {
@@ -1457,19 +1467,19 @@ function ContactForm({ t }) {
           <div className="grid gap-5">
             <label className="grid gap-2">
               <span className="text-sm font-medium text-[#111111]">{t.formName}</span>
-              <input value={form.name} onFocus={() => trackEvent("form_start", { form_name: "brief" })} onChange={(event) => setForm({ ...form, name: event.target.value })} className="border border-[#EAEAEA] bg-[#FBFBFA] px-3 py-3 text-sm outline-none transition focus:border-[#111111]" placeholder="Marina Soldevila" />
+              <input name="name" autoComplete="name" value={form.name} onFocus={() => trackEvent("form_start", { form_name: "contact" })} onChange={(event) => setForm({ ...form, name: event.target.value })} className="border border-[#EAEAEA] bg-[#FBFBFA] px-3 py-3 text-sm outline-none transition focus:border-[#111111]" placeholder="Marina Soldevila" />
             </label>
             <label className="grid gap-2">
               <span className="text-sm font-medium text-[#111111]">{t.formEmail}</span>
-              <input value={form.email} onChange={(event) => setForm({ ...form, email: event.target.value })} className="border border-[#EAEAEA] bg-[#FBFBFA] px-3 py-3 text-sm outline-none transition focus:border-[#111111]" placeholder="produccion@empresa.com" />
+              <input name="email" type="email" autoComplete="email" value={form.email} onChange={(event) => setForm({ ...form, email: event.target.value })} className="border border-[#EAEAEA] bg-[#FBFBFA] px-3 py-3 text-sm outline-none transition focus:border-[#111111]" placeholder="produccion@empresa.com" />
             </label>
             <label className="grid gap-2">
               <span className="text-sm font-medium text-[#111111]">{t.formProject}</span>
-              <textarea value={form.project} onChange={(event) => setForm({ ...form, project: event.target.value })} rows={5} className="resize-none border border-[#EAEAEA] bg-[#FBFBFA] px-3 py-3 text-sm outline-none transition focus:border-[#111111]" placeholder="Documental corto, reportaje de evento, campaña social, spot o pieza corporativa." />
+              <textarea name="project" value={form.project} onChange={(event) => setForm({ ...form, project: event.target.value })} rows={5} className="resize-none border border-[#EAEAEA] bg-[#FBFBFA] px-3 py-3 text-sm outline-none transition focus:border-[#111111]" placeholder="Documental corto, reportaje de evento, campaña social, spot o pieza corporativa." />
             </label>
             <label className="grid gap-2">
               <span className="text-sm font-medium text-[#111111]">{t.formBudget}</span>
-              <select value={form.budget} onChange={(event) => setForm({ ...form, budget: event.target.value })} className="border border-[#EAEAEA] bg-[#FBFBFA] px-3 py-3 text-sm outline-none transition focus:border-[#111111]">
+              <select name="budget" value={form.budget} onChange={(event) => setForm({ ...form, budget: event.target.value })} className="border border-[#EAEAEA] bg-[#FBFBFA] px-3 py-3 text-sm outline-none transition focus:border-[#111111]">
                 <option value="">{t.formSelect}</option>
                 <option>3.000 € - 8.000 €</option>
                 <option>8.000 € - 18.000 €</option>
