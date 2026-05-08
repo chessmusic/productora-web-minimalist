@@ -7,6 +7,7 @@ const legal = ["politica-privacidad", "aviso-legal", "cookies"];
 const landings = [
   "productora-audiovisual-barcelona",
   "video-corporativo-barcelona",
+  "video-corporativo-auditado-2026",
   "produccion-documentales-barcelona",
   "video-eventos-barcelona",
   "spot-publicitario-barcelona",

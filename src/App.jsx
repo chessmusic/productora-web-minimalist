@@ -152,7 +152,7 @@ const services = {
   es: [
     { title: "Documentales", text: "Desarrollo, guion, entrevistas, rodaje, montaje y master para historias con mirada propia.", image: "/laprodu/fotos/rodatge_3.jpg", deliverable: "Series documentales, teasers y piezas web" },
     { title: "Televisión", text: "Reportajes, programas, cápsulas y contenido pensado para emisión, archivo y continuidad editorial.", image: "/laprodu/fotos/ROSALES_SERVICIOS.png", deliverable: "RTVE La 2 Catalunya, reportaje y magazine" },
-    { title: "Vídeos corporativos", text: "Piezas de empresa, testimonios, casos de éxito y presentaciones con tono cercano y narrativo.", image: "/laprodu/fotos/rodatge_2.jpg", deliverable: "Corporativo, consultora, social y marca" },
+    { title: "Vídeos corporativos", text: "Piezas de empresa, testimonios, casos de éxito y presentaciones con tono cercano y narrativo.", image: "/laprodu/fotos/rodatge_2.jpg", deliverable: "Corporativo, consultora, social y marca", cta: "Ver enfoque para vídeo corporativo", landingSlug: "video-corporativo-auditado-2026" },
     { title: "Eventos", text: "Cobertura, entrevistas, aftermovie, fotografía y entregas rápidas para comunicar durante y después del evento.", image: "/laprodu/fotos/eventos 3.jpg", deliverable: "Aftermovie, clips, fotos y reels" },
     { title: "Fotografía", text: "Retrato, backstage, producto, prensa y bancos de imagen para campañas y comunicación recurrente.", image: "/laprodu/fotos/rodatge_5.jpg", deliverable: "Selección editada y archivo final" },
     { title: "Redes sociales", text: "Formatos verticales, teasers, subtítulos y adaptaciones por canal desde la planificación del rodaje.", image: "/laprodu/fotos/xarxa_4.jpg", deliverable: "Reels, shorts, stories y social ads" },
@@ -162,7 +162,7 @@ const services = {
   en: [
     { title: "Documentaries", text: "Development, script, interviews, shooting, editing and mastering for stories with a clear point of view.", image: "/laprodu/fotos/rodatge_3.jpg", deliverable: "Documentary series, teasers and web pieces" },
     { title: "Television", text: "Reports, programmes, capsules and content designed for broadcast, archive and editorial continuity.", image: "/laprodu/fotos/ROSALES_SERVICIOS.png", deliverable: "RTVE La 2 Catalunya, reports and magazines" },
-    { title: "Corporate videos", text: "Company films, testimonials, success cases and presentations with a close narrative tone.", image: "/laprodu/fotos/rodatge_2.jpg", deliverable: "Corporate, consultancy, social and brand" },
+    { title: "Corporate videos", text: "Company films, testimonials, success cases and presentations with a close narrative tone.", image: "/laprodu/fotos/rodatge_2.jpg", deliverable: "Corporate, consultancy, social and brand", cta: "View corporate video approach", landingSlug: "video-corporativo-auditado-2026" },
     { title: "Events", text: "Coverage, interviews, aftermovies, photography and fast delivery for communication during and after the event.", image: "/laprodu/fotos/eventos 3.jpg", deliverable: "Aftermovie, clips, photos and reels" },
     { title: "Photography", text: "Portrait, backstage, product, press and image banks for campaigns and ongoing communication.", image: "/laprodu/fotos/rodatge_5.jpg", deliverable: "Edited selection and final archive" },
     { title: "Social media", text: "Vertical formats, teasers, subtitles and channel adaptations planned from the shoot.", image: "/laprodu/fotos/xarxa_4.jpg", deliverable: "Reels, shorts, stories and social ads" },
@@ -172,7 +172,7 @@ const services = {
   ca: [
     { title: "Documentals", text: "Desenvolupament, guió, entrevistes, rodatge, muntatge i màster per a històries amb mirada pròpia.", image: "/laprodu/fotos/rodatge_3.jpg", deliverable: "Sèries documentals, teasers i peces web" },
     { title: "Televisió", text: "Reportatges, programes, càpsules i contingut pensat per a emissió, arxiu i continuïtat editorial.", image: "/laprodu/fotos/ROSALES_SERVICIOS.png", deliverable: "RTVE La 2 Catalunya, reportatge i magazín" },
-    { title: "Vídeos corporatius", text: "Peces d'empresa, testimonis, casos d'èxit i presentacions amb un to proper i narratiu.", image: "/laprodu/fotos/rodatge_2.jpg", deliverable: "Corporatiu, consultora, social i marca" },
+    { title: "Vídeos corporatius", text: "Peces d'empresa, testimonis, casos d'èxit i presentacions amb un to proper i narratiu.", image: "/laprodu/fotos/rodatge_2.jpg", deliverable: "Corporatiu, consultora, social i marca", cta: "Veure enfocament per a vídeo corporatiu", landingSlug: "video-corporativo-auditado-2026" },
     { title: "Esdeveniments", text: "Cobertura, entrevistes, aftermovie, fotografia i lliuraments ràpids per comunicar durant i després de l'esdeveniment.", image: "/laprodu/fotos/eventos 3.jpg", deliverable: "Aftermovie, clips, fotos i reels" },
     { title: "Fotografia", text: "Retrat, backstage, producte, premsa i bancs d'imatge per a campanyes i comunicació recurrent.", image: "/laprodu/fotos/rodatge_5.jpg", deliverable: "Selecció editada i arxiu final" },
     { title: "Xarxes socials", text: "Formats verticals, teasers, subtítols i adaptacions per canal des de la planificació del rodatge.", image: "/laprodu/fotos/xarxa_4.jpg", deliverable: "Reels, shorts, stories i social ads" },
@@ -978,6 +978,53 @@ const landingPages = {
         ["¿Cuánto tarda?", "Una pieza estándar suele requerir entre 2 y 4 semanas desde el briefing hasta la entrega."],
       ],
     },
+    "video-corporativo-auditado-2026": {
+      title: "Vídeo corporativo 2026: de pieza única a sistema audiovisual",
+      kicker: "Vídeo corporativo / Auditoría",
+      intro: "Auditamos lo que ya tienes, definimos qué debe contar el nuevo vídeo y lo convertimos en piezas útiles para web, ventas, LinkedIn, YouTube, eventos y campañas.",
+      primary: "Solicitar diagnóstico",
+      secondary: "Ver ejemplo corporativo",
+      proof: "Una producción pensada desde el briefing para generar confianza, explicar mejor la empresa y multiplicar entregables sin rodar cada semana.",
+      bullets: ["Auditoría del vídeo actual y mensajes clave", "Guion modular para distintas audiencias", "Master principal, clips cortos y adaptaciones por canal"],
+      related: ["chroma", "cedec-consultora", "norai-corporativo", "mwc2025", "valldaura-labs", "rcr-arquitectes"],
+      hideRelatedWork: true,
+      featuredProject: "chroma",
+      proofVideos: ["chroma", "cedec-consultora", "norai-corporativo", "norai-director-mmb"],
+      problemTitle: "El problema no suele ser tener poco vídeo. Es tener una pieza que nadie sabe reutilizar.",
+      visualLabel: "Ejemplos aplicables",
+      visualTitle: "De la pieza bonita al contenido que ventas y marca sí usan.",
+      visualIntro: "La clave es producir pensando en contexto: qué verá una persona en la web, qué enviará ventas tras una reunión y qué puede funcionar como clip corto en LinkedIn o YouTube.",
+      whenTitle: "Cuando el vídeo actual ya no ayuda a vender, explicar o captar atención.",
+      processTitle: "Primero auditamos. Después producimos solo lo que tiene sentido.",
+      deliverablesTitle: "Una jornada de rodaje puede convertirse en varios activos.",
+      faqTitle: "Preguntas sobre vídeo corporativo 2026",
+      outcomes: [
+        ["Claridad", "Ordenamos el mensaje para que el vídeo explique qué haces, para quién y por qué importa sin sonar genérico."],
+        ["Reutilización", "Planificamos recursos, entrevistas y escenas para crear master principal, clips, teasers y piezas verticales."],
+        ["Medición", "Cada versión nace con un uso: web, ventas, anuncios, LinkedIn, YouTube, evento o comunicación interna."],
+      ],
+      pain: [
+        ["El vídeo institucional se queda en la home", "Se aprueba internamente, queda bien, pero después apenas se usa en ventas, campañas o comunicación recurrente."],
+        ["El mensaje intenta hablar a todo el mundo", "Clientes, talento, partners y dirección necesitan matices distintos. Una sola pieza generalista suele diluir el valor."],
+        ["Se rueda sin pensar en distribución", "Si no se decide antes qué formatos harán falta, luego adaptar el material sale más caro y queda menos natural."],
+      ],
+      when: ["Tienes un vídeo antiguo que ya no representa a la empresa", "Necesitas explicar un servicio B2B complejo", "Quieres contenido para web, LinkedIn, YouTube o campañas", "Vas a una feria, evento o ronda comercial con material poco concreto"],
+      process: [
+        ["01", "Auditoría", "Revisamos vídeo actual, web, mensajes comerciales, audiencia y canales para detectar qué funciona y qué sobra."],
+        ["02", "Mapa de formatos", "Definimos master principal, clips por objeción, piezas verticales, teaser y usos para ventas o paid media."],
+        ["03", "Guion y rodaje", "Preparamos entrevistas, escenas, recursos visuales y una planificación que permita reutilizar sin perder calidad."],
+        ["04", "Versiones y medición", "Entregamos piezas adaptadas por canal y recomendaciones sencillas para medir retención, clics, leads o uso comercial."],
+      ],
+      includes: ["Auditoría del vídeo y materiales existentes", "Propuesta narrativa y mensajes clave", "Guion o escaleta de entrevista", "Rodaje de equipo, producto, espacios o clientes", "Montaje, color, sonido, música y grafismo", "Subtítulos, miniaturas y versiones por canal"],
+      channels: ["Home y página de servicios", "LinkedIn y YouTube", "Google Ads, YouTube Ads y remarketing", "Presentaciones comerciales", "Ferias, eventos y newsletters", "Comunicación interna y employer branding"],
+      deliverables: ["Vídeo principal de empresa", "Teaser de 30-60 segundos", "Clips por servicio, objeción o audiencia", "Versiones verticales, cuadradas y subtituladas"],
+      faq: [
+        ["¿Tenemos que rehacer todo el vídeo corporativo?", "No siempre. Primero revisamos lo que ya existe. A veces conviene rescatar material, grabar nuevas entrevistas o crear versiones más útiles antes que repetir una gran pieza desde cero."],
+        ["¿Sirve si somos una empresa B2B con un servicio difícil de explicar?", "Sí. De hecho, es donde más ayuda: podemos dividir el mensaje en problema, solución, prueba, equipo y casos para que cada pieza resuelva una duda concreta."],
+        ["¿Podéis hacer contenido vertical sin que parezca improvisado?", "Sí. El vertical puede ser muy profesional si se piensa desde guion, luz, encuadre, subtítulos y ritmo. No es un recorte final: es un formato con intención propia."],
+        ["¿Cómo sabemos si el vídeo funciona?", "Definimos indicadores sencillos antes de producir: retención, clics, leads, reuniones, uso por ventas, visualizaciones cualificadas o reducción de dudas repetidas."],
+      ],
+    },
     "produccion-documentales-barcelona": {
       title: "Producción de documentales en Barcelona",
       kicker: "Documental / TV",
@@ -1039,6 +1086,7 @@ const landingPages = {
       proof: "Producción audiovisual de casos de éxito, testimonios de clientes y vídeos corporativos para web, LinkedIn, YouTube, ventas y campañas.",
       bullets: ["Entrevistas guiadas sin sonar a anuncio", "Guion comercial sin perder naturalidad", "Pieza principal, teaser y clips cortos"],
       related: ["cedec-casos-exito", "cedec-consultora", "chroma", "norai-corporativo", "norai-director-mmb", "norai-chef"],
+      hideRelatedWork: true,
       featuredProject: "cedec-casos-exito",
       proofVideos: ["cedec-casos-exito", "cedec-consultora", "chroma", "norai-corporativo"],
       outcomes: [
@@ -1099,6 +1147,50 @@ Object.assign(landingPages.en, {
     intro: "Corporate videos to explain services, present companies, build trust and turn complex messages into useful audiovisual pieces.",
     bullets: ["Briefing and narrative proposal", "Interviews, footage and direction", "Versions for web, LinkedIn, YouTube and presentations"],
     faq: [["What does a corporate video include?", "It usually includes development, script, shooting, editing, color, music, graphics and final deliverables."], ["How long does it take?", "A standard piece usually takes between 2 and 4 weeks from briefing to delivery."]],
+  },
+  "video-corporativo-auditado-2026": {
+    ...landingPages.en["video-corporativo-auditado-2026"],
+    title: "Corporate video 2026: from one-off film to audiovisual system",
+    kicker: "Corporate video / Audit",
+    intro: "We audit what you already have, define what the new video needs to say and turn it into useful assets for website, sales, LinkedIn, YouTube, events and campaigns.",
+    primary: "Request a diagnosis",
+    secondary: "View corporate example",
+    proof: "A production planned from the briefing to build trust, explain the company better and multiply deliverables without filming every week.",
+    bullets: ["Audit of current video and key messages", "Modular script for different audiences", "Main film, short clips and channel adaptations"],
+    problemTitle: "The problem is usually not having too little video. It is having one piece nobody knows how to reuse.",
+    visualLabel: "Applicable examples",
+    visualTitle: "From a nice film to content that sales and brand teams actually use.",
+    visualIntro: "The key is to produce with context in mind: what someone will see on the website, what sales will send after a meeting and what can work as a short clip on LinkedIn or YouTube.",
+    whenTitle: "When the current video no longer helps sell, explain or capture attention.",
+    processTitle: "First we audit. Then we produce only what makes sense.",
+    deliverablesTitle: "One shoot can become several useful assets.",
+    faqTitle: "Questions about corporate video in 2026",
+    outcomes: [
+      ["Clarity", "We organize the message so the video explains what you do, for whom and why it matters without sounding generic."],
+      ["Reuse", "We plan footage, interviews and scenes to create a main film, clips, teasers and vertical pieces."],
+      ["Measurement", "Each version is created for a use case: website, sales, ads, LinkedIn, YouTube, event or internal communication."],
+    ],
+    pain: [
+      ["The institutional video stays on the homepage", "It gets approved internally and looks good, but is barely used in sales, campaigns or recurring communication."],
+      ["The message tries to speak to everyone", "Clients, talent, partners and leadership need different nuances. A single generic film often dilutes value."],
+      ["The shoot is not planned for distribution", "If required formats are not defined beforehand, adapting the material later is more expensive and less natural."],
+    ],
+    when: ["You have an old video that no longer represents the company", "You need to explain a complex B2B service", "You want content for website, LinkedIn, YouTube or campaigns", "You are preparing a trade fair, event or sales cycle with weak material"],
+    process: [
+      ["01", "Audit", "We review current video, website, commercial messages, audience and channels to detect what works and what should go."],
+      ["02", "Format map", "We define the main film, objection-based clips, vertical pieces, teaser and uses for sales or paid media."],
+      ["03", "Script and shoot", "We prepare interviews, scenes, supporting footage and a plan that allows reuse without losing quality."],
+      ["04", "Versions and measurement", "We deliver channel-specific assets and simple recommendations to measure retention, clicks, leads or commercial use."],
+    ],
+    includes: ["Audit of current video and materials", "Narrative proposal and key messages", "Script or interview outline", "Filming team, product, spaces or clients", "Editing, color, sound, music and graphics", "Subtitles, thumbnails and channel versions"],
+    channels: ["Homepage and service pages", "LinkedIn and YouTube", "Google Ads, YouTube Ads and remarketing", "Sales presentations", "Trade fairs, events and newsletters", "Internal communication and employer branding"],
+    deliverables: ["Main company video", "30-60 second teaser", "Clips by service, objection or audience", "Vertical, square and subtitled versions"],
+    faq: [
+      ["Do we need to redo the entire corporate video?", "Not always. First we review what already exists. Sometimes it is better to recover footage, record new interviews or create more useful versions before producing another large film from scratch."],
+      ["Does this work for a B2B company with a hard-to-explain service?", "Yes. That is where it helps most: we can split the message into problem, solution, proof, team and cases so each piece answers a specific doubt."],
+      ["Can vertical content still feel professional?", "Yes. Vertical can be very professional when script, light, framing, subtitles and pace are planned. It is not a final crop: it is a format with its own intention."],
+      ["How do we know whether the video works?", "We define simple indicators before production: retention, clicks, leads, meetings, sales usage, qualified views or fewer repeated questions."],
+    ],
   },
   "produccion-documentales-barcelona": {
     ...landingPages.en["produccion-documentales-barcelona"],
@@ -1181,6 +1273,50 @@ Object.assign(landingPages.ca, {
     intro: "Vídeos corporatius per explicar serveis, presentar empreses, activar confiança i convertir missatges complexos en peces audiovisuals útils.",
     bullets: ["Briefing i proposta narrativa", "Entrevistes, recursos i direcció", "Versions per a web, LinkedIn, YouTube i presentacions"],
     faq: [["Què inclou un vídeo corporatiu?", "Normalment inclou desenvolupament, guió, rodatge, edició, color, música, grafisme i entregables finals."], ["Quant tarda?", "Una peça estàndard sol requerir entre 2 i 4 setmanes des del briefing fins al lliurament."]],
+  },
+  "video-corporativo-auditado-2026": {
+    ...landingPages.ca["video-corporativo-auditado-2026"],
+    title: "Vídeo corporatiu 2026: de peça única a sistema audiovisual",
+    kicker: "Vídeo corporatiu / Auditoria",
+    intro: "Auditem el que ja tens, definim què ha d'explicar el nou vídeo i el convertim en peces útils per a web, vendes, LinkedIn, YouTube, esdeveniments i campanyes.",
+    primary: "Demanar diagnòstic",
+    secondary: "Veure exemple corporatiu",
+    proof: "Una producció pensada des del briefing per generar confiança, explicar millor l'empresa i multiplicar entregables sense rodar cada setmana.",
+    bullets: ["Auditoria del vídeo actual i missatges clau", "Guió modular per a diferents audiències", "Màster principal, clips curts i adaptacions per canal"],
+    problemTitle: "El problema no sol ser tenir poc vídeo. És tenir una peça que ningú sap reutilitzar.",
+    visualLabel: "Exemples aplicables",
+    visualTitle: "De la peça bonica al contingut que vendes i marca sí que fan servir.",
+    visualIntro: "La clau és produir pensant en context: què veurà una persona a la web, què enviarà vendes després d'una reunió i què pot funcionar com a clip curt a LinkedIn o YouTube.",
+    whenTitle: "Quan el vídeo actual ja no ajuda a vendre, explicar o captar atenció.",
+    processTitle: "Primer auditem. Després produïm només el que té sentit.",
+    deliverablesTitle: "Una jornada de rodatge pot convertir-se en diversos actius.",
+    faqTitle: "Preguntes sobre vídeo corporatiu 2026",
+    outcomes: [
+      ["Claredat", "Ordenem el missatge perquè el vídeo expliqui què fas, per a qui i per què importa sense sonar genèric."],
+      ["Reutilització", "Planifiquem recursos, entrevistes i escenes per crear màster principal, clips, teasers i peces verticals."],
+      ["Mesura", "Cada versió neix amb un ús: web, vendes, anuncis, LinkedIn, YouTube, esdeveniment o comunicació interna."],
+    ],
+    pain: [
+      ["El vídeo institucional es queda a la home", "S'aprova internament, queda bé, però després gairebé no es fa servir en vendes, campanyes o comunicació recurrent."],
+      ["El missatge intenta parlar a tothom", "Clients, talent, partners i direcció necessiten matisos diferents. Una sola peça generalista sol diluir el valor."],
+      ["Es roda sense pensar en distribució", "Si no es decideix abans quins formats faran falta, adaptar el material després surt més car i queda menys natural."],
+    ],
+    when: ["Tens un vídeo antic que ja no representa l'empresa", "Necessites explicar un servei B2B complex", "Vols contingut per a web, LinkedIn, YouTube o campanyes", "Vas a una fira, esdeveniment o ronda comercial amb material poc concret"],
+    process: [
+      ["01", "Auditoria", "Revisem vídeo actual, web, missatges comercials, audiència i canals per detectar què funciona i què sobra."],
+      ["02", "Mapa de formats", "Definim màster principal, clips per objecció, peces verticals, teaser i usos per a vendes o paid media."],
+      ["03", "Guió i rodatge", "Preparem entrevistes, escenes, recursos visuals i una planificació que permeti reutilitzar sense perdre qualitat."],
+      ["04", "Versions i mesura", "Entreguem peces adaptades per canal i recomanacions senzilles per mesurar retenció, clics, leads o ús comercial."],
+    ],
+    includes: ["Auditoria del vídeo i materials existents", "Proposta narrativa i missatges clau", "Guió o escaleta d'entrevista", "Rodatge d'equip, producte, espais o clients", "Muntatge, color, so, música i grafisme", "Subtítols, miniatures i versions per canal"],
+    channels: ["Home i pàgina de serveis", "LinkedIn i YouTube", "Google Ads, YouTube Ads i remarketing", "Presentacions comercials", "Fires, esdeveniments i newsletters", "Comunicació interna i employer branding"],
+    deliverables: ["Vídeo principal d'empresa", "Teaser de 30-60 segons", "Clips per servei, objecció o audiència", "Versions verticals, quadrades i subtitulades"],
+    faq: [
+      ["Hem de refer tot el vídeo corporatiu?", "No sempre. Primer revisem el que ja existeix. De vegades convé rescatar material, gravar noves entrevistes o crear versions més útils abans de repetir una gran peça des de zero."],
+      ["Serveix si som una empresa B2B amb un servei difícil d'explicar?", "Sí. De fet, és on més ajuda: podem dividir el missatge en problema, solució, prova, equip i casos perquè cada peça resolgui un dubte concret."],
+      ["Podeu fer contingut vertical sense que sembli improvisat?", "Sí. El vertical pot ser molt professional si es pensa des de guió, llum, enquadrament, subtítols i ritme. No és un retall final: és un format amb intenció pròpia."],
+      ["Com sabem si el vídeo funciona?", "Definim indicadors senzills abans de produir: retenció, clics, leads, reunions, ús per vendes, visualitzacions qualificades o reducció de dubtes repetits."],
+    ],
   },
   "produccion-documentales-barcelona": {
     ...landingPages.ca["produccion-documentales-barcelona"],
@@ -1893,6 +2029,12 @@ function HomePage({ lang, t, serviceItems, projectItems, postItems, faqItems }) 
                   <div className="mt-auto border-t border-[#E4E0D8] pt-4">
                     <p className="font-mono text-[10px] uppercase tracking-[0.14em] text-[#6F6B63]">{byLang(lang, { es: "Entregables", ca: "Entregables", en: "Deliverables" })}</p>
                     <p className="mt-2 text-sm font-medium leading-6 text-[#2F3437]">{service.deliverable}</p>
+                    {service.landingSlug && (
+                      <a href={pathFor(lang, service.landingSlug)} className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-[#24231f] transition hover:text-[#8C4F3B]">
+                        {service.cta}
+                        <ArrowIcon className="h-4 w-4" />
+                      </a>
+                    )}
                   </div>
                 </div>
               </article>
@@ -2078,6 +2220,18 @@ function SuccessCasesLandingPage({ page, lang, projectItems, t }) {
     .map((slug) => projectItems.find((item) => item.slug === slug))
     .filter((item) => item?.video)
     .slice(0, 4);
+  const problemTitle = page.problemTitle || byLang(lang, { es: "La confianza se acelera cuando la cuenta un cliente.", ca: "La confiança s'accelera quan l'explica un client.", en: "Trust moves faster when a client tells it." });
+  const visualLabel = page.visualLabel || byLang(lang, { es: "Teasers y ejemplos", ca: "Teasers i exemples", en: "Teasers and examples" });
+  const visualTitle = page.visualTitle || byLang(lang, { es: "Prueba visual antes de pedir contacto.", ca: "Prova visual abans de demanar contacte.", en: "Visual proof before asking for contact." });
+  const visualIntro = page.visualIntro || byLang(lang, {
+    es: "El objetivo no es hacer un vídeo bonito y aislado: es construir piezas que ventas, marketing y dirección puedan reutilizar en momentos distintos.",
+    ca: "L'objectiu no és fer un vídeo bonic i aïllat: és construir peces que vendes, màrqueting i direcció puguin reutilitzar en moments diferents.",
+    en: "The goal is not to create a nice isolated video: it is to build assets that sales, marketing and leadership can reuse at different moments.",
+  });
+  const whenTitle = page.whenTitle || byLang(lang, { es: "Cuando la prueba vale más que la promesa.", ca: "Quan la prova val més que la promesa.", en: "When proof is stronger than promise." });
+  const processTitle = page.processTitle || byLang(lang, { es: "Del cliente real a una pieza útil para ventas.", ca: "Del client real a una peça útil per a vendes.", en: "From real client to a useful sales asset." });
+  const deliverablesTitle = page.deliverablesTitle || byLang(lang, { es: "Una producción, varios usos.", ca: "Una producció, diversos usos.", en: "One production, several uses." });
+  const faqTitle = page.faqTitle || byLang(lang, { es: "Preguntas sobre casos de éxito", ca: "Preguntes sobre casos d'èxit", en: "Questions about success stories" });
 
   return (
     <>
@@ -2139,7 +2293,7 @@ function SuccessCasesLandingPage({ page, lang, projectItems, t }) {
           <div data-reveal>
             <SectionLabel>{byLang(lang, { es: "Problema comercial", ca: "Problema comercial", en: "Commercial problem" })}</SectionLabel>
             <h2 className="font-editorial mt-5 max-w-[11ch] text-5xl leading-[0.95] tracking-[-0.05em] text-[#24231f] md:text-6xl">
-              {byLang(lang, { es: "La confianza se acelera cuando la cuenta un cliente.", ca: "La confiança s'accelera quan l'explica un client.", en: "Trust moves faster when a client tells it." })}
+              {problemTitle}
             </h2>
           </div>
           <div className="grid gap-4 md:grid-cols-3">
@@ -2171,17 +2325,13 @@ function SuccessCasesLandingPage({ page, lang, projectItems, t }) {
           <div className="mx-auto max-w-[1440px]">
             <div data-reveal className="mb-10 grid gap-6 lg:grid-cols-[.75fr_1.25fr] lg:items-end">
               <div>
-                <SectionLabel>{byLang(lang, { es: "Teasers y ejemplos", ca: "Teasers i exemples", en: "Teasers and examples" })}</SectionLabel>
+                <SectionLabel>{visualLabel}</SectionLabel>
                 <h2 className="font-editorial mt-5 text-5xl leading-[0.95] tracking-[-0.05em] text-[#24231f] md:text-6xl">
-                  {byLang(lang, { es: "Prueba visual antes de pedir contacto.", ca: "Prova visual abans de demanar contacte.", en: "Visual proof before asking for contact." })}
+                  {visualTitle}
                 </h2>
               </div>
               <p className="pretty-text max-w-3xl text-base leading-7 text-[#6F6B63]">
-                {byLang(lang, {
-                  es: "El objetivo no es hacer un vídeo bonito y aislado: es construir piezas que ventas, marketing y dirección puedan reutilizar en momentos distintos.",
-                  ca: "L'objectiu no és fer un vídeo bonic i aïllat: és construir peces que vendes, màrqueting i direcció puguin reutilitzar en moments diferents.",
-                  en: "The goal is not to create a nice isolated video: it is to build assets that sales, marketing and leadership can reuse at different moments.",
-                })}
+                {visualIntro}
               </p>
             </div>
             <div className="grid gap-4 lg:grid-cols-2">
@@ -2217,7 +2367,7 @@ function SuccessCasesLandingPage({ page, lang, projectItems, t }) {
           <div data-reveal>
             <SectionLabel>{byLang(lang, { es: "Cuándo tiene sentido", ca: "Quan té sentit", en: "When it makes sense" })}</SectionLabel>
             <h2 className="font-editorial mt-5 max-w-[11ch] text-5xl leading-[0.95] tracking-[-0.05em] text-[#24231f] md:text-6xl">
-              {byLang(lang, { es: "Cuando la prueba vale más que la promesa.", ca: "Quan la prova val més que la promesa.", en: "When proof is stronger than promise." })}
+              {whenTitle}
             </h2>
           </div>
           <div className="grid gap-4 md:grid-cols-2">
@@ -2236,7 +2386,7 @@ function SuccessCasesLandingPage({ page, lang, projectItems, t }) {
           <div data-reveal className="mb-12 max-w-4xl">
             <SectionLabel>{byLang(lang, { es: "Proceso", ca: "Procés", en: "Process" })}</SectionLabel>
             <h2 className="font-editorial mt-5 text-5xl leading-[0.95] tracking-[-0.05em] text-[#24231f] md:text-6xl">
-              {byLang(lang, { es: "Del cliente real a una pieza útil para ventas.", ca: "Del client real a una peça útil per a vendes.", en: "From real client to a useful sales asset." })}
+              {processTitle}
             </h2>
           </div>
           <div className="grid gap-4 lg:grid-cols-4">
@@ -2256,7 +2406,7 @@ function SuccessCasesLandingPage({ page, lang, projectItems, t }) {
           <div data-reveal>
             <SectionLabel>{byLang(lang, { es: "Entregables", ca: "Entregables", en: "Deliverables" })}</SectionLabel>
             <h2 className="font-editorial mt-5 text-5xl leading-[0.95] tracking-[-0.05em] text-[#24231f] md:text-6xl">
-              {byLang(lang, { es: "Una producción, varios usos.", ca: "Una producció, diversos usos.", en: "One production, several uses." })}
+              {deliverablesTitle}
             </h2>
           </div>
           <div className="grid gap-5">
@@ -2286,7 +2436,7 @@ function SuccessCasesLandingPage({ page, lang, projectItems, t }) {
         </div>
       </section>
 
-      {related.length > 0 && (
+      {!page.hideRelatedWork && related.length > 0 && (
         <section className="border-y border-[#EAEAEA] bg-white px-4 py-16 md:px-8 md:py-24">
           <div className="mx-auto max-w-[1440px]">
             <div data-reveal className="mb-10 flex flex-col justify-between gap-5 md:flex-row md:items-end">
@@ -2315,7 +2465,7 @@ function SuccessCasesLandingPage({ page, lang, projectItems, t }) {
           <div data-reveal>
             <SectionLabel>FAQ</SectionLabel>
             <h2 className="font-editorial mt-5 text-5xl leading-[0.95] tracking-[-0.05em] text-[#24231f] md:text-6xl">
-              {byLang(lang, { es: "Preguntas sobre casos de éxito", ca: "Preguntes sobre casos d'èxit", en: "Questions about success stories" })}
+              {faqTitle}
             </h2>
           </div>
           <div data-reveal style={{ "--index": 1 }}>
