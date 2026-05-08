@@ -922,6 +922,35 @@ const landingPages = {
         ["¿Preparáis entregables técnicos?", "Sí. Generamos masters para web, redes, archivo, emisión o presentaciones."],
       ],
     },
+    "casos-exito-video": {
+      title: "Vídeos de casos de éxito para empresas",
+      kicker: "Casos de éxito / Testimoniales",
+      intro: "Convertimos clientes reales, proyectos terminados y resultados tangibles en piezas audiovisuales que ayudan a vender con más confianza.",
+      primary: "Crear un caso de éxito",
+      secondary: "Ver teaser CEDEC",
+      proof: "Testimonios, entrevistas, recursos de empresa y versiones para web, LinkedIn, YouTube y presentaciones comerciales.",
+      bullets: ["Entrevistas guiadas sin sonar a anuncio", "Rodaje cuidado con cliente, equipo y localización", "Piezas largas, clips cortos y versiones para campaña"],
+      related: ["cedec-casos-exito", "cedec-consultora", "chroma"],
+      featuredProject: "cedec-casos-exito",
+      outcomes: [
+        ["Confianza", "Un cliente satisfecho explica mejor que nadie por qué el proyecto funcionó."],
+        ["Ventas", "El equipo comercial gana una pieza concreta para enviar, presentar o usar en campañas."],
+        ["Marca", "La empresa muestra método, relación con cliente y capacidad real de entrega."],
+      ],
+      when: ["Lanzamiento de un servicio B2B", "Proyecto con resultados medibles", "Cliente dispuesto a explicar su experiencia", "Campañas de captación, LinkedIn o ferias"],
+      process: [
+        ["01", "Selección del caso", "Elegimos el cliente, el ángulo narrativo y el objetivo comercial de la pieza."],
+        ["02", "Preguntas y guion", "Preparamos entrevista, estructura y mensajes clave para que el testimonio fluya natural."],
+        ["03", "Rodaje", "Grabamos entrevista, recursos, ambiente de trabajo y detalles que den contexto visual."],
+        ["04", "Versiones", "Montamos pieza principal, teaser y clips cortos listos para publicar o activar en campaña."],
+      ],
+      deliverables: ["Teaser de 30-60 segundos", "Pieza principal de caso de éxito", "Clips verticales para redes", "Miniaturas, subtítulos y masters finales"],
+      faq: [
+        ["¿El cliente tiene que aprenderse un guion?", "No. Preparamos una entrevista guiada para que la conversación sea natural, clara y útil. La idea es conseguir verdad, no una frase memorizada."],
+        ["¿Podemos grabar en las oficinas del cliente?", "Sí. Revisamos localización, luz, sonido y tiempos antes del rodaje para que la grabación sea cómoda y no interrumpa más de lo necesario."],
+        ["¿Sirve para campañas de Google Ads o LinkedIn?", "Sí. Podemos entregar versiones pensadas para landing, YouTube, LinkedIn, remarketing, presentaciones comerciales y comunicación interna."],
+      ],
+    },
   },
 };
 
@@ -982,6 +1011,34 @@ Object.assign(landingPages.en, {
     bullets: ["Editing and narrative structure", "Color, sound and graphics", "Subtitles, formats and final versions"],
     faq: [["Can you edit footage that is already shot?", "Yes. We can handle postproduction only if the material has already been filmed."], ["Do you prepare technical deliverables?", "Yes. We create masters for web, social media, archive, broadcast or presentations."]],
   },
+  "casos-exito-video": {
+    ...landingPages.en["casos-exito-video"],
+    title: "Customer success story videos for companies",
+    kicker: "Success stories / Testimonials",
+    intro: "We turn real clients, completed projects and tangible results into audiovisual pieces that help sales teams build trust.",
+    primary: "Create a success story",
+    secondary: "Watch CEDEC teaser",
+    proof: "Testimonials, interviews, company footage and versions for websites, LinkedIn, YouTube and sales presentations.",
+    bullets: ["Guided interviews that do not sound like ads", "Careful shooting with client, team and location", "Main film, short clips and campaign-ready versions"],
+    outcomes: [
+      ["Trust", "A satisfied client explains better than anyone why the project worked."],
+      ["Sales", "The sales team gets a specific piece to send, present or use in campaigns."],
+      ["Brand", "The company shows process, client relationship and real delivery capacity."],
+    ],
+    when: ["B2B service launch", "Project with measurable results", "Client willing to share the experience", "Lead generation, LinkedIn or trade fair campaigns"],
+    process: [
+      ["01", "Case selection", "We choose the client, narrative angle and commercial goal of the piece."],
+      ["02", "Questions and script", "We prepare interview, structure and key messages so the testimonial flows naturally."],
+      ["03", "Shoot", "We film interview, supporting footage, work atmosphere and details that give visual context."],
+      ["04", "Versions", "We edit the main piece, teaser and short clips ready for publication or campaign activation."],
+    ],
+    deliverables: ["30-60 second teaser", "Main success story film", "Vertical clips for social media", "Thumbnails, subtitles and final masters"],
+    faq: [
+      ["Does the client need to learn a script?", "No. We prepare a guided interview so the conversation feels natural, clear and useful. The goal is truth, not memorized lines."],
+      ["Can we film at the client's office?", "Yes. We review location, light, sound and timing before the shoot so the recording is comfortable and efficient."],
+      ["Does it work for Google Ads or LinkedIn campaigns?", "Yes. We can deliver versions for landing pages, YouTube, LinkedIn, remarketing, sales presentations and internal communication."],
+    ],
+  },
 });
 
 Object.assign(landingPages.ca, {
@@ -1027,6 +1084,34 @@ Object.assign(landingPages.ca, {
     intro: "Edició, color, grafisme, mescla, subtítols, versions i màsters finals per a projectes propis o material ja rodat.",
     bullets: ["Muntatge i estructura narrativa", "Color, so i grafisme", "Subtítols, formats i versions finals"],
     faq: [["Podeu editar material ja gravat?", "Sí. Podem encarregar-nos només de la postproducció si el material està rodat."], ["Prepareu entregables tècnics?", "Sí. Generem màsters per a web, xarxes, arxiu, emissió o presentacions."]],
+  },
+  "casos-exito-video": {
+    ...landingPages.ca["casos-exito-video"],
+    title: "Vídeos de casos d'èxit per a empreses",
+    kicker: "Casos d'èxit / Testimonis",
+    intro: "Convertim clients reals, projectes acabats i resultats tangibles en peces audiovisuals que ajuden a vendre amb més confiança.",
+    primary: "Crear un cas d'èxit",
+    secondary: "Veure teaser CEDEC",
+    proof: "Testimonis, entrevistes, recursos d'empresa i versions per a web, LinkedIn, YouTube i presentacions comercials.",
+    bullets: ["Entrevistes guiades sense sonar a anunci", "Rodatge cuidat amb client, equip i localització", "Peces llargues, clips curts i versions per a campanya"],
+    outcomes: [
+      ["Confiança", "Un client satisfet explica millor que ningú per què el projecte va funcionar."],
+      ["Vendes", "L'equip comercial guanya una peça concreta per enviar, presentar o fer servir en campanyes."],
+      ["Marca", "L'empresa mostra mètode, relació amb client i capacitat real de lliurament."],
+    ],
+    when: ["Llançament d'un servei B2B", "Projecte amb resultats mesurables", "Client disposat a explicar la seva experiència", "Campanyes de captació, LinkedIn o fires"],
+    process: [
+      ["01", "Selecció del cas", "Triem el client, l'angle narratiu i l'objectiu comercial de la peça."],
+      ["02", "Preguntes i guió", "Preparem entrevista, estructura i missatges clau perquè el testimoni flueixi natural."],
+      ["03", "Rodatge", "Gravem entrevista, recursos, ambient de treball i detalls que donin context visual."],
+      ["04", "Versions", "Muntem peça principal, teaser i clips curts llestos per publicar o activar en campanya."],
+    ],
+    deliverables: ["Teaser de 30-60 segons", "Peça principal de cas d'èxit", "Clips verticals per a xarxes", "Miniatures, subtítols i màsters finals"],
+    faq: [
+      ["El client ha d'aprendre's un guió?", "No. Preparem una entrevista guiada perquè la conversa sigui natural, clara i útil. La idea és aconseguir veritat, no una frase memoritzada."],
+      ["Podem gravar a les oficines del client?", "Sí. Revisem localització, llum, so i temps abans del rodatge perquè la gravació sigui còmoda i no interrompi més del necessari."],
+      ["Serveix per a campanyes de Google Ads o LinkedIn?", "Sí. Podem entregar versions pensades per a landing, YouTube, LinkedIn, remarketing, presentacions comercials i comunicació interna."],
+    ],
   },
 });
 
@@ -1415,7 +1500,7 @@ function FAQ({ items }) {
 
 function ContactForm({ t }) {
   const [status, setStatus] = useState("idle");
-  const [form, setForm] = useState({ name: "", email: "", project: "", budget: "" });
+  const [form, setForm] = useState({ name: "", email: "", project: "" });
   const [error, setError] = useState("");
 
   function submit(event) {
@@ -1427,12 +1512,11 @@ function ContactForm({ t }) {
       return;
     }
     setStatus("loading");
-    trackEvent("brief_submit", { event_category: "lead", budget_range: form.budget || "not_selected" });
+    trackEvent("brief_submit", { event_category: "lead" });
     const subject = `Nuevo proyecto audiovisual - ${form.name.trim()}`;
     const body = [
       `${t.formName}: ${form.name.trim()}`,
       `${t.formEmail}: ${form.email.trim()}`,
-      `${t.formBudget}: ${form.budget || t.formBudgetOpen}`,
       "",
       `${t.formProject}:`,
       form.project.trim(),
@@ -1476,16 +1560,6 @@ function ContactForm({ t }) {
             <label className="grid gap-2">
               <span className="text-sm font-medium text-[#111111]">{t.formProject}</span>
               <textarea name="project" value={form.project} onChange={(event) => setForm({ ...form, project: event.target.value })} rows={5} className="resize-none border border-[#EAEAEA] bg-[#FBFBFA] px-3 py-3 text-sm outline-none transition focus:border-[#111111]" placeholder="Documental corto, reportaje de evento, campaña social, spot o pieza corporativa." />
-            </label>
-            <label className="grid gap-2">
-              <span className="text-sm font-medium text-[#111111]">{t.formBudget}</span>
-              <select name="budget" value={form.budget} onChange={(event) => setForm({ ...form, budget: event.target.value })} className="border border-[#EAEAEA] bg-[#FBFBFA] px-3 py-3 text-sm outline-none transition focus:border-[#111111]">
-                <option value="">{t.formSelect}</option>
-                <option>3.000 € - 8.000 €</option>
-                <option>8.000 € - 18.000 €</option>
-                <option>18.000 € - 40.000 €</option>
-                <option>{t.formBudgetOpen}</option>
-              </select>
             </label>
           </div>
           {status === "error" && <p className="mt-5 border border-[#FDEBEC] bg-[#FDEBEC] px-3 py-3 text-sm text-[#9F2F2D]">{error}</p>}
@@ -1808,6 +1882,12 @@ function ProjectDetailPage({ project, lang, projectItems }) {
               <Tag>{project.year}</Tag>
               <Tag bg="#E1F3FE" color="#1F6C9F">{project.client}</Tag>
             </div>
+            {project.slug === "cedec-casos-exito" && (
+              <a href={pathFor(lang, "casos-exito-video")} className="mt-8 inline-flex items-center gap-2 border border-[#24231f] bg-[#24231f] px-5 py-3 text-sm font-semibold text-white transition hover:border-[#8C4F3B] hover:bg-[#8C4F3B]">
+                {byLang(lang, { es: "Ver landing de casos de éxito", ca: "Veure landing de casos d'èxit", en: "View success stories landing" })}
+                <ArrowIcon className="h-4 w-4" />
+              </a>
+            )}
           </div>
           <div data-reveal style={{ "--index": 1 }} className="border border-[#EAEAEA] bg-white p-3">
             <div className="relative aspect-video overflow-hidden bg-[#111111]">
@@ -1831,6 +1911,170 @@ function ProjectDetailPage({ project, lang, projectItems }) {
         )}
       </div>
     </section>
+  );
+}
+
+function SuccessCasesLandingPage({ page, lang, projectItems, t }) {
+  const featured = projectItems.find((item) => item.slug === page.featuredProject) || projectItems.find((item) => item.slug === "cedec-casos-exito");
+  const related = page.related.map((slug) => projectItems.find((item) => item.slug === slug)).filter(Boolean);
+
+  return (
+    <>
+      <section className="px-4 py-16 md:px-8 md:py-24">
+        <div className="mx-auto grid max-w-[1440px] gap-10 lg:grid-cols-[.82fr_1.18fr] lg:items-end">
+          <div data-reveal>
+            <SectionLabel>{page.kicker}</SectionLabel>
+            <h1 className="balanced-text font-editorial mt-6 max-w-[12ch] text-5xl leading-[0.95] tracking-[-0.055em] text-[#24231f] md:text-7xl">
+              {page.title}
+            </h1>
+            <p className="pretty-text mt-7 max-w-2xl text-xl font-semibold leading-8 tracking-[-0.03em] text-[#24231f]">{page.intro}</p>
+            <p className="pretty-text mt-5 max-w-2xl text-base leading-7 text-[#6F6B63]">{page.proof}</p>
+            <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+              <a href={pathFor(lang, "contacto")} onClick={() => trackEvent("success_cases_cta_click", { event_category: "lead" })} className="border border-[#24231f] bg-[#24231f] px-5 py-3 text-sm font-semibold text-white transition hover:border-[#8C4F3B] hover:bg-[#8C4F3B] active:scale-[0.98]">
+                {page.primary}
+              </a>
+              {featured && (
+                <a href={pathFor(lang, "portfolio", featured.slug)} className="border border-[#D8D2C7] bg-[#FBFAF7] px-5 py-3 text-sm font-semibold text-[#24231f] transition hover:bg-[#EFEAE2] active:scale-[0.98]">
+                  {page.secondary}
+                </a>
+              )}
+            </div>
+          </div>
+          <div data-reveal style={{ "--index": 1 }} className="border border-[#DED8CE] bg-white p-3 shadow-[0_24px_70px_rgba(73,59,45,0.10)]">
+            <div className="relative aspect-video overflow-hidden bg-[#111111]">
+              {featured?.video ? (
+                <iframe src={featured.video} title={`${featured.title} - ${featured.type}`} loading="lazy" className="absolute inset-0 h-full w-full" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
+              ) : (
+                <img src={featured?.image} alt={featured?.title || page.title} loading="lazy" decoding="async" className="h-full w-full object-cover" />
+              )}
+            </div>
+            {featured && (
+              <div className="grid gap-5 p-5 md:grid-cols-[1fr_auto]">
+                <div>
+                  <Tag bg="#F1ECFA" color="#6D4AA0">{featured.type}</Tag>
+                  <h2 className="mt-4 text-3xl font-semibold tracking-[-0.04em] text-[#24231f]">{featured.title}</h2>
+                  <p className="mt-2 text-sm leading-6 text-[#6F6B63]">{featured.note}</p>
+                </div>
+                <a href={pathFor(lang, "portfolio", featured.slug)} className="inline-flex items-center gap-2 text-sm font-semibold text-[#24231f] transition hover:text-[#8C4F3B]">
+                  Portfolio
+                  <ArrowIcon className="h-4 w-4" />
+                </a>
+              </div>
+            )}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-y border-[#E4E0D8] bg-[#FBFAF7] px-4 py-16 md:px-8 md:py-24">
+        <div className="mx-auto grid max-w-[1440px] gap-4 md:grid-cols-3">
+          {page.outcomes.map(([title, text], index) => (
+            <article key={title} data-reveal style={{ "--index": index }} className="bg-white p-6 shadow-[inset_0_0_0_1px_rgba(36,35,31,0.08)] md:p-8">
+              <Tag bg={index === 0 ? "#EDF3EC" : index === 1 ? "#FBF3DB" : "#E1F3FE"} color={index === 0 ? "#346538" : index === 1 ? "#956400" : "#1F6C9F"}>0{index + 1}</Tag>
+              <h2 className="mt-8 text-3xl font-semibold tracking-[-0.04em] text-[#24231f]">{title}</h2>
+              <p className="pretty-text mt-4 text-base leading-7 text-[#6F6B63]">{text}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="px-4 py-16 md:px-8 md:py-24">
+        <div className="mx-auto grid max-w-[1440px] gap-12 lg:grid-cols-[.75fr_1.25fr]">
+          <div data-reveal>
+            <SectionLabel>{byLang(lang, { es: "Cuándo tiene sentido", ca: "Quan té sentit", en: "When it makes sense" })}</SectionLabel>
+            <h2 className="font-editorial mt-5 max-w-[11ch] text-5xl leading-[0.95] tracking-[-0.05em] text-[#24231f] md:text-6xl">
+              {byLang(lang, { es: "Cuando la prueba vale más que la promesa.", ca: "Quan la prova val més que la promesa.", en: "When proof is stronger than promise." })}
+            </h2>
+          </div>
+          <div className="grid gap-4 md:grid-cols-2">
+            {page.when.map((item, index) => (
+              <div key={item} data-reveal style={{ "--index": index }} className="flex min-h-36 flex-col justify-between border border-[#E4E0D8] bg-[#FBFAF7] p-6">
+                <span className="font-mono text-xs uppercase tracking-[0.16em] text-[#8C4F3B]">0{index + 1}</span>
+                <p className="mt-8 text-xl font-semibold leading-7 tracking-[-0.03em] text-[#24231f]">{item}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-y border-[#EAEAEA] bg-[#F7F6F3] px-4 py-16 md:px-8 md:py-24">
+        <div className="mx-auto max-w-[1440px]">
+          <div data-reveal className="mb-12 max-w-4xl">
+            <SectionLabel>{byLang(lang, { es: "Proceso", ca: "Procés", en: "Process" })}</SectionLabel>
+            <h2 className="font-editorial mt-5 text-5xl leading-[0.95] tracking-[-0.05em] text-[#24231f] md:text-6xl">
+              {byLang(lang, { es: "Del cliente real a una pieza útil para ventas.", ca: "Del client real a una peça útil per a vendes.", en: "From real client to a useful sales asset." })}
+            </h2>
+          </div>
+          <div className="grid gap-4 lg:grid-cols-4">
+            {page.process.map(([num, title, text], index) => (
+              <article key={num} data-reveal style={{ "--index": index }} className="bg-white p-6 shadow-[inset_0_0_0_1px_rgba(36,35,31,0.08)]">
+                <p className="font-mono text-xs uppercase tracking-[0.18em] text-[#8C4F3B]">{num}</p>
+                <h3 className="mt-8 text-2xl font-semibold tracking-[-0.035em] text-[#24231f]">{title}</h3>
+                <p className="pretty-text mt-4 text-sm leading-6 text-[#6F6B63]">{text}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="px-4 py-16 md:px-8 md:py-24">
+        <div className="mx-auto grid max-w-[1440px] gap-12 lg:grid-cols-[.75fr_1.25fr]">
+          <div data-reveal>
+            <SectionLabel>{byLang(lang, { es: "Entregables", ca: "Entregables", en: "Deliverables" })}</SectionLabel>
+            <h2 className="font-editorial mt-5 text-5xl leading-[0.95] tracking-[-0.05em] text-[#24231f] md:text-6xl">
+              {byLang(lang, { es: "Una producción, varios usos.", ca: "Una producció, diversos usos.", en: "One production, several uses." })}
+            </h2>
+          </div>
+          <div className="grid gap-3">
+            {page.deliverables.map((item, index) => (
+              <div key={item} data-reveal style={{ "--index": index }} className="flex items-center justify-between gap-6 border border-[#E4E0D8] bg-[#FBFAF7] p-5">
+                <p className="text-xl font-semibold tracking-[-0.03em] text-[#24231f]">{item}</p>
+                <span className="font-mono text-xs uppercase tracking-[0.16em] text-[#8C4F3B]">0{index + 1}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {related.length > 0 && (
+        <section className="border-y border-[#EAEAEA] bg-white px-4 py-16 md:px-8 md:py-24">
+          <div className="mx-auto max-w-[1440px]">
+            <div data-reveal className="mb-10 flex flex-col justify-between gap-5 md:flex-row md:items-end">
+              <div>
+                <SectionLabel>{byLang(lang, { es: "Prueba visual", ca: "Prova visual", en: "Visual proof" })}</SectionLabel>
+                <h2 className="font-editorial mt-5 text-5xl leading-[0.95] tracking-[-0.05em] text-[#24231f] md:text-6xl">
+                  {byLang(lang, { es: "Trabajos relacionados", ca: "Treballs relacionats", en: "Related work" })}
+                </h2>
+              </div>
+              <a href={pathFor(lang, "portfolio", "todos")} className="inline-flex items-center gap-2 border border-[#24231f] bg-[#24231f] px-4 py-3 text-sm font-semibold text-white transition hover:bg-[#333333]">
+                {byLang(lang, { es: "Ver portfolio", ca: "Veure portfolio", en: "View portfolio" })}
+                <ArrowIcon className="h-4 w-4" />
+              </a>
+            </div>
+            <div className="grid gap-4 md:grid-cols-3">
+              {related.map((item, index) => (
+                <ProjectCard key={item.slug} project={item} index={index} lang={lang} />
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      <section className="px-4 py-16 md:px-8 md:py-24">
+        <div className="mx-auto grid max-w-[1440px] gap-12 lg:grid-cols-[.85fr_1.15fr]">
+          <div data-reveal>
+            <SectionLabel>FAQ</SectionLabel>
+            <h2 className="font-editorial mt-5 text-5xl leading-[0.95] tracking-[-0.05em] text-[#24231f] md:text-6xl">
+              {byLang(lang, { es: "Preguntas sobre casos de éxito", ca: "Preguntes sobre casos d'èxit", en: "Questions about success stories" })}
+            </h2>
+          </div>
+          <div data-reveal style={{ "--index": 1 }}>
+            <FAQ items={page.faq} />
+          </div>
+        </div>
+      </section>
+
+      <ContactSection t={t} lang={lang} />
+    </>
   );
 }
 
@@ -2339,9 +2583,34 @@ function seoForRoute({ lang, section, slug, project, post, landingPage, legalPag
     title = `${t.contactTitle} | ${baseTitle}`;
     description = t.contactText;
   } else if (landingPage) {
+    const featured = landingPage.featuredProject ? projects[lang].find((item) => item.slug === landingPage.featuredProject) : null;
     title = `${landingPage.title} | LAPRODU FILMS`;
     description = landingPage.intro;
+    image = absoluteUrl(featured?.image || "/laprodu/portada/CASOS_EXITOS_PORTADA.png");
     canonicalPath = pathFor(lang, section);
+    jsonLd.push({
+      "@context": "https://schema.org",
+      "@type": "Service",
+      name: landingPage.title,
+      description: landingPage.intro,
+      provider: { "@type": "Organization", name: "LAPRODU FILMS", url: SITE_URL },
+      areaServed: byLang(lang, { es: "Barcelona, España e internacional", ca: "Barcelona, Espanya i internacional", en: "Barcelona, Spain and international" }),
+      serviceType: byLang(lang, { es: "Producción audiovisual de vídeos de casos de éxito", ca: "Producció audiovisual de vídeos de casos d'èxit", en: "Audiovisual production of customer success story videos" }),
+      url: absoluteUrl(canonicalPath),
+    });
+    if (featured?.video) {
+      const videoId = videoIdFromEmbed(featured.video);
+      jsonLd.push({
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        name: `${featured.title} - ${featured.type}`,
+        description: featured.note,
+        thumbnailUrl: [image],
+        uploadDate: `${featured.year}-01-01T09:00:00+01:00`,
+        embedUrl: featured.video,
+        contentUrl: videoId ? `https://www.youtube.com/watch?v=${videoId}` : featured.video,
+      });
+    }
     jsonLd.push({
       "@context": "https://schema.org",
       "@type": "FAQPage",
@@ -2497,6 +2766,8 @@ export default function LaProduFilmsEditorial({ initialRoute = null }) {
     page = <BlogListPage t={t} lang={lang} postItems={postItems} />;
   } else if (normalizedSection === "blog" && slug) {
     page = post ? <BlogDetailPage post={post} lang={lang} postItems={postItems} /> : <NotFoundPage lang={lang} />;
+  } else if (landingPage?.featuredProject) {
+    page = <SuccessCasesLandingPage page={landingPage} lang={lang} projectItems={projectItems} t={t} />;
   } else if (legalPage) {
     page = <LegalPage page={legalPage} lang={lang} />;
   }

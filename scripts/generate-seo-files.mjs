@@ -11,6 +11,7 @@ const landings = [
   "video-eventos-barcelona",
   "spot-publicitario-barcelona",
   "postproduccion-video-barcelona",
+  "casos-exito-video",
 ];
 const projects = [
   "secundaris",
