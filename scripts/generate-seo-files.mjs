@@ -8,6 +8,7 @@ const landings = [
   "productora-audiovisual-barcelona",
   "video-corporativo-barcelona",
   "video-corporativo-auditado-2026",
+  "auditoria-seo-web",
   "produccion-documentales-barcelona",
   "video-eventos-barcelona",
   "spot-publicitario-barcelona",
@@ -53,6 +54,7 @@ const posts = [
   "productora-audiovisual-barcelona-precio-2026",
   "video-corporativo-empresa-barcelona-2026",
   "produccion-documental-television-espana-2026",
+  "auditoria-seo-web-2026",
 ];
 
 function url(lang, path = "") {

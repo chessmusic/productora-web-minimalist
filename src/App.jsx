@@ -483,6 +483,23 @@ const posts = {
         "La postproducción ordena todo ese material: montaje, color, mezcla, grafismo, subtítulos, masters y revisiones. Cuanto mejor está preparada la fase previa, más margen tiene la edición para construir una pieza con sentido. La técnica importa, pero el verdadero centro sigue siendo la historia.",
       ],
     },
+    {
+      slug: "auditoria-seo-web-2026",
+      title: "Auditoría SEO para web: qué revisar antes de invertir en posicionamiento o Google Ads",
+      excerpt: "Checklist práctico para saber si tu web está preparada para posicionar, captar leads y recibir tráfico de campañas sin perder oportunidades.",
+      category: "SEO",
+      date: "22 diciembre 2026",
+      read: "9 min",
+      image: "/laprodu/fotos/xarxa_4.jpg",
+      ctaLanding: "auditoria-seo-web",
+      ctaLabel: "Ver packs de auditoría SEO",
+      content: [
+        "Una auditoría SEO no debería limitarse a decir si una web está “bien” o “mal”. Lo importante es saber si Google puede rastrear las páginas clave, si entiende qué ofrece cada una y si el usuario encuentra un camino claro hacia el contacto, la compra o la solicitud de presupuesto.",
+        "Antes de invertir en posicionamiento o Google Ads conviene revisar sitemap, robots, indexación, titles, metas, H1, jerarquía de contenidos, velocidad, enlaces internos, páginas duplicadas, formularios, llamadas a la acción y medición de eventos. Si una landing no responde a una intención concreta, enviarle tráfico suele salir caro.",
+        "La parte de contenido también pesa. Una web puede tener buen diseño y aun así no atacar búsquedas long-tail como “auditoría SEO web precio”, “mejorar posicionamiento web empresa” o “landing page para Google Ads”. Detectar esas oportunidades permite crear páginas y artículos que responden a preguntas reales del mercado.",
+        "Una buena auditoría termina con prioridades. No todo tiene la misma urgencia: primero se corrigen bloqueos de indexación, errores de estructura y páginas críticas; después se trabaja contenido, enlaces internos, schema, FAQ, casos de confianza y nuevas landings comerciales.",
+      ],
+    },
   ],
   en: [],
 };
@@ -651,6 +668,19 @@ const postTranslations = {
       "Documentary production for television in Spain requires both narrative vision and technical order. A good story is not enough: it needs to become treatment, structure, shooting plan, interviews, archive, rights and final delivery prepared for broadcast.",
       "The process usually starts with research and editorial focus. Then come permissions, locations, characters, schedule, sound, light and camera needs. In television, duration, rhythm, contextual clarity and alignment with the programme or channel also matter.",
       "Postproduction orders all that material: editing, color, mix, graphics, subtitles, masters and revisions. The better the previous phase is prepared, the more room editing has to build a meaningful piece. Technique matters, but the real center remains the story.",
+    ],
+  },
+  "auditoria-seo-web-2026": {
+    title: "SEO audit for websites: what to review before investing in ranking or Google Ads",
+    excerpt: "A practical checklist to know whether your website is ready to rank, capture leads and receive campaign traffic without wasting opportunities.",
+    category: "SEO",
+    date: "December 22, 2026",
+    ctaLabel: "View SEO audit packages",
+    content: [
+      "An SEO audit should not be limited to saying whether a website is “good” or “bad”. What matters is knowing whether Google can crawl the key pages, whether it understands what each page offers and whether the user finds a clear path to contact, purchase or request a quote.",
+      "Before investing in SEO or Google Ads, it is worth reviewing sitemap, robots, indexation, titles, metas, H1s, content hierarchy, speed, internal links, duplicate pages, forms, calls to action and event tracking. If a landing page does not answer a specific intent, sending paid traffic to it becomes expensive.",
+      "Content also matters. A website can have a good design and still miss long-tail searches such as “SEO audit website price”, “improve business website ranking” or “landing page for Google Ads”. Detecting those opportunities makes it possible to create pages and articles that answer real market questions.",
+      "A good audit ends with priorities. Not everything has the same urgency: first come indexation blockers, structure errors and critical pages; then content, internal links, schema, FAQ, trust signals and new commercial landings.",
     ],
   },
 };
@@ -824,6 +854,19 @@ const postTranslationsCa = {
       "La producció documental per a televisió a Espanya exigeix una barreja de mirada narrativa i ordre tècnic. No n'hi ha prou amb tenir una bona història: cal transformar-la en tractament, estructura, pla de rodatge, entrevistes, arxiu, drets i entrega final preparada per a emissió.",
       "El procés acostuma a començar amb investigació i enfocament editorial. Després arriben permisos, localitzacions, personatges, calendari, necessitats de so, llum i càmera. En televisió també pesen la durada, el ritme, la claredat de context i la convivència amb la línia editorial del programa o canal.",
       "La postproducció ordena tot aquest material: muntatge, color, mescla, grafisme, subtítols, màsters i revisions. Com millor està preparada la fase prèvia, més marge té l'edició per construir una peça amb sentit. La tècnica importa, però el centre real continua sent la història.",
+    ],
+  },
+  "auditoria-seo-web-2026": {
+    title: "Auditoria SEO per a web: què revisar abans d'invertir en posicionament o Google Ads",
+    excerpt: "Checklist pràctic per saber si la teva web està preparada per posicionar, captar leads i rebre trànsit de campanyes sense perdre oportunitats.",
+    category: "SEO",
+    date: "22 desembre 2026",
+    ctaLabel: "Veure packs d'auditoria SEO",
+    content: [
+      "Una auditoria SEO no s'hauria de limitar a dir si una web està “bé” o “malament”. L'important és saber si Google pot rastrejar les pàgines clau, si entén què ofereix cadascuna i si l'usuari troba un camí clar cap al contacte, la compra o la sol·licitud de pressupost.",
+      "Abans d'invertir en posicionament o Google Ads convé revisar sitemap, robots, indexació, titles, metas, H1, jerarquia de continguts, velocitat, enllaços interns, pàgines duplicades, formularis, crides a l'acció i mesura d'esdeveniments. Si una landing no respon a una intenció concreta, enviar-hi trànsit sol sortir car.",
+      "La part de contingut també pesa. Una web pot tenir bon disseny i tot i així no atacar cerques long-tail com “auditoria SEO web preu”, “millorar posicionament web empresa” o “landing page per a Google Ads”. Detectar aquestes oportunitats permet crear pàgines i articles que responen a preguntes reals del mercat.",
+      "Una bona auditoria acaba amb prioritats. No tot té la mateixa urgència: primer es corregeixen bloquejos d'indexació, errors d'estructura i pàgines crítiques; després es treballa contingut, enllaços interns, schema, FAQ, senyals de confiança i noves landings comercials.",
     ],
   },
 };
@@ -1025,6 +1068,60 @@ const landingPages = {
         ["¿Cómo sabemos si el vídeo funciona?", "Definimos indicadores sencillos antes de producir: retención, clics, leads, reuniones, uso por ventas, visualizaciones cualificadas o reducción de dudas repetidas."],
       ],
     },
+    "auditoria-seo-web": {
+      title: "Auditoría SEO para webs que necesitan vender mejor",
+      kicker: "SEO / Auditoría web",
+      intro: "Revisamos estructura, indexación, contenido, velocidad, intención de búsqueda y oportunidades comerciales para convertir tu web en una base más fuerte para SEO y Google Ads.",
+      primary: "Solicitar auditoría SEO",
+      secondary: "Leer guía previa",
+      proof: "Pensada para negocios que ya tienen web, pero no saben si Google la entiende, si las páginas convierten o si la inversión en campañas está aterrizando en el lugar correcto.",
+      bullets: ["Diagnóstico técnico y de contenidos", "Prioridades accionables, no informes eternos", "Recomendaciones para SEO orgánico y campañas"],
+      related: [],
+      proofVideos: [],
+      heroImage: "/laprodu/fotos/xarxa_4.jpg",
+      blogSlug: "auditoria-seo-web-2026",
+      hideRelatedWork: true,
+      problemLabel: "Problema habitual",
+      problemTitle: "Muchas webs parecen terminadas, pero Google y el cliente no encuentran un camino claro.",
+      visualLabel: "Qué revisamos",
+      visualTitle: "Una auditoría útil separa lo urgente de lo decorativo.",
+      visualIntro: "No se trata de llenar un PDF con capturas. Se trata de detectar bloqueos reales: páginas que no se indexan, títulos duplicados, contenido débil, landings sin intención clara, formularios poco medibles o activos que frenan el rendimiento.",
+      whenTitle: "Cuando quieres invertir en SEO o Ads sin enviar tráfico a una web frágil.",
+      processTitle: "De la revisión técnica al plan de acción.",
+      deliverablesTitle: "Tres niveles según profundidad y momento del negocio.",
+      faqTitle: "Preguntas sobre auditorías SEO",
+      outcomes: [
+        ["Indexación", "Comprobamos si Google puede rastrear, entender y priorizar las páginas que te interesan."],
+        ["Contenido", "Revisamos si cada página responde a una búsqueda real y si tiene suficiente profundidad para competir."],
+        ["Conversión", "Detectamos fricciones en CTAs, formularios, mensajes, confianza y estructura comercial."],
+      ],
+      pain: [
+        ["La web existe, pero no posiciona", "Puede haber problemas de rutas, sitemap, metadatos, contenido duplicado, arquitectura o páginas demasiado parecidas entre sí."],
+        ["Las campañas traen tráfico, pero pocos contactos", "Google Ads necesita landings claras, rápidas y medibles. Si la página no acompaña, el coste por lead sube."],
+        ["Hay muchas mejoras posibles y poca prioridad", "Una auditoría práctica ordena el trabajo: qué arreglar primero, qué puede esperar y qué conviene convertir en contenido nuevo."],
+      ],
+      when: ["Antes de lanzar una campaña de Google Ads", "Después de rediseñar una web", "Si Search Console muestra páginas no indexadas", "Cuando el blog existe pero no atrae tráfico útil"],
+      process: [
+        ["01", "Revisión inicial", "Analizamos URLs, sitemap, robots, metadatos, indexación, rendimiento, enlaces internos y señales básicas de confianza."],
+        ["02", "Intención y contenido", "Detectamos qué páginas atacan búsquedas reales, cuáles compiten entre sí y qué long-tail falta cubrir."],
+        ["03", "Conversión", "Revisamos claridad del mensaje, llamadas a la acción, formularios, pruebas visuales, FAQ, schema y medición."],
+        ["04", "Plan priorizado", "Entregamos una lista ordenada por impacto, esfuerzo y urgencia para poder actuar sin perder semanas."],
+      ],
+      includes: ["Revisión de indexación y sitemap", "Análisis de titles, metas, H1 y estructura", "Checklist de contenido y long-tail", "Revisión de landings y CTAs", "Recomendaciones de schema y FAQ", "Plan de prioridades SEO + Ads"],
+      channels: ["Google Search Console", "SEO orgánico", "Google Ads y landings", "Blog y contenido long-tail", "Páginas de servicios", "Medición de leads y eventos"],
+      deliverables: ["Informe claro de hallazgos", "Checklist de correcciones", "Mapa de oportunidades de contenido", "Plan de acción por prioridad"],
+      pricing: [
+        ["Básica", "150 €", "Para webs pequeñas o revisión previa antes de campaña.", ["Hasta 5 páginas clave", "Indexación, metadatos y estructura básica", "Checklist de correcciones prioritarias", "Entrega en documento breve"]],
+        ["Standard", "400 €", "La opción más equilibrada para mejorar SEO y conversión.", ["Hasta 15 páginas clave", "Análisis técnico, contenido y landings", "Revisión de Search Console si hay acceso", "Plan de acción por impacto y esfuerzo"]],
+        ["Premium", "900 €", "Para webs con varios servicios, idiomas o campañas activas.", ["Hasta 60 páginas, idiomas o landings activas", "Auditoría SEO, contenido, UX y medición", "Recomendaciones para Google Ads y landings", "Sesión de explicación y roadmap de 90 días"]],
+      ],
+      faq: [
+        ["¿La auditoría incluye implementar cambios?", "No por defecto. La auditoría entrega diagnóstico y prioridades. Si quieres, después podemos presupuestar implementación, rediseño de landings, contenidos o mejoras técnicas."],
+        ["¿Sirve si mi web está hecha en WordPress, Webflow, Wix, Vercel o código propio?", "Sí. La revisión se centra en lo que ve Google y lo que vive el usuario: URLs, contenido, velocidad, indexación, estructura, confianza y conversión."],
+        ["¿Necesitáis acceso a Google Search Console?", "Ayuda mucho, sobre todo en la auditoría Standard y Premium. Si no hay acceso, podemos trabajar con rastreo externo y revisión manual, pero Search Console aporta datos más precisos."],
+        ["¿Qué pack elegir antes de Google Ads?", "Para campañas pequeñas puede bastar la Básica. Si vas a invertir de forma continuada, recomendamos Standard porque revisa landing, intención, medición y oportunidades de contenido."],
+      ],
+    },
     "produccion-documentales-barcelona": {
       title: "Producción de documentales en Barcelona",
       kicker: "Documental / TV",
@@ -1192,6 +1289,56 @@ Object.assign(landingPages.en, {
       ["How do we know whether the video works?", "We define simple indicators before production: retention, clicks, leads, meetings, sales usage, qualified views or fewer repeated questions."],
     ],
   },
+  "auditoria-seo-web": {
+    ...landingPages.en["auditoria-seo-web"],
+    title: "SEO audit for websites that need to sell better",
+    kicker: "SEO / Website audit",
+    intro: "We review structure, indexation, content, speed, search intent and commercial opportunities to turn your website into a stronger base for SEO and Google Ads.",
+    primary: "Request SEO audit",
+    secondary: "Read the guide",
+    proof: "For businesses that already have a website but do not know whether Google understands it, whether pages convert or whether campaign spend is landing in the right place.",
+    bullets: ["Technical and content diagnosis", "Actionable priorities, not endless reports", "Recommendations for organic SEO and campaigns"],
+    problemLabel: "Common problem",
+    problemTitle: "Many websites look finished, but Google and the customer cannot find a clear path.",
+    visualLabel: "What we review",
+    visualTitle: "A useful audit separates the urgent from the decorative.",
+    visualIntro: "This is not about filling a PDF with screenshots. It is about finding real blockers: pages not indexed, duplicate titles, thin content, unclear landing intent, weak forms or assets that slow performance.",
+    whenTitle: "When you want to invest in SEO or Ads without sending traffic to a fragile website.",
+    processTitle: "From technical review to action plan.",
+    deliverablesTitle: "Three levels depending on depth and business stage.",
+    faqTitle: "Questions about SEO audits",
+    outcomes: [
+      ["Indexation", "We check whether Google can crawl, understand and prioritize the pages that matter."],
+      ["Content", "We review whether each page answers a real search intent and has enough depth to compete."],
+      ["Conversion", "We detect friction in CTAs, forms, messaging, trust signals and commercial structure."],
+    ],
+    pain: [
+      ["The website exists, but does not rank", "There may be routing, sitemap, metadata, duplicate content, architecture or page similarity problems."],
+      ["Campaigns bring traffic, but few leads", "Google Ads needs clear, fast and measurable landing pages. If the page does not support the click, cost per lead rises."],
+      ["There are too many possible improvements", "A practical audit orders the work: what to fix first, what can wait and what should become new content."],
+    ],
+    when: ["Before launching a Google Ads campaign", "After redesigning a website", "If Search Console shows non-indexed pages", "When the blog exists but does not attract useful traffic"],
+    process: [
+      ["01", "Initial review", "We analyze URLs, sitemap, robots, metadata, indexation, performance, internal links and basic trust signals."],
+      ["02", "Intent and content", "We detect which pages target real searches, which compete with each other and which long-tail topics are missing."],
+      ["03", "Conversion", "We review message clarity, calls to action, forms, visual proof, FAQ, schema and measurement."],
+      ["04", "Prioritized plan", "We deliver a list ordered by impact, effort and urgency so you can act without losing weeks."],
+    ],
+    includes: ["Indexation and sitemap review", "Titles, metas, H1 and structure analysis", "Content and long-tail checklist", "Landing page and CTA review", "Schema and FAQ recommendations", "SEO + Ads priority plan"],
+    channels: ["Google Search Console", "Organic SEO", "Google Ads and landing pages", "Blog and long-tail content", "Service pages", "Lead and event measurement"],
+    deliverables: ["Clear findings report", "Corrections checklist", "Content opportunity map", "Priority action plan"],
+    pricing: [
+      ["Basic", "150 €", "For small websites or a pre-campaign review.", ["Up to 5 key pages", "Indexation, metadata and basic structure", "Priority corrections checklist", "Short document delivery"]],
+      ["Standard", "400 €", "The most balanced option for improving SEO and conversion.", ["Up to 15 key pages", "Technical, content and landing analysis", "Search Console review if access is available", "Action plan by impact and effort"]],
+      ["Premium", "900 €", "For websites with up to 60 pages, languages or active landing pages.", ["Up to 60 pages, languages or active landings", "SEO, content, UX and measurement audit", "Google Ads and landing recommendations", "Explanation session and 90-day roadmap"]],
+    ],
+    faq: [
+      ["Does the audit include implementation?", "Not by default. The audit delivers diagnosis and priorities. Afterwards we can quote implementation, landing redesign, content or technical improvements."],
+      ["Does it work for WordPress, Webflow, Wix, Vercel or custom code?", "Yes. The review focuses on what Google sees and what users experience: URLs, content, speed, indexation, structure, trust and conversion."],
+      ["Do you need access to Google Search Console?", "It helps a lot, especially for Standard and Premium. Without access, we can work with external crawling and manual review, but Search Console gives more precise data."],
+      ["Which package should I choose before Google Ads?", "For small campaigns Basic may be enough. For continuous investment we recommend Standard because it reviews landing page, intent, measurement and content opportunities."],
+    ],
+  },
   "produccion-documentales-barcelona": {
     ...landingPages.en["produccion-documentales-barcelona"],
     title: "Documentary production in Barcelona",
@@ -1316,6 +1463,56 @@ Object.assign(landingPages.ca, {
       ["Serveix si som una empresa B2B amb un servei difícil d'explicar?", "Sí. De fet, és on més ajuda: podem dividir el missatge en problema, solució, prova, equip i casos perquè cada peça resolgui un dubte concret."],
       ["Podeu fer contingut vertical sense que sembli improvisat?", "Sí. El vertical pot ser molt professional si es pensa des de guió, llum, enquadrament, subtítols i ritme. No és un retall final: és un format amb intenció pròpia."],
       ["Com sabem si el vídeo funciona?", "Definim indicadors senzills abans de produir: retenció, clics, leads, reunions, ús per vendes, visualitzacions qualificades o reducció de dubtes repetits."],
+    ],
+  },
+  "auditoria-seo-web": {
+    ...landingPages.ca["auditoria-seo-web"],
+    title: "Auditoria SEO per a webs que necessiten vendre millor",
+    kicker: "SEO / Auditoria web",
+    intro: "Revisem estructura, indexació, contingut, velocitat, intenció de cerca i oportunitats comercials per convertir la teva web en una base més forta per a SEO i Google Ads.",
+    primary: "Demanar auditoria SEO",
+    secondary: "Llegir guia prèvia",
+    proof: "Pensada per a negocis que ja tenen web, però no saben si Google l'entén, si les pàgines converteixen o si la inversió en campanyes aterra al lloc correcte.",
+    bullets: ["Diagnòstic tècnic i de continguts", "Prioritats accionables, no informes eterns", "Recomanacions per a SEO orgànic i campanyes"],
+    problemLabel: "Problema habitual",
+    problemTitle: "Moltes webs semblen acabades, però Google i el client no hi troben un camí clar.",
+    visualLabel: "Què revisem",
+    visualTitle: "Una auditoria útil separa l'urgent del decoratiu.",
+    visualIntro: "No es tracta d'omplir un PDF amb captures. Es tracta de detectar bloquejos reals: pàgines que no s'indexen, títols duplicats, contingut feble, landings sense intenció clara, formularis poc mesurables o actius que frenen el rendiment.",
+    whenTitle: "Quan vols invertir en SEO o Ads sense enviar trànsit a una web fràgil.",
+    processTitle: "De la revisió tècnica al pla d'acció.",
+    deliverablesTitle: "Tres nivells segons profunditat i moment del negoci.",
+    faqTitle: "Preguntes sobre auditories SEO",
+    outcomes: [
+      ["Indexació", "Comprovem si Google pot rastrejar, entendre i prioritzar les pàgines que t'interessen."],
+      ["Contingut", "Revisem si cada pàgina respon a una cerca real i si té prou profunditat per competir."],
+      ["Conversió", "Detectem friccions en CTAs, formularis, missatges, confiança i estructura comercial."],
+    ],
+    pain: [
+      ["La web existeix, però no posiciona", "Pot haver-hi problemes de rutes, sitemap, metadades, contingut duplicat, arquitectura o pàgines massa semblants entre si."],
+      ["Les campanyes porten trànsit, però pocs contactes", "Google Ads necessita landings clares, ràpides i mesurables. Si la pàgina no acompanya, el cost per lead puja."],
+      ["Hi ha moltes millores possibles i poca prioritat", "Una auditoria pràctica ordena la feina: què arreglar primer, què pot esperar i què convé convertir en contingut nou."],
+    ],
+    when: ["Abans de llançar una campanya de Google Ads", "Després de redissenyar una web", "Si Search Console mostra pàgines no indexades", "Quan el blog existeix però no atrau trànsit útil"],
+    process: [
+      ["01", "Revisió inicial", "Analitzem URLs, sitemap, robots, metadades, indexació, rendiment, enllaços interns i senyals bàsiques de confiança."],
+      ["02", "Intenció i contingut", "Detectem quines pàgines ataquen cerques reals, quines competeixen entre si i quin long-tail falta cobrir."],
+      ["03", "Conversió", "Revisem claredat del missatge, crides a l'acció, formularis, prova visual, FAQ, schema i mesura."],
+      ["04", "Pla prioritzat", "Entreguem una llista ordenada per impacte, esforç i urgència per poder actuar sense perdre setmanes."],
+    ],
+    includes: ["Revisió d'indexació i sitemap", "Anàlisi de titles, metas, H1 i estructura", "Checklist de contingut i long-tail", "Revisió de landings i CTAs", "Recomanacions de schema i FAQ", "Pla de prioritats SEO + Ads"],
+    channels: ["Google Search Console", "SEO orgànic", "Google Ads i landings", "Blog i contingut long-tail", "Pàgines de serveis", "Mesura de leads i esdeveniments"],
+    deliverables: ["Informe clar de troballes", "Checklist de correccions", "Mapa d'oportunitats de contingut", "Pla d'acció per prioritat"],
+    pricing: [
+      ["Bàsica", "150 €", "Per a webs petites o revisió prèvia abans de campanya.", ["Fins a 5 pàgines clau", "Indexació, metadades i estructura bàsica", "Checklist de correccions prioritàries", "Entrega en document breu"]],
+      ["Standard", "400 €", "L'opció més equilibrada per millorar SEO i conversió.", ["Fins a 15 pàgines clau", "Anàlisi tècnica, contingut i landings", "Revisió de Search Console si hi ha accés", "Pla d'acció per impacte i esforç"]],
+      ["Premium", "900 €", "Per a webs amb diversos serveis, idiomes o campanyes actives.", ["Fins a 60 pàgines, idiomes o landings actives", "Auditoria SEO, contingut, UX i mesura", "Recomanacions per a Google Ads i landings", "Sessió d'explicació i roadmap de 90 dies"]],
+    ],
+    faq: [
+      ["L'auditoria inclou implementar canvis?", "No per defecte. L'auditoria entrega diagnòstic i prioritats. Si vols, després podem pressupostar implementació, redisseny de landings, continguts o millores tècniques."],
+      ["Serveix si la meva web està feta amb WordPress, Webflow, Wix, Vercel o codi propi?", "Sí. La revisió se centra en el que veu Google i el que viu l'usuari: URLs, contingut, velocitat, indexació, estructura, confiança i conversió."],
+      ["Necessiteu accés a Google Search Console?", "Ajuda molt, sobretot en l'auditoria Standard i Premium. Si no hi ha accés, podem treballar amb rastreig extern i revisió manual, però Search Console aporta dades més precises."],
+      ["Quin pack triar abans de Google Ads?", "Per a campanyes petites pot bastar la Bàsica. Si vols invertir de forma continuada, recomanem Standard perquè revisa landing, intenció, mesura i oportunitats de contingut."],
     ],
   },
   "produccion-documentales-barcelona": {
@@ -2214,13 +2411,16 @@ function ProjectDetailPage({ project, lang, projectItems }) {
 }
 
 function SuccessCasesLandingPage({ page, lang, projectItems, t }) {
-  const featured = projectItems.find((item) => item.slug === page.featuredProject) || projectItems.find((item) => item.slug === "cedec-casos-exito");
-  const related = page.related.map((slug) => projectItems.find((item) => item.slug === slug)).filter(Boolean);
-  const proofVideos = (page.proofVideos || page.related)
+  const featured = page.featuredProject ? projectItems.find((item) => item.slug === page.featuredProject) : null;
+  const related = (page.related || []).map((slug) => projectItems.find((item) => item.slug === slug)).filter(Boolean);
+  const proofVideos = (page.proofVideos || page.related || [])
     .map((slug) => projectItems.find((item) => item.slug === slug))
     .filter((item) => item?.video)
     .slice(0, 4);
+  const heroImage = page.heroImage || featured?.image;
+  const secondaryHref = page.blogSlug ? pathFor(lang, "blog", page.blogSlug) : featured ? pathFor(lang, "portfolio", featured.slug) : null;
   const problemTitle = page.problemTitle || byLang(lang, { es: "La confianza se acelera cuando la cuenta un cliente.", ca: "La confiança s'accelera quan l'explica un client.", en: "Trust moves faster when a client tells it." });
+  const problemLabel = page.problemLabel || byLang(lang, { es: "Problema comercial", ca: "Problema comercial", en: "Commercial problem" });
   const visualLabel = page.visualLabel || byLang(lang, { es: "Teasers y ejemplos", ca: "Teasers i exemples", en: "Teasers and examples" });
   const visualTitle = page.visualTitle || byLang(lang, { es: "Prueba visual antes de pedir contacto.", ca: "Prova visual abans de demanar contacte.", en: "Visual proof before asking for contact." });
   const visualIntro = page.visualIntro || byLang(lang, {
@@ -2256,8 +2456,8 @@ function SuccessCasesLandingPage({ page, lang, projectItems, t }) {
               <a href={pathFor(lang, "contacto")} onClick={() => trackEvent("success_cases_cta_click", { event_category: "lead" })} className="border border-[#24231f] bg-[#24231f] px-5 py-3 text-sm font-semibold text-white transition hover:border-[#8C4F3B] hover:bg-[#8C4F3B] active:scale-[0.98]">
                 {page.primary}
               </a>
-              {featured && (
-                <a href={pathFor(lang, "portfolio", featured.slug)} className="border border-[#D8D2C7] bg-[#FBFAF7] px-5 py-3 text-sm font-semibold text-[#24231f] transition hover:bg-[#EFEAE2] active:scale-[0.98]">
+              {secondaryHref && (
+                <a href={secondaryHref} className="border border-[#D8D2C7] bg-[#FBFAF7] px-5 py-3 text-sm font-semibold text-[#24231f] transition hover:bg-[#EFEAE2] active:scale-[0.98]">
                   {page.secondary}
                 </a>
               )}
@@ -2268,7 +2468,7 @@ function SuccessCasesLandingPage({ page, lang, projectItems, t }) {
               {featured?.video ? (
                 <iframe src={featured.video} title={`${featured.title} - ${featured.type}`} loading="lazy" className="absolute inset-0 h-full w-full" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
               ) : (
-                <img src={featured?.image} alt={featured ? projectImageAlt(featured, lang) : page.title} loading="lazy" decoding="async" className="h-full w-full object-cover" />
+                <img src={heroImage} alt={featured ? projectImageAlt(featured, lang) : page.title} loading="lazy" decoding="async" className="h-full w-full object-cover" />
               )}
             </div>
             {featured && (
@@ -2288,37 +2488,41 @@ function SuccessCasesLandingPage({ page, lang, projectItems, t }) {
         </div>
       </section>
 
-      <section className="border-y border-[#E4E0D8] bg-[#FBFAF7] px-4 py-16 md:px-8 md:py-24">
-        <div className="mx-auto grid max-w-[1440px] gap-12 lg:grid-cols-[.75fr_1.25fr]">
-          <div data-reveal>
-            <SectionLabel>{byLang(lang, { es: "Problema comercial", ca: "Problema comercial", en: "Commercial problem" })}</SectionLabel>
-            <h2 className="font-editorial mt-5 max-w-[11ch] text-5xl leading-[0.95] tracking-[-0.05em] text-[#24231f] md:text-6xl">
-              {problemTitle}
-            </h2>
+      {page.pain && (
+        <section className="border-y border-[#E4E0D8] bg-[#FBFAF7] px-4 py-16 md:px-8 md:py-24">
+          <div className="mx-auto grid max-w-[1440px] gap-12 lg:grid-cols-[.75fr_1.25fr]">
+            <div data-reveal>
+              <SectionLabel>{problemLabel}</SectionLabel>
+              <h2 className="font-editorial mt-5 max-w-[11ch] text-5xl leading-[0.95] tracking-[-0.05em] text-[#24231f] md:text-6xl">
+                {problemTitle}
+              </h2>
+            </div>
+            <div className="grid gap-4 md:grid-cols-3">
+              {page.pain.map(([title, text], index) => (
+                <article key={title} data-reveal style={{ "--index": index }} className="bg-white p-6 shadow-[inset_0_0_0_1px_rgba(36,35,31,0.08)]">
+                  <p className="font-mono text-xs uppercase tracking-[0.18em] text-[#8C4F3B]">0{index + 1}</p>
+                  <h3 className="mt-8 text-2xl font-semibold tracking-[-0.035em] text-[#24231f]">{title}</h3>
+                  <p className="pretty-text mt-4 text-sm leading-6 text-[#6F6B63]">{text}</p>
+                </article>
+              ))}
+            </div>
           </div>
-          <div className="grid gap-4 md:grid-cols-3">
-            {page.pain.map(([title, text], index) => (
-              <article key={title} data-reveal style={{ "--index": index }} className="bg-white p-6 shadow-[inset_0_0_0_1px_rgba(36,35,31,0.08)]">
-                <p className="font-mono text-xs uppercase tracking-[0.18em] text-[#8C4F3B]">0{index + 1}</p>
-                <h3 className="mt-8 text-2xl font-semibold tracking-[-0.035em] text-[#24231f]">{title}</h3>
-                <p className="pretty-text mt-4 text-sm leading-6 text-[#6F6B63]">{text}</p>
+        </section>
+      )}
+
+      {page.outcomes && (
+        <section className="border-y border-[#E4E0D8] bg-[#FBFAF7] px-4 py-16 md:px-8 md:py-24">
+          <div className="mx-auto grid max-w-[1440px] gap-4 md:grid-cols-3">
+            {page.outcomes.map(([title, text], index) => (
+              <article key={title} data-reveal style={{ "--index": index }} className="bg-white p-6 shadow-[inset_0_0_0_1px_rgba(36,35,31,0.08)] md:p-8">
+                <Tag bg={index === 0 ? "#EDF3EC" : index === 1 ? "#FBF3DB" : "#E1F3FE"} color={index === 0 ? "#346538" : index === 1 ? "#956400" : "#1F6C9F"}>0{index + 1}</Tag>
+                <h2 className="mt-8 text-3xl font-semibold tracking-[-0.04em] text-[#24231f]">{title}</h2>
+                <p className="pretty-text mt-4 text-base leading-7 text-[#6F6B63]">{text}</p>
               </article>
             ))}
           </div>
-        </div>
-      </section>
-
-      <section className="border-y border-[#E4E0D8] bg-[#FBFAF7] px-4 py-16 md:px-8 md:py-24">
-        <div className="mx-auto grid max-w-[1440px] gap-4 md:grid-cols-3">
-          {page.outcomes.map(([title, text], index) => (
-            <article key={title} data-reveal style={{ "--index": index }} className="bg-white p-6 shadow-[inset_0_0_0_1px_rgba(36,35,31,0.08)] md:p-8">
-              <Tag bg={index === 0 ? "#EDF3EC" : index === 1 ? "#FBF3DB" : "#E1F3FE"} color={index === 0 ? "#346538" : index === 1 ? "#956400" : "#1F6C9F"}>0{index + 1}</Tag>
-              <h2 className="mt-8 text-3xl font-semibold tracking-[-0.04em] text-[#24231f]">{title}</h2>
-              <p className="pretty-text mt-4 text-base leading-7 text-[#6F6B63]">{text}</p>
-            </article>
-          ))}
-        </div>
-      </section>
+        </section>
+      )}
 
       {proofVideos.length > 0 && (
         <section className="px-4 py-16 md:px-8 md:py-24">
@@ -2362,79 +2566,132 @@ function SuccessCasesLandingPage({ page, lang, projectItems, t }) {
         </section>
       )}
 
-      <section className="px-4 py-16 md:px-8 md:py-24">
-        <div className="mx-auto grid max-w-[1440px] gap-12 lg:grid-cols-[.75fr_1.25fr]">
-          <div data-reveal>
-            <SectionLabel>{byLang(lang, { es: "Cuándo tiene sentido", ca: "Quan té sentit", en: "When it makes sense" })}</SectionLabel>
-            <h2 className="font-editorial mt-5 max-w-[11ch] text-5xl leading-[0.95] tracking-[-0.05em] text-[#24231f] md:text-6xl">
-              {whenTitle}
-            </h2>
-          </div>
-          <div className="grid gap-4 md:grid-cols-2">
-            {page.when.map((item, index) => (
-              <div key={item} data-reveal style={{ "--index": index }} className="flex min-h-36 flex-col justify-between border border-[#E4E0D8] bg-[#FBFAF7] p-6">
-                <span className="font-mono text-xs uppercase tracking-[0.16em] text-[#8C4F3B]">0{index + 1}</span>
-                <p className="mt-8 text-xl font-semibold leading-7 tracking-[-0.03em] text-[#24231f]">{item}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="border-y border-[#EAEAEA] bg-[#F7F6F3] px-4 py-16 md:px-8 md:py-24">
-        <div className="mx-auto max-w-[1440px]">
-          <div data-reveal className="mb-12 max-w-4xl">
-            <SectionLabel>{byLang(lang, { es: "Proceso", ca: "Procés", en: "Process" })}</SectionLabel>
-            <h2 className="font-editorial mt-5 text-5xl leading-[0.95] tracking-[-0.05em] text-[#24231f] md:text-6xl">
-              {processTitle}
-            </h2>
-          </div>
-          <div className="grid gap-4 lg:grid-cols-4">
-            {page.process.map(([num, title, text], index) => (
-              <article key={num} data-reveal style={{ "--index": index }} className="bg-white p-6 shadow-[inset_0_0_0_1px_rgba(36,35,31,0.08)]">
-                <p className="font-mono text-xs uppercase tracking-[0.18em] text-[#8C4F3B]">{num}</p>
-                <h3 className="mt-8 text-2xl font-semibold tracking-[-0.035em] text-[#24231f]">{title}</h3>
-                <p className="pretty-text mt-4 text-sm leading-6 text-[#6F6B63]">{text}</p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="px-4 py-16 md:px-8 md:py-24">
-        <div className="mx-auto grid max-w-[1440px] gap-12 lg:grid-cols-[.75fr_1.25fr]">
-          <div data-reveal>
-            <SectionLabel>{byLang(lang, { es: "Entregables", ca: "Entregables", en: "Deliverables" })}</SectionLabel>
-            <h2 className="font-editorial mt-5 text-5xl leading-[0.95] tracking-[-0.05em] text-[#24231f] md:text-6xl">
-              {deliverablesTitle}
-            </h2>
-          </div>
-          <div className="grid gap-5">
-            <div className="grid gap-4 md:grid-cols-2">
-              <div className="bg-[#FBFAF7] p-6 shadow-[inset_0_0_0_1px_rgba(36,35,31,0.08)]">
-                <h3 className="text-2xl font-semibold tracking-[-0.035em] text-[#24231f]">{byLang(lang, { es: "Qué incluye", ca: "Què inclou", en: "What is included" })}</h3>
-                <ul className="mt-6 grid gap-3 text-sm leading-6 text-[#6F6B63]">
-                  {page.includes.map((item) => <li key={item} className="flex gap-3"><span className="mt-2 h-2 w-2 shrink-0 bg-[#8C4F3B]" />{item}</li>)}
-                </ul>
-              </div>
-              <div className="bg-[#24231f] p-6 text-white">
-                <h3 className="text-2xl font-semibold tracking-[-0.035em]">{byLang(lang, { es: "Dónde se usa", ca: "On es fa servir", en: "Where it is used" })}</h3>
-                <ul className="mt-6 grid gap-3 text-sm leading-6 text-[#EFEAE2]">
-                  {page.channels.map((item) => <li key={item} className="flex gap-3"><span className="mt-2 h-2 w-2 shrink-0 bg-[#D6A15C]" />{item}</li>)}
-                </ul>
-              </div>
+      {page.when && (
+        <section className="px-4 py-16 md:px-8 md:py-24">
+          <div className="mx-auto grid max-w-[1440px] gap-12 lg:grid-cols-[.75fr_1.25fr]">
+            <div data-reveal>
+              <SectionLabel>{byLang(lang, { es: "Cuándo tiene sentido", ca: "Quan té sentit", en: "When it makes sense" })}</SectionLabel>
+              <h2 className="font-editorial mt-5 max-w-[11ch] text-5xl leading-[0.95] tracking-[-0.05em] text-[#24231f] md:text-6xl">
+                {whenTitle}
+              </h2>
             </div>
-            <div className="grid gap-3">
-              {page.deliverables.map((item, index) => (
-                <div key={item} data-reveal style={{ "--index": index }} className="flex items-center justify-between gap-6 border border-[#E4E0D8] bg-[#FBFAF7] p-5">
-                  <p className="text-xl font-semibold tracking-[-0.03em] text-[#24231f]">{item}</p>
+            <div className="grid gap-4 md:grid-cols-2">
+              {page.when.map((item, index) => (
+                <div key={item} data-reveal style={{ "--index": index }} className="flex min-h-36 flex-col justify-between border border-[#E4E0D8] bg-[#FBFAF7] p-6">
                   <span className="font-mono text-xs uppercase tracking-[0.16em] text-[#8C4F3B]">0{index + 1}</span>
+                  <p className="mt-8 text-xl font-semibold leading-7 tracking-[-0.03em] text-[#24231f]">{item}</p>
                 </div>
               ))}
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
+
+      {page.process && (
+        <section className="border-y border-[#EAEAEA] bg-[#F7F6F3] px-4 py-16 md:px-8 md:py-24">
+          <div className="mx-auto max-w-[1440px]">
+            <div data-reveal className="mb-12 max-w-4xl">
+              <SectionLabel>{byLang(lang, { es: "Proceso", ca: "Procés", en: "Process" })}</SectionLabel>
+              <h2 className="font-editorial mt-5 text-5xl leading-[0.95] tracking-[-0.05em] text-[#24231f] md:text-6xl">
+                {processTitle}
+              </h2>
+            </div>
+            <div className="grid gap-4 lg:grid-cols-4">
+              {page.process.map(([num, title, text], index) => (
+                <article key={num} data-reveal style={{ "--index": index }} className="bg-white p-6 shadow-[inset_0_0_0_1px_rgba(36,35,31,0.08)]">
+                  <p className="font-mono text-xs uppercase tracking-[0.18em] text-[#8C4F3B]">{num}</p>
+                  <h3 className="mt-8 text-2xl font-semibold tracking-[-0.035em] text-[#24231f]">{title}</h3>
+                  <p className="pretty-text mt-4 text-sm leading-6 text-[#6F6B63]">{text}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {page.deliverables && (
+        <section className="px-4 py-16 md:px-8 md:py-24">
+          <div className="mx-auto grid max-w-[1440px] gap-12 lg:grid-cols-[.75fr_1.25fr]">
+            <div data-reveal>
+              <SectionLabel>{byLang(lang, { es: "Entregables", ca: "Entregables", en: "Deliverables" })}</SectionLabel>
+              <h2 className="font-editorial mt-5 text-5xl leading-[0.95] tracking-[-0.05em] text-[#24231f] md:text-6xl">
+                {deliverablesTitle}
+              </h2>
+            </div>
+            <div className="grid gap-5">
+              {(page.includes || page.channels) && (
+                <div className="grid gap-4 md:grid-cols-2">
+                  {page.includes && (
+                    <div className="bg-[#FBFAF7] p-6 shadow-[inset_0_0_0_1px_rgba(36,35,31,0.08)]">
+                      <h3 className="text-2xl font-semibold tracking-[-0.035em] text-[#24231f]">{byLang(lang, { es: "Qué incluye", ca: "Què inclou", en: "What is included" })}</h3>
+                      <ul className="mt-6 grid gap-3 text-sm leading-6 text-[#6F6B63]">
+                        {page.includes.map((item) => <li key={item} className="flex gap-3"><span className="mt-2 h-2 w-2 shrink-0 bg-[#8C4F3B]" />{item}</li>)}
+                      </ul>
+                    </div>
+                  )}
+                  {page.channels && (
+                    <div className="bg-[#24231f] p-6 text-white">
+                      <h3 className="text-2xl font-semibold tracking-[-0.035em]">{byLang(lang, { es: "Dónde se usa", ca: "On es fa servir", en: "Where it is used" })}</h3>
+                      <ul className="mt-6 grid gap-3 text-sm leading-6 text-[#EFEAE2]">
+                        {page.channels.map((item) => <li key={item} className="flex gap-3"><span className="mt-2 h-2 w-2 shrink-0 bg-[#D6A15C]" />{item}</li>)}
+                      </ul>
+                    </div>
+                  )}
+                </div>
+              )}
+              <div className="grid gap-3">
+                {page.deliverables.map((item, index) => (
+                  <div key={item} data-reveal style={{ "--index": index }} className="flex items-center justify-between gap-6 border border-[#E4E0D8] bg-[#FBFAF7] p-5">
+                    <p className="text-xl font-semibold tracking-[-0.03em] text-[#24231f]">{item}</p>
+                    <span className="font-mono text-xs uppercase tracking-[0.16em] text-[#8C4F3B]">0{index + 1}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {page.pricing && (
+        <section className="border-y border-[#EAEAEA] bg-white px-4 py-16 md:px-8 md:py-24">
+          <div className="mx-auto max-w-[1440px]">
+            <div data-reveal className="mb-12 max-w-4xl">
+              <SectionLabel>{byLang(lang, { es: "Precios", ca: "Preus", en: "Pricing" })}</SectionLabel>
+              <h2 className="font-editorial mt-5 text-5xl leading-[0.95] tracking-[-0.05em] text-[#24231f] md:text-6xl">
+                {byLang(lang, { es: "Elige la profundidad de auditoría que necesita tu web.", ca: "Tria la profunditat d'auditoria que necessita la teva web.", en: "Choose the audit depth your website needs." })}
+              </h2>
+              <p className="pretty-text mt-5 max-w-3xl text-base leading-7 text-[#6F6B63]">
+                {byLang(lang, {
+                  es: "Una página clave puede ser la home, un servicio, una landing, una entrada de blog importante o la página de contacto.",
+                  ca: "Una pàgina clau pot ser la home, un servei, una landing, una entrada de blog important o la pàgina de contacte.",
+                  en: "A key page can be the homepage, a service page, a landing page, an important blog post or the contact page.",
+                })}
+              </p>
+            </div>
+            <div className="grid gap-4 lg:grid-cols-3">
+              {page.pricing.map(([name, price, intro, features], index) => (
+                <article key={name} data-reveal style={{ "--index": index }} className={`flex flex-col border p-6 md:p-8 ${index === 1 ? "border-[#24231f] bg-[#24231f] text-white" : "border-[#E4E0D8] bg-[#FBFAF7] text-[#24231f]"}`}>
+                  <p className={`font-mono text-xs uppercase tracking-[0.18em] ${index === 1 ? "text-[#D6A15C]" : "text-[#8C4F3B]"}`}>0{index + 1}</p>
+                  <h3 className="mt-8 text-3xl font-semibold tracking-[-0.04em]">{name}</h3>
+                  <p className={`mt-3 text-5xl font-semibold tracking-[-0.05em] ${index === 1 ? "text-white" : "text-[#24231f]"}`}>{price}</p>
+                  <p className={`pretty-text mt-5 text-sm leading-6 ${index === 1 ? "text-[#EFEAE2]" : "text-[#6F6B63]"}`}>{intro}</p>
+                  <ul className={`mt-8 grid gap-3 text-sm leading-6 ${index === 1 ? "text-[#EFEAE2]" : "text-[#5E5A52]"}`}>
+                    {features.map((feature) => (
+                      <li key={feature} className="flex gap-3">
+                        <span className={`mt-2 h-2 w-2 shrink-0 ${index === 1 ? "bg-[#D6A15C]" : "bg-[#8C4F3B]"}`} />
+                        <span>{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <a href={pathFor(lang, "contacto")} className={`mt-8 inline-flex justify-center border px-4 py-3 text-sm font-semibold transition active:scale-[0.98] ${index === 1 ? "border-white bg-white text-[#24231f] hover:bg-[#EFEAE2]" : "border-[#24231f] bg-[#24231f] text-white hover:border-[#8C4F3B] hover:bg-[#8C4F3B]"}`}>
+                    {byLang(lang, { es: "Pedir este pack", ca: "Demanar aquest pack", en: "Request this package" })}
+                  </a>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {!page.hideRelatedWork && related.length > 0 && (
         <section className="border-y border-[#EAEAEA] bg-white px-4 py-16 md:px-8 md:py-24">
@@ -2503,6 +2760,7 @@ function BlogListPage({ t, lang, postItems }) {
 }
 
 function postTopic(post) {
+  if (post.slug.includes("seo")) return "seo";
   if (post.slug.includes("fotografia")) return "photo";
   if (post.slug.includes("luz") || post.slug.includes("iluminacion")) return "light";
   if (post.slug.includes("audio-profesional") || post.slug.includes("sonido-")) return "audio";
@@ -2552,6 +2810,35 @@ function blogExperienceCopy(lang, topic) {
   };
 
   const topics = {
+    seo: {
+      es: {
+        decisions: ["Qué páginas deben posicionar y cuáles solo cumplen función informativa.", "Qué búsquedas long-tail conviene atacar con blog, servicio o landing comercial.", "Qué eventos se deben medir: formulario, email, teléfono, clic en WhatsApp o descarga.", "Qué cambios son urgentes antes de invertir en Google Ads."],
+        mistakes: ["Cambiar diseño sin revisar si Google puede indexar las nuevas URLs.", "Crear muchas páginas parecidas que compiten entre sí por la misma keyword.", "Lanzar campañas sin una landing clara, rápida y con un CTA medible."],
+        questions: ["¿Qué página debería aparecer cuando alguien busca tu servicio principal?", "¿Qué dudas reales tiene el cliente antes de contactar?", "¿La web mide los leads o solo muestra visitas?"],
+        example: "Una web puede tener buen aspecto y aun así no posicionar porque todas sus páginas hablan de forma genérica. En una auditoría buscamos dónde falta intención: servicios concretos, preguntas frecuentes, casos, precios orientativos, schema y rutas que Google pueda entender.",
+        ctaTitle: "Cómo puede ayudarte una auditoría SEO",
+        ctaText: "Si vas a invertir en posicionamiento, contenidos o campañas, primero conviene saber qué está frenando la web y qué acciones tienen más impacto.",
+        ctaButton: "Ver auditoría SEO",
+      },
+      ca: {
+        decisions: ["Quines pàgines han de posicionar i quines només compleixen una funció informativa.", "Quines cerques long-tail convé atacar amb blog, servei o landing comercial.", "Quins esdeveniments cal mesurar: formulari, email, telèfon, clic a WhatsApp o descàrrega.", "Quins canvis són urgents abans d'invertir en Google Ads."],
+        mistakes: ["Canviar disseny sense revisar si Google pot indexar les noves URLs.", "Crear moltes pàgines semblants que competeixen entre si per la mateixa keyword.", "Llançar campanyes sense una landing clara, ràpida i amb un CTA mesurable."],
+        questions: ["Quina pàgina hauria d'aparèixer quan algú busca el teu servei principal?", "Quins dubtes reals té el client abans de contactar?", "La web mesura els leads o només mostra visites?"],
+        example: "Una web pot tenir bon aspecte i tot i així no posicionar perquè totes les pàgines parlen de forma genèrica. En una auditoria busquem on falta intenció: serveis concrets, preguntes freqüents, casos, preus orientatius, schema i rutes que Google pugui entendre.",
+        ctaTitle: "Com pot ajudar-te una auditoria SEO",
+        ctaText: "Si vols invertir en posicionament, continguts o campanyes, primer convé saber què està frenant la web i quines accions tenen més impacte.",
+        ctaButton: "Veure auditoria SEO",
+      },
+      en: {
+        decisions: ["Which pages should rank and which only serve an informational purpose.", "Which long-tail searches should be covered with blog posts, service pages or commercial landings.", "Which events should be measured: form, email, phone, WhatsApp click or download.", "Which changes are urgent before investing in Google Ads."],
+        mistakes: ["Changing design without checking whether Google can index the new URLs.", "Creating many similar pages that compete for the same keyword.", "Launching campaigns without a clear, fast landing page and measurable CTA."],
+        questions: ["Which page should appear when someone searches for your main service?", "What real doubts does the customer have before contacting?", "Does the website measure leads or only show visits?"],
+        example: "A website can look good and still fail to rank because every page speaks in generic terms. In an audit we look for missing intent: concrete services, FAQs, cases, indicative prices, schema and routes Google can understand.",
+        ctaTitle: "How an SEO audit can help",
+        ctaText: "If you are going to invest in ranking, content or campaigns, it is worth knowing what is holding the website back and which actions have the highest impact.",
+        ctaButton: "View SEO audit",
+      },
+    },
     photo: {
       es: {
         decisions: ["Uso final de las fotografías: web, prensa, LinkedIn, campaña o archivo interno.", "Lista de personas, espacios y detalles que deben aparecer.", "Estilo visual: natural, editorial, corporativo, documental o más publicitario.", "Entrega necesaria: selección rápida, edición completa, formatos verticales y versiones para redes."],
@@ -2665,6 +2952,23 @@ function BlogDetailPage({ post, lang, postItems }) {
             <p key={paragraph}>{paragraph}</p>
           ))}
         </div>
+        {post.ctaLanding && (
+          <div className="mx-auto mt-12 max-w-3xl border border-[#24231f] bg-[#24231f] p-6 text-white md:p-8">
+            <p className="font-mono text-xs uppercase tracking-[0.18em] text-[#D6A15C]">{byLang(lang, { es: "Siguiente paso", ca: "Següent pas", en: "Next step" })}</p>
+            <h2 className="mt-5 text-3xl font-semibold tracking-[-0.04em]">{byLang(lang, { es: "Convierte esta revisión en un plan concreto.", ca: "Converteix aquesta revisió en un pla concret.", en: "Turn this review into a concrete plan." })}</h2>
+            <p className="pretty-text mt-4 text-base leading-7 text-[#EFEAE2]">
+              {byLang(lang, {
+                es: "Si quieres revisar tu web antes de invertir más en SEO o campañas, hemos preparado tres niveles de auditoría según profundidad y momento del proyecto.",
+                ca: "Si vols revisar la teva web abans d'invertir més en SEO o campanyes, hem preparat tres nivells d'auditoria segons profunditat i moment del projecte.",
+                en: "If you want to review your website before investing more in SEO or campaigns, we have prepared three audit levels depending on depth and project stage.",
+              })}
+            </p>
+            <a href={pathFor(lang, post.ctaLanding)} className="mt-6 inline-flex items-center gap-2 border border-white bg-white px-4 py-3 text-sm font-semibold text-[#24231f] transition hover:bg-[#EFEAE2]">
+              {post.ctaLabel}
+              <ArrowIcon className="h-4 w-4" />
+            </a>
+          </div>
+        )}
         <div className="mx-auto mt-14 max-w-3xl border-y border-[#E4E0D8] py-10">
           <h2 className="balanced-text text-4xl font-semibold leading-tight tracking-[-0.04em] text-[#24231f]">{experience.fieldTitle}</h2>
           <p className="pretty-text mt-5 text-lg leading-8 text-[#5E5A52]">{experience.fieldIntro}</p>
@@ -2990,7 +3294,7 @@ function seoForRoute({ lang, section, slug, project, post, landingPage, legalPag
       .filter((item) => item?.video);
     title = `${landingPage.title} | LAPRODU FILMS`;
     description = landingPage.intro;
-    image = absoluteUrl(featured?.image || "/laprodu/portada/CASOS_EXITOS_PORTADA.png");
+    image = absoluteUrl(featured?.image || landingPage.heroImage || "/laprodu/portada/CASOS_EXITOS_PORTADA.png");
     canonicalPath = pathFor(lang, section);
     jsonLd.push({
       "@context": "https://schema.org",
@@ -2999,11 +3303,22 @@ function seoForRoute({ lang, section, slug, project, post, landingPage, legalPag
       description: landingPage.intro,
       provider: { "@type": "Organization", name: "LAPRODU FILMS", url: SITE_URL },
       areaServed: byLang(lang, { es: "Barcelona, España e internacional", ca: "Barcelona, Espanya i internacional", en: "Barcelona, Spain and international" }),
-      serviceType: byLang(lang, { es: "Producción audiovisual de vídeos de casos de éxito", ca: "Producció audiovisual de vídeos de casos d'èxit", en: "Audiovisual production of customer success story videos" }),
+      serviceType: landingPage.serviceType || landingPage.title,
       url: absoluteUrl(canonicalPath),
-      hasOfferCatalog: landingPage.deliverables ? {
+      hasOfferCatalog: landingPage.pricing ? {
         "@type": "OfferCatalog",
-        name: byLang(lang, { es: "Entregables de vídeo testimonial", ca: "Entregables de vídeo testimonial", en: "Testimonial video deliverables" }),
+        name: landingPage.title,
+        itemListElement: landingPage.pricing.map(([name, price, intro]) => ({
+          "@type": "Offer",
+          name,
+          description: intro,
+          price: price.replace(/[^\d,.]/g, "").replace(".", "").replace(",", "."),
+          priceCurrency: "EUR",
+          itemOffered: { "@type": "Service", name },
+        })),
+      } : landingPage.deliverables ? {
+        "@type": "OfferCatalog",
+        name: byLang(lang, { es: "Entregables del servicio", ca: "Entregables del servei", en: "Service deliverables" }),
         itemListElement: landingPage.deliverables.map((name) => ({ "@type": "Offer", itemOffered: { "@type": "Service", name } })),
       } : undefined,
     });
@@ -3175,7 +3490,7 @@ export default function LaProduFilmsEditorial({ initialRoute = null }) {
     page = <BlogListPage t={t} lang={lang} postItems={postItems} />;
   } else if (normalizedSection === "blog" && slug) {
     page = post ? <BlogDetailPage post={post} lang={lang} postItems={postItems} /> : <NotFoundPage lang={lang} />;
-  } else if (landingPage?.featuredProject) {
+  } else if (landingPage) {
     page = <SuccessCasesLandingPage page={landingPage} lang={lang} projectItems={projectItems} t={t} />;
   } else if (legalPage) {
     page = <LegalPage page={legalPage} lang={lang} />;
