@@ -441,6 +441,48 @@ const posts = {
         "El objetivo es reducir incertidumbre. Una buena estrategia de audio combina microfonía cercana, ambiente controlado, redundancia y escucha activa durante el rodaje. Cuando el sonido está cuidado, la edición fluye y el mensaje llega sin fricción.",
       ],
     },
+    {
+      slug: "productora-audiovisual-barcelona-precio-2026",
+      title: "Productora audiovisual en Barcelona: precio, alcance y cómo pedir presupuesto",
+      excerpt: "Guía práctica para entender qué influye en el precio de una producción audiovisual en Barcelona y cómo pedir una propuesta clara.",
+      category: "Presupuesto",
+      date: "4 diciembre 2026",
+      read: "8 min",
+      image: "/laprodu/fotos/corporatiu_1.jpg",
+      content: [
+        "Buscar “productora audiovisual Barcelona precio” suele llevar a una respuesta incómoda: depende. Y es verdad, pero no debería quedarse ahí. El precio cambia según objetivo, duración, equipo, localizaciones, número de entrevistas, necesidades de luz y sonido, postproducción, grafismo, música, subtítulos y versiones finales.",
+        "Un trabajo pequeño puede ser una pieza sencilla, una sesión de fotografía, un clip social o una edición concreta. Una producción más completa puede incluir tratamiento, guion, jornada de rodaje, equipo técnico, dirección, entrevistas, montaje, color, mezcla, subtítulos y entregables para varios canales.",
+        "La mejor forma de pedir presupuesto no es empezar por una cifra cerrada, sino por el uso real del contenido: dónde se publicará, qué debe conseguir, qué material ya existe y qué fecha de entrega manda. Con ese contexto, la productora puede ajustar alcance sin inflar el proyecto ni dejar fuera lo importante.",
+      ],
+    },
+    {
+      slug: "video-corporativo-empresa-barcelona-2026",
+      title: "Vídeo corporativo para empresa en Barcelona: cuándo hacerlo y qué debe contar",
+      excerpt: "Cómo enfocar un vídeo corporativo para explicar una empresa, generar confianza y crear piezas útiles para web, ventas y LinkedIn.",
+      category: "Corporativo",
+      date: "11 diciembre 2026",
+      read: "8 min",
+      image: "/laprodu/fotos/rodatge_2.jpg",
+      content: [
+        "Un vídeo corporativo para empresa no debería ser una presentación larga con frases genéricas. Funciona cuando ayuda a entender qué hace la compañía, por qué importa, quién está detrás y qué problema resuelve para sus clientes.",
+        "En Barcelona, muchas empresas necesitan piezas que vivan en varios lugares: web, LinkedIn, presentaciones comerciales, ferias, newsletters o campañas. Eso obliga a pensar el vídeo como un sistema: pieza principal, teaser, clips cortos, subtítulos, miniaturas y versiones por idioma si el mercado es internacional.",
+        "El contenido suele ganar cuando combina entrevistas breves, recursos reales de trabajo, detalles del producto o servicio y una estructura clara. La producción debe cuidar tono, luz, sonido y ritmo, pero también evitar el exceso de solemnidad. Una empresa se entiende mejor cuando se muestra trabajando.",
+      ],
+    },
+    {
+      slug: "produccion-documental-television-espana-2026",
+      title: "Producción documental para televisión en España: de la idea al máster final",
+      excerpt: "Qué necesita una producción documental para televisión: investigación, tratamiento, entrevistas, rodaje, montaje, derechos y entrega técnica.",
+      category: "Documental",
+      date: "18 diciembre 2026",
+      read: "9 min",
+      image: "/laprodu/fotos/televiso_2.png",
+      content: [
+        "La producción documental para televisión en España exige una mezcla de mirada narrativa y orden técnico. No basta con tener una buena historia: hay que transformarla en tratamiento, estructura, plan de rodaje, entrevistas, archivo, derechos y entrega final preparada para emisión.",
+        "El proceso suele empezar con investigación y enfoque editorial. Después llegan permisos, localizaciones, personajes, calendario, necesidades de sonido, luz y cámara. En televisión también pesan la duración, el ritmo, la claridad de contexto y la convivencia con la línea editorial del programa o canal.",
+        "La postproducción ordena todo ese material: montaje, color, mezcla, grafismo, subtítulos, masters y revisiones. Cuanto mejor está preparada la fase previa, más margen tiene la edición para construir una pieza con sentido. La técnica importa, pero el verdadero centro sigue siendo la historia.",
+      ],
+    },
   ],
   en: [],
 };
@@ -576,6 +618,39 @@ const postTranslations = {
       "In interviews and events, sound depends on both technique and coordination. Knowing who speaks, where they move, what sound system the venue has and which moments are unrepeatable makes coverage safer.",
       "Before recording, it is useful to test microphones, review batteries, recorders, frequencies, cables, desk inputs and possible backups. In events, it is also important to coordinate with the venue's technical team to access a clean signal whenever possible.",
       "The goal is to reduce uncertainty. A good audio strategy combines close microphones, controlled ambience, redundancy and active listening during the shoot. When sound is cared for, editing flows and the message arrives without friction.",
+    ],
+  },
+  "productora-audiovisual-barcelona-precio-2026": {
+    title: "Audiovisual production company in Barcelona: price, scope and how to request a quote",
+    excerpt: "A practical guide to understand what affects the cost of audiovisual production in Barcelona and how to request a clear proposal.",
+    category: "Budget",
+    date: "December 4, 2026",
+    content: [
+      "Searching for “audiovisual production company Barcelona price” usually leads to an uncomfortable answer: it depends. That is true, but it should not stop there. Price changes according to goal, duration, crew, locations, number of interviews, lighting and sound needs, postproduction, graphics, music, subtitles and final versions.",
+      "A small job may be a simple piece, a photography session, a social clip or a specific edit. A fuller production may include treatment, script, shooting day, crew, direction, interviews, editing, color, mixing, subtitles and deliverables for several channels.",
+      "The best way to request a quote is not to start with a fixed figure, but with the real use of the content: where it will be published, what it needs to achieve, what material already exists and what deadline matters. With that context, the production company can adjust scope without inflating the project or leaving out what matters.",
+    ],
+  },
+  "video-corporativo-empresa-barcelona-2026": {
+    title: "Corporate video for companies in Barcelona: when to produce one and what it should tell",
+    excerpt: "How to approach a corporate video that explains a company, builds trust and creates useful assets for web, sales and LinkedIn.",
+    category: "Corporate",
+    date: "December 11, 2026",
+    content: [
+      "A corporate video for a company should not be a long presentation full of generic claims. It works when it helps people understand what the company does, why it matters, who is behind it and what problem it solves for clients.",
+      "In Barcelona, many companies need pieces that live in several places: website, LinkedIn, sales presentations, trade fairs, newsletters or campaigns. That means thinking about the video as a system: main piece, teaser, short clips, subtitles, thumbnails and language versions if the market is international.",
+      "The content usually gains strength when it combines short interviews, real work footage, details of the product or service and a clear structure. Production should care for tone, light, sound and rhythm, but also avoid excessive solemnity. A company is easier to understand when it is shown at work.",
+    ],
+  },
+  "produccion-documental-television-espana-2026": {
+    title: "Documentary production for television in Spain: from idea to final master",
+    excerpt: "What a documentary production for television needs: research, treatment, interviews, shooting, editing, rights and technical delivery.",
+    category: "Documentary",
+    date: "December 18, 2026",
+    content: [
+      "Documentary production for television in Spain requires both narrative vision and technical order. A good story is not enough: it needs to become treatment, structure, shooting plan, interviews, archive, rights and final delivery prepared for broadcast.",
+      "The process usually starts with research and editorial focus. Then come permissions, locations, characters, schedule, sound, light and camera needs. In television, duration, rhythm, contextual clarity and alignment with the programme or channel also matter.",
+      "Postproduction orders all that material: editing, color, mix, graphics, subtitles, masters and revisions. The better the previous phase is prepared, the more room editing has to build a meaningful piece. Technique matters, but the real center remains the story.",
     ],
   },
 };
@@ -716,6 +791,39 @@ const postTranslationsCa = {
       "En entrevistes i esdeveniments, el so depèn tant de la tècnica com de la coordinació. Saber qui parla, on es mou, quin sistema de so hi ha a sala i quins moments són irrepetibles permet preparar una cobertura més segura.",
       "Abans de gravar convé fer prova de micro, revisar bateries, gravadors, freqüències, cables, entrades de taula i possibles backups. En esdeveniments, a més, és important coordinar-se amb l'equip tècnic de l'espai per accedir a senyal net quan sigui possible.",
       "L'objectiu és reduir incertesa. Una bona estratègia d'àudio combina microfonia propera, ambient controlat, redundància i escolta activa durant el rodatge. Quan el so està cuidat, l'edició flueix i el missatge arriba sense fricció.",
+    ],
+  },
+  "productora-audiovisual-barcelona-precio-2026": {
+    title: "Productora audiovisual a Barcelona: preu, abast i com demanar pressupost",
+    excerpt: "Guia pràctica per entendre què influeix en el preu d'una producció audiovisual a Barcelona i com demanar una proposta clara.",
+    category: "Pressupost",
+    date: "4 desembre 2026",
+    content: [
+      "Buscar “productora audiovisual Barcelona preu” acostuma a portar a una resposta incòmoda: depèn. I és veritat, però no hauria de quedar-se aquí. El preu canvia segons objectiu, durada, equip, localitzacions, nombre d'entrevistes, necessitats de llum i so, postproducció, grafisme, música, subtítols i versions finals.",
+      "Una feina petita pot ser una peça senzilla, una sessió de fotografia, un clip social o una edició concreta. Una producció més completa pot incloure tractament, guió, jornada de rodatge, equip tècnic, direcció, entrevistes, muntatge, color, mescla, subtítols i entregables per a diversos canals.",
+      "La millor manera de demanar pressupost no és començar per una xifra tancada, sinó per l'ús real del contingut: on es publicarà, què ha d'aconseguir, quin material ja existeix i quina data de lliurament mana. Amb aquest context, la productora pot ajustar abast sense inflar el projecte ni deixar fora el que és important.",
+    ],
+  },
+  "video-corporativo-empresa-barcelona-2026": {
+    title: "Vídeo corporatiu per a empresa a Barcelona: quan fer-lo i què ha d'explicar",
+    excerpt: "Com enfocar un vídeo corporatiu per explicar una empresa, generar confiança i crear peces útils per a web, vendes i LinkedIn.",
+    category: "Corporatiu",
+    date: "11 desembre 2026",
+    content: [
+      "Un vídeo corporatiu per a empresa no hauria de ser una presentació llarga amb frases genèriques. Funciona quan ajuda a entendre què fa la companyia, per què importa, qui hi ha al darrere i quin problema resol per als seus clients.",
+      "A Barcelona, moltes empreses necessiten peces que visquin en diversos llocs: web, LinkedIn, presentacions comercials, fires, newsletters o campanyes. Això obliga a pensar el vídeo com un sistema: peça principal, teaser, clips curts, subtítols, miniatures i versions per idioma si el mercat és internacional.",
+      "El contingut sol guanyar quan combina entrevistes breus, recursos reals de treball, detalls del producte o servei i una estructura clara. La producció ha de cuidar to, llum, so i ritme, però també evitar l'excés de solemnitat. Una empresa s'entén millor quan es mostra treballant.",
+    ],
+  },
+  "produccion-documental-television-espana-2026": {
+    title: "Producció documental per a televisió a Espanya: de la idea al màster final",
+    excerpt: "Què necessita una producció documental per a televisió: investigació, tractament, entrevistes, rodatge, muntatge, drets i entrega tècnica.",
+    category: "Documental",
+    date: "18 desembre 2026",
+    content: [
+      "La producció documental per a televisió a Espanya exigeix una barreja de mirada narrativa i ordre tècnic. No n'hi ha prou amb tenir una bona història: cal transformar-la en tractament, estructura, pla de rodatge, entrevistes, arxiu, drets i entrega final preparada per a emissió.",
+      "El procés acostuma a començar amb investigació i enfocament editorial. Després arriben permisos, localitzacions, personatges, calendari, necessitats de so, llum i càmera. En televisió també pesen la durada, el ritme, la claredat de context i la convivència amb la línia editorial del programa o canal.",
+      "La postproducció ordena tot aquest material: muntatge, color, mescla, grafisme, subtítols, màsters i revisions. Com millor està preparada la fase prèvia, més marge té l'edició per construir una peça amb sentit. La tècnica importa, però el centre real continua sent la història.",
     ],
   },
 };
@@ -923,19 +1031,25 @@ const landingPages = {
       ],
     },
     "casos-exito-video": {
-      title: "Vídeos de casos de éxito para empresas",
+      title: "Vídeos de casos de éxito y testimoniales para empresas B2B",
       kicker: "Casos de éxito / Testimoniales",
-      intro: "Convertimos clientes reales, proyectos terminados y resultados tangibles en piezas audiovisuales que ayudan a vender con más confianza.",
-      primary: "Crear un caso de éxito",
+      intro: "Creamos vídeos con clientes reales para demostrar resultados, generar confianza y dar al equipo comercial una pieza útil antes de la siguiente conversación.",
+      primary: "Pedir propuesta",
       secondary: "Ver teaser CEDEC",
-      proof: "Testimonios, entrevistas, recursos de empresa y versiones para web, LinkedIn, YouTube y presentaciones comerciales.",
-      bullets: ["Entrevistas guiadas sin sonar a anuncio", "Rodaje cuidado con cliente, equipo y localización", "Piezas largas, clips cortos y versiones para campaña"],
-      related: ["cedec-casos-exito", "cedec-consultora", "chroma"],
+      proof: "Producción audiovisual de casos de éxito, testimonios de clientes y vídeos corporativos para web, LinkedIn, YouTube, ventas y campañas.",
+      bullets: ["Entrevistas guiadas sin sonar a anuncio", "Guion comercial sin perder naturalidad", "Pieza principal, teaser y clips cortos"],
+      related: ["cedec-casos-exito", "cedec-consultora", "chroma", "norai-corporativo", "norai-director-mmb", "norai-chef"],
       featuredProject: "cedec-casos-exito",
+      proofVideos: ["cedec-casos-exito", "cedec-consultora", "chroma", "norai-corporativo"],
       outcomes: [
         ["Confianza", "Un cliente satisfecho explica mejor que nadie por qué el proyecto funcionó."],
         ["Ventas", "El equipo comercial gana una pieza concreta para enviar, presentar o usar en campañas."],
         ["Marca", "La empresa muestra método, relación con cliente y capacidad real de entrega."],
+      ],
+      pain: [
+        ["Hay interés, pero falta prueba", "El cliente potencial entiende tu servicio, pero necesita ver que ya ha funcionado para alguien parecido."],
+        ["Los testimonios escritos no bastan", "Una frase en una web ayuda, pero una entrevista bien rodada transmite matices, contexto y credibilidad."],
+        ["Ventas necesita contenido accionable", "El equipo comercial necesita una pieza que pueda enviar antes de una reunión, incluir en una propuesta o activar en campaña."],
       ],
       when: ["Lanzamiento de un servicio B2B", "Proyecto con resultados medibles", "Cliente dispuesto a explicar su experiencia", "Campañas de captación, LinkedIn o ferias"],
       process: [
@@ -944,11 +1058,14 @@ const landingPages = {
         ["03", "Rodaje", "Grabamos entrevista, recursos, ambiente de trabajo y detalles que den contexto visual."],
         ["04", "Versiones", "Montamos pieza principal, teaser y clips cortos listos para publicar o activar en campaña."],
       ],
+      includes: ["Tratamiento narrativo del caso", "Preparación de preguntas para cliente", "Dirección de entrevista", "Rodaje de testimonio y recursos", "Montaje, color, sonido y grafismo", "Subtítulos y adaptaciones por canal"],
+      channels: ["Landing comercial", "Página de casos de éxito", "LinkedIn y social ads", "YouTube y remarketing", "Presentaciones de venta", "Ferias, eventos y newsletters"],
       deliverables: ["Teaser de 30-60 segundos", "Pieza principal de caso de éxito", "Clips verticales para redes", "Miniaturas, subtítulos y masters finales"],
       faq: [
         ["¿El cliente tiene que aprenderse un guion?", "No. Preparamos una entrevista guiada para que la conversación sea natural, clara y útil. La idea es conseguir verdad, no una frase memorizada."],
         ["¿Podemos grabar en las oficinas del cliente?", "Sí. Revisamos localización, luz, sonido y tiempos antes del rodaje para que la grabación sea cómoda y no interrumpa más de lo necesario."],
         ["¿Sirve para campañas de Google Ads o LinkedIn?", "Sí. Podemos entregar versiones pensadas para landing, YouTube, LinkedIn, remarketing, presentaciones comerciales y comunicación interna."],
+        ["¿Podéis hacer varios teasers del mismo caso?", "Sí. Podemos montar una pieza principal y varios cortes: teaser corto, clips por pregunta, versión vertical y fragmentos para activar en distintas fases del embudo comercial."],
       ],
     },
   },
@@ -1013,17 +1130,22 @@ Object.assign(landingPages.en, {
   },
   "casos-exito-video": {
     ...landingPages.en["casos-exito-video"],
-    title: "Customer success story videos for companies",
+    title: "Customer success story and testimonial videos for B2B companies",
     kicker: "Success stories / Testimonials",
-    intro: "We turn real clients, completed projects and tangible results into audiovisual pieces that help sales teams build trust.",
-    primary: "Create a success story",
+    intro: "We create videos with real clients to prove results, build trust and give the sales team a useful asset before the next conversation.",
+    primary: "Request a proposal",
     secondary: "Watch CEDEC teaser",
-    proof: "Testimonials, interviews, company footage and versions for websites, LinkedIn, YouTube and sales presentations.",
-    bullets: ["Guided interviews that do not sound like ads", "Careful shooting with client, team and location", "Main film, short clips and campaign-ready versions"],
+    proof: "Audiovisual production of success stories, client testimonials and corporate videos for websites, LinkedIn, YouTube, sales and campaigns.",
+    bullets: ["Guided interviews that do not sound like ads", "Commercial script without losing naturalness", "Main piece, teaser and short clips"],
     outcomes: [
       ["Trust", "A satisfied client explains better than anyone why the project worked."],
       ["Sales", "The sales team gets a specific piece to send, present or use in campaigns."],
       ["Brand", "The company shows process, client relationship and real delivery capacity."],
+    ],
+    pain: [
+      ["There is interest, but proof is missing", "The prospect understands the service, but needs to see that it has already worked for someone similar."],
+      ["Written testimonials are not enough", "A quote on a website helps, but a well-filmed interview communicates nuance, context and credibility."],
+      ["Sales needs actionable content", "The sales team needs an asset to send before a meeting, include in a proposal or activate in a campaign."],
     ],
     when: ["B2B service launch", "Project with measurable results", "Client willing to share the experience", "Lead generation, LinkedIn or trade fair campaigns"],
     process: [
@@ -1032,11 +1154,14 @@ Object.assign(landingPages.en, {
       ["03", "Shoot", "We film interview, supporting footage, work atmosphere and details that give visual context."],
       ["04", "Versions", "We edit the main piece, teaser and short clips ready for publication or campaign activation."],
     ],
+    includes: ["Narrative treatment of the case", "Client interview questions", "Interview direction", "Testimonial and supporting footage shoot", "Editing, color, sound and graphics", "Subtitles and channel adaptations"],
+    channels: ["Commercial landing page", "Success stories page", "LinkedIn and social ads", "YouTube and remarketing", "Sales presentations", "Trade fairs, events and newsletters"],
     deliverables: ["30-60 second teaser", "Main success story film", "Vertical clips for social media", "Thumbnails, subtitles and final masters"],
     faq: [
       ["Does the client need to learn a script?", "No. We prepare a guided interview so the conversation feels natural, clear and useful. The goal is truth, not memorized lines."],
       ["Can we film at the client's office?", "Yes. We review location, light, sound and timing before the shoot so the recording is comfortable and efficient."],
       ["Does it work for Google Ads or LinkedIn campaigns?", "Yes. We can deliver versions for landing pages, YouTube, LinkedIn, remarketing, sales presentations and internal communication."],
+      ["Can you create several teasers from the same case?", "Yes. We can edit a main piece and several cuts: short teaser, question-based clips, vertical version and fragments for different stages of the sales funnel."],
     ],
   },
 });
@@ -1087,17 +1212,22 @@ Object.assign(landingPages.ca, {
   },
   "casos-exito-video": {
     ...landingPages.ca["casos-exito-video"],
-    title: "Vídeos de casos d'èxit per a empreses",
+    title: "Vídeos de casos d'èxit i testimonis per a empreses B2B",
     kicker: "Casos d'èxit / Testimonis",
-    intro: "Convertim clients reals, projectes acabats i resultats tangibles en peces audiovisuals que ajuden a vendre amb més confiança.",
-    primary: "Crear un cas d'èxit",
+    intro: "Creem vídeos amb clients reals per demostrar resultats, generar confiança i donar a l'equip comercial una peça útil abans de la propera conversa.",
+    primary: "Demanar proposta",
     secondary: "Veure teaser CEDEC",
-    proof: "Testimonis, entrevistes, recursos d'empresa i versions per a web, LinkedIn, YouTube i presentacions comercials.",
-    bullets: ["Entrevistes guiades sense sonar a anunci", "Rodatge cuidat amb client, equip i localització", "Peces llargues, clips curts i versions per a campanya"],
+    proof: "Producció audiovisual de casos d'èxit, testimonis de clients i vídeos corporatius per a web, LinkedIn, YouTube, vendes i campanyes.",
+    bullets: ["Entrevistes guiades sense sonar a anunci", "Guió comercial sense perdre naturalitat", "Peça principal, teaser i clips curts"],
     outcomes: [
       ["Confiança", "Un client satisfet explica millor que ningú per què el projecte va funcionar."],
       ["Vendes", "L'equip comercial guanya una peça concreta per enviar, presentar o fer servir en campanyes."],
       ["Marca", "L'empresa mostra mètode, relació amb client i capacitat real de lliurament."],
+    ],
+    pain: [
+      ["Hi ha interès, però falta prova", "El client potencial entén el servei, però necessita veure que ja ha funcionat per a algú semblant."],
+      ["Els testimonis escrits no són suficients", "Una frase a una web ajuda, però una entrevista ben rodada transmet matisos, context i credibilitat."],
+      ["Vendes necessita contingut accionable", "L'equip comercial necessita una peça que pugui enviar abans d'una reunió, incloure en una proposta o activar en campanya."],
     ],
     when: ["Llançament d'un servei B2B", "Projecte amb resultats mesurables", "Client disposat a explicar la seva experiència", "Campanyes de captació, LinkedIn o fires"],
     process: [
@@ -1106,11 +1236,14 @@ Object.assign(landingPages.ca, {
       ["03", "Rodatge", "Gravem entrevista, recursos, ambient de treball i detalls que donin context visual."],
       ["04", "Versions", "Muntem peça principal, teaser i clips curts llestos per publicar o activar en campanya."],
     ],
+    includes: ["Tractament narratiu del cas", "Preparació de preguntes per al client", "Direcció d'entrevista", "Rodatge de testimoni i recursos", "Muntatge, color, so i grafisme", "Subtítols i adaptacions per canal"],
+    channels: ["Landing comercial", "Pàgina de casos d'èxit", "LinkedIn i social ads", "YouTube i remarketing", "Presentacions de venda", "Fires, esdeveniments i newsletters"],
     deliverables: ["Teaser de 30-60 segons", "Peça principal de cas d'èxit", "Clips verticals per a xarxes", "Miniatures, subtítols i màsters finals"],
     faq: [
       ["El client ha d'aprendre's un guió?", "No. Preparem una entrevista guiada perquè la conversa sigui natural, clara i útil. La idea és aconseguir veritat, no una frase memoritzada."],
       ["Podem gravar a les oficines del client?", "Sí. Revisem localització, llum, so i temps abans del rodatge perquè la gravació sigui còmoda i no interrompi més del necessari."],
       ["Serveix per a campanyes de Google Ads o LinkedIn?", "Sí. Podem entregar versions pensades per a landing, YouTube, LinkedIn, remarketing, presentacions comercials i comunicació interna."],
+      ["Podeu fer diversos teasers del mateix cas?", "Sí. Podem muntar una peça principal i diversos talls: teaser curt, clips per pregunta, versió vertical i fragments per activar en diferents fases de l'embut comercial."],
     ],
   },
 });
@@ -1389,6 +1522,30 @@ function projectCategoryStyle(category) {
   return styles[category] || { bg: "#EFEAE2", color: "#6F513F" };
 }
 
+function serviceImageAlt(service, lang) {
+  return byLang(lang, {
+    es: `${service.title} de LAPRODU FILMS para producción audiovisual en Barcelona: ${service.deliverable}.`,
+    ca: `${service.title} de LAPRODU FILMS per a producció audiovisual a Barcelona: ${service.deliverable}.`,
+    en: `${service.title} by LAPRODU FILMS for audiovisual production in Barcelona: ${service.deliverable}.`,
+  });
+}
+
+function projectImageAlt(project, lang) {
+  return byLang(lang, {
+    es: `${project.title}, ${project.type} producido por LAPRODU FILMS para ${project.client}.`,
+    ca: `${project.title}, ${project.type} produït per LAPRODU FILMS per a ${project.client}.`,
+    en: `${project.title}, ${project.type} produced by LAPRODU FILMS for ${project.client}.`,
+  });
+}
+
+function postImageAlt(post, lang) {
+  return byLang(lang, {
+    es: `${post.title}: imagen de producción audiovisual de LAPRODU FILMS en Barcelona.`,
+    ca: `${post.title}: imatge de producció audiovisual de LAPRODU FILMS a Barcelona.`,
+    en: `${post.title}: audiovisual production image by LAPRODU FILMS in Barcelona.`,
+  });
+}
+
 function ProjectCard({ project, index, lang }) {
   const categoryStyle = projectCategoryStyle(project.category);
 
@@ -1398,7 +1555,7 @@ function ProjectCard({ project, index, lang }) {
         <div className="relative aspect-[16/10] overflow-hidden bg-[#EFEAE2]">
           <img
             src={project.image}
-            alt={`${project.title} - ${project.type}`}
+            alt={projectImageAlt(project, lang)}
             loading="lazy"
             decoding="async"
             className="h-full w-full object-cover grayscale transition duration-500 group-hover:scale-[1.035] group-hover:grayscale-0"
@@ -1429,7 +1586,7 @@ function PostCard({ post, index, lang }) {
     <article data-reveal style={{ "--index": index }} className="group bg-[#FBFAF7] shadow-[inset_0_0_0_1px_rgba(36,35,31,0.08)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_18px_46px_rgba(73,59,45,0.10)]">
       <a href={pathFor(lang, "blog", post.slug)} className="block" onClick={() => trackEvent("blog_card_click", { post_slug: post.slug, post_category: post.category })}>
         <div className="aspect-[16/9] overflow-hidden bg-[#EFEAE2]">
-          <img src={post.image} alt={post.title} loading="lazy" decoding="async" className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.025]" />
+          <img src={post.image} alt={postImageAlt(post, lang)} loading="lazy" decoding="async" className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.025]" />
         </div>
         <div className="p-6 md:p-8">
           <div className="mb-10 flex items-center justify-between gap-4">
@@ -1727,7 +1884,7 @@ function HomePage({ lang, t, serviceItems, projectItems, postItems, faqItems }) 
             {serviceItems.map((service, index) => (
               <article key={service.title} data-reveal style={{ "--index": index }} className="group grid bg-[#F6F5F2] shadow-[inset_0_0_0_1px_rgba(36,35,31,0.08)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_18px_46px_rgba(73,59,45,0.10)]">
                 <div className="aspect-[4/3] overflow-hidden bg-[#EFEAE2]">
-                  <img src={service.image} alt={service.title} loading="lazy" decoding="async" className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.025]" />
+                  <img src={service.image} alt={serviceImageAlt(service, lang)} loading="lazy" decoding="async" className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.025]" />
                 </div>
                 <div className="flex min-h-[18.5rem] flex-col p-6">
                   <Tag bg="#EFEAE2" color="#8C4F3B">0{index + 1}</Tag>
@@ -1894,7 +2051,7 @@ function ProjectDetailPage({ project, lang, projectItems }) {
               {project.video ? (
                 <iframe src={project.video} title={project.title} loading="lazy" className="absolute inset-0 h-full w-full" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
               ) : (
-                <img src={project.image} alt={project.title} loading="lazy" decoding="async" className="h-full w-full object-cover" />
+                <img src={project.image} alt={projectImageAlt(project, lang)} loading="lazy" decoding="async" className="h-full w-full object-cover" />
               )}
             </div>
           </div>
@@ -1917,6 +2074,10 @@ function ProjectDetailPage({ project, lang, projectItems }) {
 function SuccessCasesLandingPage({ page, lang, projectItems, t }) {
   const featured = projectItems.find((item) => item.slug === page.featuredProject) || projectItems.find((item) => item.slug === "cedec-casos-exito");
   const related = page.related.map((slug) => projectItems.find((item) => item.slug === slug)).filter(Boolean);
+  const proofVideos = (page.proofVideos || page.related)
+    .map((slug) => projectItems.find((item) => item.slug === slug))
+    .filter((item) => item?.video)
+    .slice(0, 4);
 
   return (
     <>
@@ -1929,6 +2090,14 @@ function SuccessCasesLandingPage({ page, lang, projectItems, t }) {
             </h1>
             <p className="pretty-text mt-7 max-w-2xl text-xl font-semibold leading-8 tracking-[-0.03em] text-[#24231f]">{page.intro}</p>
             <p className="pretty-text mt-5 max-w-2xl text-base leading-7 text-[#6F6B63]">{page.proof}</p>
+            <div className="mt-7 grid gap-3">
+              {page.bullets.map((bullet) => (
+                <div key={bullet} className="flex items-start gap-3 text-sm font-semibold leading-6 text-[#24231f]">
+                  <span className="mt-2 h-2 w-2 shrink-0 bg-[#8C4F3B]" />
+                  <span>{bullet}</span>
+                </div>
+              ))}
+            </div>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <a href={pathFor(lang, "contacto")} onClick={() => trackEvent("success_cases_cta_click", { event_category: "lead" })} className="border border-[#24231f] bg-[#24231f] px-5 py-3 text-sm font-semibold text-white transition hover:border-[#8C4F3B] hover:bg-[#8C4F3B] active:scale-[0.98]">
                 {page.primary}
@@ -1945,7 +2114,7 @@ function SuccessCasesLandingPage({ page, lang, projectItems, t }) {
               {featured?.video ? (
                 <iframe src={featured.video} title={`${featured.title} - ${featured.type}`} loading="lazy" className="absolute inset-0 h-full w-full" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
               ) : (
-                <img src={featured?.image} alt={featured?.title || page.title} loading="lazy" decoding="async" className="h-full w-full object-cover" />
+                <img src={featured?.image} alt={featured ? projectImageAlt(featured, lang) : page.title} loading="lazy" decoding="async" className="h-full w-full object-cover" />
               )}
             </div>
             {featured && (
@@ -1966,6 +2135,26 @@ function SuccessCasesLandingPage({ page, lang, projectItems, t }) {
       </section>
 
       <section className="border-y border-[#E4E0D8] bg-[#FBFAF7] px-4 py-16 md:px-8 md:py-24">
+        <div className="mx-auto grid max-w-[1440px] gap-12 lg:grid-cols-[.75fr_1.25fr]">
+          <div data-reveal>
+            <SectionLabel>{byLang(lang, { es: "Problema comercial", ca: "Problema comercial", en: "Commercial problem" })}</SectionLabel>
+            <h2 className="font-editorial mt-5 max-w-[11ch] text-5xl leading-[0.95] tracking-[-0.05em] text-[#24231f] md:text-6xl">
+              {byLang(lang, { es: "La confianza se acelera cuando la cuenta un cliente.", ca: "La confiança s'accelera quan l'explica un client.", en: "Trust moves faster when a client tells it." })}
+            </h2>
+          </div>
+          <div className="grid gap-4 md:grid-cols-3">
+            {page.pain.map(([title, text], index) => (
+              <article key={title} data-reveal style={{ "--index": index }} className="bg-white p-6 shadow-[inset_0_0_0_1px_rgba(36,35,31,0.08)]">
+                <p className="font-mono text-xs uppercase tracking-[0.18em] text-[#8C4F3B]">0{index + 1}</p>
+                <h3 className="mt-8 text-2xl font-semibold tracking-[-0.035em] text-[#24231f]">{title}</h3>
+                <p className="pretty-text mt-4 text-sm leading-6 text-[#6F6B63]">{text}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-y border-[#E4E0D8] bg-[#FBFAF7] px-4 py-16 md:px-8 md:py-24">
         <div className="mx-auto grid max-w-[1440px] gap-4 md:grid-cols-3">
           {page.outcomes.map(([title, text], index) => (
             <article key={title} data-reveal style={{ "--index": index }} className="bg-white p-6 shadow-[inset_0_0_0_1px_rgba(36,35,31,0.08)] md:p-8">
@@ -1976,6 +2165,52 @@ function SuccessCasesLandingPage({ page, lang, projectItems, t }) {
           ))}
         </div>
       </section>
+
+      {proofVideos.length > 0 && (
+        <section className="px-4 py-16 md:px-8 md:py-24">
+          <div className="mx-auto max-w-[1440px]">
+            <div data-reveal className="mb-10 grid gap-6 lg:grid-cols-[.75fr_1.25fr] lg:items-end">
+              <div>
+                <SectionLabel>{byLang(lang, { es: "Teasers y ejemplos", ca: "Teasers i exemples", en: "Teasers and examples" })}</SectionLabel>
+                <h2 className="font-editorial mt-5 text-5xl leading-[0.95] tracking-[-0.05em] text-[#24231f] md:text-6xl">
+                  {byLang(lang, { es: "Prueba visual antes de pedir contacto.", ca: "Prova visual abans de demanar contacte.", en: "Visual proof before asking for contact." })}
+                </h2>
+              </div>
+              <p className="pretty-text max-w-3xl text-base leading-7 text-[#6F6B63]">
+                {byLang(lang, {
+                  es: "El objetivo no es hacer un vídeo bonito y aislado: es construir piezas que ventas, marketing y dirección puedan reutilizar en momentos distintos.",
+                  ca: "L'objectiu no és fer un vídeo bonic i aïllat: és construir peces que vendes, màrqueting i direcció puguin reutilitzar en moments diferents.",
+                  en: "The goal is not to create a nice isolated video: it is to build assets that sales, marketing and leadership can reuse at different moments.",
+                })}
+              </p>
+            </div>
+            <div className="grid gap-4 lg:grid-cols-2">
+              {proofVideos.map((item, index) => (
+                <article key={item.slug} data-reveal style={{ "--index": index }} className="border border-[#DED8CE] bg-white p-3">
+                  <div className="relative aspect-video overflow-hidden bg-[#111111]">
+                    <iframe src={item.video} title={`${item.title} - ${item.type}`} loading="lazy" className="absolute inset-0 h-full w-full" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
+                  </div>
+                  <div className="grid gap-4 p-5 md:grid-cols-[1fr_auto]">
+                    <div>
+                      <Tag bg={projectCategoryStyle(item.category).bg} color={projectCategoryStyle(item.category).color}>{item.category}</Tag>
+                      <h3 className="mt-4 text-2xl font-semibold tracking-[-0.035em] text-[#24231f]">{item.title}</h3>
+                      <p className="mt-2 text-sm leading-6 text-[#6F6B63]">{item.type}</p>
+                    </div>
+                    <a href={pathFor(lang, "portfolio", item.slug)} className="inline-flex items-center gap-2 text-sm font-semibold text-[#24231f] transition hover:text-[#8C4F3B]">
+                      Portfolio
+                      <ArrowIcon className="h-4 w-4" />
+                    </a>
+                  </div>
+                </article>
+              ))}
+            </div>
+            <a href="https://www.youtube.com/@laprodufilms/videos" target="_blank" rel="noreferrer" className="mt-8 inline-flex items-center gap-2 border border-[#24231f] bg-[#24231f] px-4 py-3 text-sm font-semibold text-white transition hover:border-[#8C4F3B] hover:bg-[#8C4F3B]">
+              {byLang(lang, { es: "Ver más vídeos en YouTube", ca: "Veure més vídeos a YouTube", en: "View more videos on YouTube" })}
+              <ArrowIcon className="h-4 w-4" />
+            </a>
+          </div>
+        </section>
+      )}
 
       <section className="px-4 py-16 md:px-8 md:py-24">
         <div className="mx-auto grid max-w-[1440px] gap-12 lg:grid-cols-[.75fr_1.25fr]">
@@ -2024,13 +2259,29 @@ function SuccessCasesLandingPage({ page, lang, projectItems, t }) {
               {byLang(lang, { es: "Una producción, varios usos.", ca: "Una producció, diversos usos.", en: "One production, several uses." })}
             </h2>
           </div>
-          <div className="grid gap-3">
-            {page.deliverables.map((item, index) => (
-              <div key={item} data-reveal style={{ "--index": index }} className="flex items-center justify-between gap-6 border border-[#E4E0D8] bg-[#FBFAF7] p-5">
-                <p className="text-xl font-semibold tracking-[-0.03em] text-[#24231f]">{item}</p>
-                <span className="font-mono text-xs uppercase tracking-[0.16em] text-[#8C4F3B]">0{index + 1}</span>
+          <div className="grid gap-5">
+            <div className="grid gap-4 md:grid-cols-2">
+              <div className="bg-[#FBFAF7] p-6 shadow-[inset_0_0_0_1px_rgba(36,35,31,0.08)]">
+                <h3 className="text-2xl font-semibold tracking-[-0.035em] text-[#24231f]">{byLang(lang, { es: "Qué incluye", ca: "Què inclou", en: "What is included" })}</h3>
+                <ul className="mt-6 grid gap-3 text-sm leading-6 text-[#6F6B63]">
+                  {page.includes.map((item) => <li key={item} className="flex gap-3"><span className="mt-2 h-2 w-2 shrink-0 bg-[#8C4F3B]" />{item}</li>)}
+                </ul>
               </div>
-            ))}
+              <div className="bg-[#24231f] p-6 text-white">
+                <h3 className="text-2xl font-semibold tracking-[-0.035em]">{byLang(lang, { es: "Dónde se usa", ca: "On es fa servir", en: "Where it is used" })}</h3>
+                <ul className="mt-6 grid gap-3 text-sm leading-6 text-[#EFEAE2]">
+                  {page.channels.map((item) => <li key={item} className="flex gap-3"><span className="mt-2 h-2 w-2 shrink-0 bg-[#D6A15C]" />{item}</li>)}
+                </ul>
+              </div>
+            </div>
+            <div className="grid gap-3">
+              {page.deliverables.map((item, index) => (
+                <div key={item} data-reveal style={{ "--index": index }} className="flex items-center justify-between gap-6 border border-[#E4E0D8] bg-[#FBFAF7] p-5">
+                  <p className="text-xl font-semibold tracking-[-0.03em] text-[#24231f]">{item}</p>
+                  <span className="font-mono text-xs uppercase tracking-[0.16em] text-[#8C4F3B]">0{index + 1}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -2104,7 +2355,7 @@ function BlogListPage({ t, lang, postItems }) {
 function postTopic(post) {
   if (post.slug.includes("fotografia")) return "photo";
   if (post.slug.includes("luz") || post.slug.includes("iluminacion")) return "light";
-  if (post.slug.includes("audio") || post.slug.includes("sonido")) return "audio";
+  if (post.slug.includes("audio-profesional") || post.slug.includes("sonido-")) return "audio";
   if (post.slug.includes("evento")) return "event";
   if (post.slug.includes("briefing")) return "brief";
   if (post.slug.includes("redes")) return "social";
@@ -2257,7 +2508,7 @@ function BlogDetailPage({ post, lang, postItems }) {
           </div>
         </div>
         <div data-reveal style={{ "--index": 1 }} className="mt-10 aspect-[16/9] overflow-hidden border border-[#EAEAEA] bg-[#F7F6F3]">
-          <img src={post.image} alt={post.title} loading="lazy" decoding="async" className="h-full w-full object-cover" />
+          <img src={post.image} alt={postImageAlt(post, lang)} loading="lazy" decoding="async" className="h-full w-full object-cover" />
         </div>
         <div className="mx-auto mt-12 max-w-3xl space-y-7 text-lg leading-8 text-[#2F3437]">
           {post.content.map((paragraph) => (
@@ -2584,6 +2835,9 @@ function seoForRoute({ lang, section, slug, project, post, landingPage, legalPag
     description = t.contactText;
   } else if (landingPage) {
     const featured = landingPage.featuredProject ? projects[lang].find((item) => item.slug === landingPage.featuredProject) : null;
+    const proofVideos = (landingPage.proofVideos || (featured ? [featured.slug] : []))
+      .map((projectSlug) => projects[lang].find((item) => item.slug === projectSlug))
+      .filter((item) => item?.video);
     title = `${landingPage.title} | LAPRODU FILMS`;
     description = landingPage.intro;
     image = absoluteUrl(featured?.image || "/laprodu/portada/CASOS_EXITOS_PORTADA.png");
@@ -2597,20 +2851,25 @@ function seoForRoute({ lang, section, slug, project, post, landingPage, legalPag
       areaServed: byLang(lang, { es: "Barcelona, España e internacional", ca: "Barcelona, Espanya i internacional", en: "Barcelona, Spain and international" }),
       serviceType: byLang(lang, { es: "Producción audiovisual de vídeos de casos de éxito", ca: "Producció audiovisual de vídeos de casos d'èxit", en: "Audiovisual production of customer success story videos" }),
       url: absoluteUrl(canonicalPath),
+      hasOfferCatalog: landingPage.deliverables ? {
+        "@type": "OfferCatalog",
+        name: byLang(lang, { es: "Entregables de vídeo testimonial", ca: "Entregables de vídeo testimonial", en: "Testimonial video deliverables" }),
+        itemListElement: landingPage.deliverables.map((name) => ({ "@type": "Offer", itemOffered: { "@type": "Service", name } })),
+      } : undefined,
     });
-    if (featured?.video) {
-      const videoId = videoIdFromEmbed(featured.video);
+    proofVideos.forEach((item) => {
+      const videoId = videoIdFromEmbed(item.video);
       jsonLd.push({
         "@context": "https://schema.org",
         "@type": "VideoObject",
-        name: `${featured.title} - ${featured.type}`,
-        description: featured.note,
-        thumbnailUrl: [image],
-        uploadDate: `${featured.year}-01-01T09:00:00+01:00`,
-        embedUrl: featured.video,
-        contentUrl: videoId ? `https://www.youtube.com/watch?v=${videoId}` : featured.video,
+        name: `${item.title} - ${item.type}`,
+        description: item.note,
+        thumbnailUrl: [absoluteUrl(item.image)],
+        uploadDate: `${item.year}-01-01T09:00:00+01:00`,
+        embedUrl: item.video,
+        contentUrl: videoId ? `https://www.youtube.com/watch?v=${videoId}` : item.video,
       });
-    }
+    });
     jsonLd.push({
       "@context": "https://schema.org",
       "@type": "FAQPage",

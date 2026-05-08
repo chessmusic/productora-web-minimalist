@@ -49,6 +49,9 @@ const posts = [
   "luz-entrevistas-documentales-2026",
   "audio-profesional-rodaje-video-2026",
   "sonido-entrevistas-eventos-2026",
+  "productora-audiovisual-barcelona-precio-2026",
+  "video-corporativo-empresa-barcelona-2026",
+  "produccion-documental-television-espana-2026",
 ];
 
 function url(lang, path = "") {
