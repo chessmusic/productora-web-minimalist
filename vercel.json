@@ -1,4 +1,14 @@
 {
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        { "type": "host", "value": "laprodufilms.com" }
+      ],
+      "destination": "https://www.laprodufilms.com/:path*",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     { "source": "/((?!assets|laprodu|favicon.jpg|favicon.svg|icons.svg|robots.txt|sitemap.xml).*)", "destination": "/index.html" }
   ],

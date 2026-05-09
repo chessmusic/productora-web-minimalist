@@ -3192,6 +3192,7 @@ function metaDescription(lang, key) {
       home: "Productora audiovisual en Barcelona para documentales, televisión, vídeo corporativo, eventos, publicidad, fotografía y postproducción.",
       servicios: "Servicios de producción audiovisual en Barcelona: documentales, televisión, vídeo corporativo, eventos, fotografía, redes, publicidad y postproducción.",
       portfolio: "Portfolio audiovisual de LAPRODU FILMS: documentales, reportajes de televisión, vídeos corporativos, eventos, publicidad y proyectos sociales.",
+      metodo: "Método de producción audiovisual de LAPRODU FILMS: brief, tratamiento, preproducción, rodaje, postproducción y entregables finales.",
       blog: "Blog de producción audiovisual con guías sobre vídeo corporativo, documentales, fotografía, iluminación, audio, eventos, SEO y Google Ads.",
       contacto: "Contacta con LAPRODU FILMS para producir documentales, vídeos corporativos, eventos, publicidad, fotografía o contenido audiovisual en Barcelona.",
       faq: "Preguntas frecuentes sobre producción audiovisual, vídeo corporativo, documentales, eventos, redes sociales, fotografía y postproducción.",
@@ -3200,6 +3201,7 @@ function metaDescription(lang, key) {
       home: "Productora audiovisual a Barcelona per a documentals, televisió, vídeo corporatiu, esdeveniments, publicitat, fotografia i postproducció.",
       servicios: "Serveis de producció audiovisual a Barcelona: documentals, televisió, vídeo corporatiu, esdeveniments, fotografia, xarxes, publicitat i postproducció.",
       portfolio: "Portfolio audiovisual de LAPRODU FILMS: documentals, reportatges de televisió, vídeos corporatius, esdeveniments, publicitat i projectes socials.",
+      metodo: "Mètode de producció audiovisual de LAPRODU FILMS: brief, tractament, preproducció, rodatge, postproducció i lliuraments finals.",
       blog: "Blog de producció audiovisual amb guies sobre vídeo corporatiu, documentals, fotografia, il·luminació, àudio, esdeveniments, SEO i Google Ads.",
       contacto: "Contacta amb LAPRODU FILMS per produir documentals, vídeos corporatius, esdeveniments, publicitat, fotografia o contingut audiovisual a Barcelona.",
       faq: "Preguntes freqüents sobre producció audiovisual, vídeo corporatiu, documentals, esdeveniments, xarxes socials, fotografia i postproducció.",
@@ -3208,6 +3210,7 @@ function metaDescription(lang, key) {
       home: "Audiovisual production company in Barcelona for documentaries, television, corporate video, events, advertising, photography and postproduction.",
       servicios: "Audiovisual production services in Barcelona: documentaries, television, corporate video, events, photography, social media, advertising and postproduction.",
       portfolio: "LAPRODU FILMS audiovisual portfolio: documentaries, television reports, corporate videos, events, advertising and social impact projects.",
+      metodo: "LAPRODU FILMS audiovisual production method: brief, treatment, preproduction, shoot, postproduction and final deliverables.",
       blog: "Production blog with practical guides on corporate video, documentaries, photography, lighting, audio, events, SEO and Google Ads.",
       contacto: "Contact LAPRODU FILMS to produce documentaries, corporate videos, events, advertising, photography or audiovisual content in Barcelona.",
       faq: "Frequently asked questions about audiovisual production, corporate video, documentaries, events, social media, photography and postproduction.",
@@ -3320,6 +3323,21 @@ function seoForRoute({ lang, section, slug, project, post, landingPage, legalPag
         contentUrl: videoId ? `https://www.youtube.com/watch?v=${videoId}` : project.video,
       });
     }
+  } else if (section === "metodo") {
+    title = `${t.methodTitle} | ${baseTitle}`;
+    description = metaDescription(lang, "metodo");
+    jsonLd.push({
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      name: t.methodTitle,
+      description,
+      itemListElement: byLang(lang, methodSteps).map((step, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: step.name,
+        description: step.desc,
+      })),
+    });
   } else if (section === "blog" && !slug) {
     title = `${t.blogTitle} | ${baseTitle}`;
     description = metaDescription(lang, "blog");
@@ -3330,6 +3348,7 @@ function seoForRoute({ lang, section, slug, project, post, landingPage, legalPag
     jsonLd.push({
       "@context": "https://schema.org",
       "@type": "BlogPosting",
+      "@id": `${absoluteUrl(canonicalPath)}#blogposting`,
       headline: post.title,
       description: post.excerpt,
       image,
@@ -3344,6 +3363,8 @@ function seoForRoute({ lang, section, slug, project, post, landingPage, legalPag
     jsonLd.push({
       "@context": "https://schema.org",
       "@type": "FAQPage",
+      "@id": `${absoluteUrl(canonicalPath)}#faq`,
+      url: absoluteUrl(canonicalPath),
       mainEntity: faqs[lang].map(([name, acceptedAnswer]) => ({
         "@type": "Question",
         name,
@@ -3404,6 +3425,8 @@ function seoForRoute({ lang, section, slug, project, post, landingPage, legalPag
     jsonLd.push({
       "@context": "https://schema.org",
       "@type": "FAQPage",
+      "@id": `${absoluteUrl(canonicalPath)}#faq`,
+      url: absoluteUrl(canonicalPath),
       mainEntity: landingPage.faq.map(([name, acceptedAnswer]) => ({
         "@type": "Question",
         name,
