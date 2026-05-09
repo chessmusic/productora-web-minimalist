@@ -3,6 +3,7 @@ import { useEffect, useMemo, useState } from "react";
 const SITE_URL = "https://www.laprodufilms.com";
 const LANGS = ["es", "ca", "en"];
 const DEFAULT_LANG = "es";
+const BUSINESS_ID = `${SITE_URL}/#laprodu-films`;
 
 const reelUrl =
   "https://player.vimeo.com/video/1035928354?h=da15957380&badge=0&autopause=0&player_id=0&app_id=58479&title=0&byline=0&portrait=0&dnt=1";
@@ -150,59 +151,59 @@ const copy = {
 
 const services = {
   es: [
-    { title: "Documentales", text: "Desarrollo, guion, entrevistas, rodaje, montaje y master para historias con mirada propia.", image: "/laprodu/fotos/rodatge_3.jpg", deliverable: "Series documentales, teasers y piezas web" },
-    { title: "Televisión", text: "Reportajes, programas, cápsulas y contenido pensado para emisión, archivo y continuidad editorial.", image: "/laprodu/fotos/ROSALES_SERVICIOS.png", deliverable: "RTVE La 2 Catalunya, reportaje y magazine" },
-    { title: "Vídeos corporativos", text: "Piezas de empresa, testimonios, casos de éxito y presentaciones con tono cercano y narrativo.", image: "/laprodu/fotos/rodatge_2.jpg", deliverable: "Corporativo, consultora, social y marca", cta: "Ver enfoque para vídeo corporativo", landingSlug: "video-corporativo-auditado-2026" },
-    { title: "Eventos", text: "Cobertura, entrevistas, aftermovie, fotografía y entregas rápidas para comunicar durante y después del evento.", image: "/laprodu/fotos/eventos 3.jpg", deliverable: "Aftermovie, clips, fotos y reels" },
-    { title: "Fotografía", text: "Retrato, backstage, producto, prensa y bancos de imagen para campañas y comunicación recurrente.", image: "/laprodu/fotos/rodatge_5.jpg", deliverable: "Selección editada y archivo final" },
-    { title: "Redes sociales", text: "Formatos verticales, teasers, subtítulos y adaptaciones por canal desde la planificación del rodaje.", image: "/laprodu/fotos/xarxa_4.jpg", deliverable: "Reels, shorts, stories y social ads" },
-    { title: "Publicidad", text: "Spots, branded content y piezas promocionales con concepto, dirección y producción ajustada a campaña.", image: "/laprodu/fotos/producte_5.jpg", deliverable: "Spot, promo, pre-roll y paid media" },
-    { title: "Postproducción", text: "Edición, color, grafismo, mezcla, subtítulos, versiones, conformado y entregables técnicos.", image: "/laprodu/fotos/pospo_1.jpg", deliverable: "Masters finales y versiones" },
+    { title: "Documentales", text: "Desarrollo, guion, entrevistas, rodaje, montaje y master para historias con mirada propia.", image: "/laprodu/fotos/rodaje-documental-entrevista-laprodu-films.jpg", deliverable: "Series documentales, teasers y piezas web" },
+    { title: "Televisión", text: "Reportajes, programas, cápsulas y contenido pensado para emisión, archivo y continuidad editorial.", image: "/laprodu/fotos/reportaje-television-rtve-rosales-laprodu-films.png", deliverable: "RTVE La 2 Catalunya, reportaje y magazine" },
+    { title: "Vídeos corporativos", text: "Piezas de empresa, testimonios, casos de éxito y presentaciones con tono cercano y narrativo.", image: "/laprodu/fotos/video-corporativo-rodaje-empresa-laprodu-films.jpg", deliverable: "Corporativo, consultora, social y marca", cta: "Ver enfoque para vídeo corporativo", landingSlug: "video-corporativo-auditado-2026" },
+    { title: "Eventos", text: "Cobertura, entrevistas, aftermovie, fotografía y entregas rápidas para comunicar durante y después del evento.", image: "/laprodu/fotos/cobertura-eventos-aftermovie-laprodu-films.jpg", deliverable: "Aftermovie, clips, fotos y reels" },
+    { title: "Fotografía", text: "Retrato, backstage, producto, prensa y bancos de imagen para campañas y comunicación recurrente.", image: "/laprodu/fotos/fotografia-corporativa-rodaje-laprodu-films.jpg", deliverable: "Selección editada y archivo final" },
+    { title: "Redes sociales", text: "Formatos verticales, teasers, subtítulos y adaptaciones por canal desde la planificación del rodaje.", image: "/laprodu/fotos/contenido-redes-sociales-video-laprodu-films.jpg", deliverable: "Reels, shorts, stories y social ads" },
+    { title: "Publicidad", text: "Spots, branded content y piezas promocionales con concepto, dirección y producción ajustada a campaña.", image: "/laprodu/fotos/spot-publicitario-producto-laprodu-films.jpg", deliverable: "Spot, promo, pre-roll y paid media" },
+    { title: "Postproducción", text: "Edición, color, grafismo, mezcla, subtítulos, versiones, conformado y entregables técnicos.", image: "/laprodu/fotos/postproduccion-video-edicion-color-laprodu-films.jpg", deliverable: "Masters finales y versiones" },
   ],
   en: [
-    { title: "Documentaries", text: "Development, script, interviews, shooting, editing and mastering for stories with a clear point of view.", image: "/laprodu/fotos/rodatge_3.jpg", deliverable: "Documentary series, teasers and web pieces" },
-    { title: "Television", text: "Reports, programmes, capsules and content designed for broadcast, archive and editorial continuity.", image: "/laprodu/fotos/ROSALES_SERVICIOS.png", deliverable: "RTVE La 2 Catalunya, reports and magazines" },
-    { title: "Corporate videos", text: "Company films, testimonials, success cases and presentations with a close narrative tone.", image: "/laprodu/fotos/rodatge_2.jpg", deliverable: "Corporate, consultancy, social and brand", cta: "View corporate video approach", landingSlug: "video-corporativo-auditado-2026" },
-    { title: "Events", text: "Coverage, interviews, aftermovies, photography and fast delivery for communication during and after the event.", image: "/laprodu/fotos/eventos 3.jpg", deliverable: "Aftermovie, clips, photos and reels" },
-    { title: "Photography", text: "Portrait, backstage, product, press and image banks for campaigns and ongoing communication.", image: "/laprodu/fotos/rodatge_5.jpg", deliverable: "Edited selection and final archive" },
-    { title: "Social media", text: "Vertical formats, teasers, subtitles and channel adaptations planned from the shoot.", image: "/laprodu/fotos/xarxa_4.jpg", deliverable: "Reels, shorts, stories and social ads" },
-    { title: "Advertising", text: "Spots, branded content and promotional films with concept, direction and campaign-ready production.", image: "/laprodu/fotos/producte_5.jpg", deliverable: "Spot, promo, pre-roll and paid media" },
-    { title: "Postproduction", text: "Editing, color, graphics, mixing, subtitles, versions, conforming and technical deliverables.", image: "/laprodu/fotos/pospo_1.jpg", deliverable: "Final masters and versions" },
+    { title: "Documentaries", text: "Development, script, interviews, shooting, editing and mastering for stories with a clear point of view.", image: "/laprodu/fotos/rodaje-documental-entrevista-laprodu-films.jpg", deliverable: "Documentary series, teasers and web pieces" },
+    { title: "Television", text: "Reports, programmes, capsules and content designed for broadcast, archive and editorial continuity.", image: "/laprodu/fotos/reportaje-television-rtve-rosales-laprodu-films.png", deliverable: "RTVE La 2 Catalunya, reports and magazines" },
+    { title: "Corporate videos", text: "Company films, testimonials, success cases and presentations with a close narrative tone.", image: "/laprodu/fotos/video-corporativo-rodaje-empresa-laprodu-films.jpg", deliverable: "Corporate, consultancy, social and brand", cta: "View corporate video approach", landingSlug: "video-corporativo-auditado-2026" },
+    { title: "Events", text: "Coverage, interviews, aftermovies, photography and fast delivery for communication during and after the event.", image: "/laprodu/fotos/cobertura-eventos-aftermovie-laprodu-films.jpg", deliverable: "Aftermovie, clips, photos and reels" },
+    { title: "Photography", text: "Portrait, backstage, product, press and image banks for campaigns and ongoing communication.", image: "/laprodu/fotos/fotografia-corporativa-rodaje-laprodu-films.jpg", deliverable: "Edited selection and final archive" },
+    { title: "Social media", text: "Vertical formats, teasers, subtitles and channel adaptations planned from the shoot.", image: "/laprodu/fotos/contenido-redes-sociales-video-laprodu-films.jpg", deliverable: "Reels, shorts, stories and social ads" },
+    { title: "Advertising", text: "Spots, branded content and promotional films with concept, direction and campaign-ready production.", image: "/laprodu/fotos/spot-publicitario-producto-laprodu-films.jpg", deliverable: "Spot, promo, pre-roll and paid media" },
+    { title: "Postproduction", text: "Editing, color, graphics, mixing, subtitles, versions, conforming and technical deliverables.", image: "/laprodu/fotos/postproduccion-video-edicion-color-laprodu-films.jpg", deliverable: "Final masters and versions" },
   ],
   ca: [
-    { title: "Documentals", text: "Desenvolupament, guió, entrevistes, rodatge, muntatge i màster per a històries amb mirada pròpia.", image: "/laprodu/fotos/rodatge_3.jpg", deliverable: "Sèries documentals, teasers i peces web" },
-    { title: "Televisió", text: "Reportatges, programes, càpsules i contingut pensat per a emissió, arxiu i continuïtat editorial.", image: "/laprodu/fotos/ROSALES_SERVICIOS.png", deliverable: "RTVE La 2 Catalunya, reportatge i magazín" },
-    { title: "Vídeos corporatius", text: "Peces d'empresa, testimonis, casos d'èxit i presentacions amb un to proper i narratiu.", image: "/laprodu/fotos/rodatge_2.jpg", deliverable: "Corporatiu, consultora, social i marca", cta: "Veure enfocament per a vídeo corporatiu", landingSlug: "video-corporativo-auditado-2026" },
-    { title: "Esdeveniments", text: "Cobertura, entrevistes, aftermovie, fotografia i lliuraments ràpids per comunicar durant i després de l'esdeveniment.", image: "/laprodu/fotos/eventos 3.jpg", deliverable: "Aftermovie, clips, fotos i reels" },
-    { title: "Fotografia", text: "Retrat, backstage, producte, premsa i bancs d'imatge per a campanyes i comunicació recurrent.", image: "/laprodu/fotos/rodatge_5.jpg", deliverable: "Selecció editada i arxiu final" },
-    { title: "Xarxes socials", text: "Formats verticals, teasers, subtítols i adaptacions per canal des de la planificació del rodatge.", image: "/laprodu/fotos/xarxa_4.jpg", deliverable: "Reels, shorts, stories i social ads" },
-    { title: "Publicitat", text: "Spots, branded content i peces promocionals amb concepte, direcció i producció ajustada a campanya.", image: "/laprodu/fotos/producte_5.jpg", deliverable: "Spot, promo, pre-roll i paid media" },
-    { title: "Postproducció", text: "Edició, color, grafisme, mescla, subtítols, versions, conformat i entregables tècnics.", image: "/laprodu/fotos/pospo_1.jpg", deliverable: "Màsters finals i versions" },
+    { title: "Documentals", text: "Desenvolupament, guió, entrevistes, rodatge, muntatge i màster per a històries amb mirada pròpia.", image: "/laprodu/fotos/rodaje-documental-entrevista-laprodu-films.jpg", deliverable: "Sèries documentals, teasers i peces web" },
+    { title: "Televisió", text: "Reportatges, programes, càpsules i contingut pensat per a emissió, arxiu i continuïtat editorial.", image: "/laprodu/fotos/reportaje-television-rtve-rosales-laprodu-films.png", deliverable: "RTVE La 2 Catalunya, reportatge i magazín" },
+    { title: "Vídeos corporatius", text: "Peces d'empresa, testimonis, casos d'èxit i presentacions amb un to proper i narratiu.", image: "/laprodu/fotos/video-corporativo-rodaje-empresa-laprodu-films.jpg", deliverable: "Corporatiu, consultora, social i marca", cta: "Veure enfocament per a vídeo corporatiu", landingSlug: "video-corporativo-auditado-2026" },
+    { title: "Esdeveniments", text: "Cobertura, entrevistes, aftermovie, fotografia i lliuraments ràpids per comunicar durant i després de l'esdeveniment.", image: "/laprodu/fotos/cobertura-eventos-aftermovie-laprodu-films.jpg", deliverable: "Aftermovie, clips, fotos i reels" },
+    { title: "Fotografia", text: "Retrat, backstage, producte, premsa i bancs d'imatge per a campanyes i comunicació recurrent.", image: "/laprodu/fotos/fotografia-corporativa-rodaje-laprodu-films.jpg", deliverable: "Selecció editada i arxiu final" },
+    { title: "Xarxes socials", text: "Formats verticals, teasers, subtítols i adaptacions per canal des de la planificació del rodatge.", image: "/laprodu/fotos/contenido-redes-sociales-video-laprodu-films.jpg", deliverable: "Reels, shorts, stories i social ads" },
+    { title: "Publicitat", text: "Spots, branded content i peces promocionals amb concepte, direcció i producció ajustada a campanya.", image: "/laprodu/fotos/spot-publicitario-producto-laprodu-films.jpg", deliverable: "Spot, promo, pre-roll i paid media" },
+    { title: "Postproducció", text: "Edició, color, grafisme, mescla, subtítols, versions, conformat i entregables tècnics.", image: "/laprodu/fotos/postproduccion-video-edicion-color-laprodu-films.jpg", deliverable: "Màsters finals i versions" },
   ],
 };
 
 const projectData = [
-  { slug: "secundaris", title: "SECUNDARIS", type: "Serie Documental TV | Teaser", client: "RTVE La 2 Catalunya", year: "2025", category: "Televisión", image: "/laprodu/portada/SECUNDARIS_PORTADA.png", video: "https://www.youtube.com/embed/0lL1hoBhZ4o", span: "lg:col-span-7", note: "Serie documental de retratos y oficios con mirada humana." },
-  { slug: "inspira", title: "INSPIRA", type: "Serie Documental TV | Teaser", client: "RTVE La 2 Catalunya", year: "2025", category: "Televisión", image: "/laprodu/portada/INSPIRA_PORTADA.png", video: "https://www.youtube.com/embed/u9bkYrMcHGg", span: "lg:col-span-5", note: "Conversaciones culturales con un tratamiento visual sobrio." },
-  { slug: "la-nit-de-reis", title: "LA NIT DE REIS", type: "Documental TV", client: "RTVE La 2 Catalunya", year: "2025", category: "Documental", image: "/laprodu/portada/NITDEREIS_2_PORTADA.png", video: "https://www.youtube.com/embed/VIOS9JBA2-k", span: "lg:col-span-4", note: "Documental televisivo para emisión cultural." },
-  { slug: "martina-matencio", title: "MARTINA MATENCIO", type: "Reportaje TV | Secundaris", client: "RTVE La 2 Catalunya", year: "2025", category: "Televisión", image: "/laprodu/portada/MARTINA_PORTADA.png", video: "https://www.youtube.com/embed/5tWH5UoYkfk", span: "lg:col-span-4", note: "Reportaje de la serie Secundaris." },
-  { slug: "guillermina-baeza", title: "GUILLERMINA BAEZA", type: "Reportaje TV | Secundaris", client: "RTVE La 2 Catalunya", year: "2025", category: "Televisión", image: "/laprodu/portada/BAEZA_PORATDA.png", video: "https://www.youtube.com/embed/jx8hI4ZWnUI", span: "lg:col-span-4", note: "Retrato televisivo de autora y trayectoria." },
-  { slug: "bofill", title: "BOFILL", type: "Reportaje TV | Inspira", client: "RTVE La 2 Catalunya", year: "2025", category: "Televisión", image: "/laprodu/portada/BOFILL_PORTADA.png", video: "https://www.youtube.com/embed/wIECrDeaDxo", span: "lg:col-span-6", note: "Arquitectura, memoria e imagen para Inspira." },
-  { slug: "chroma", title: "CHROMA", type: "Corporativo", client: "Chroma", year: "2024", category: "Corporativo", image: "/laprodu/portada/CHROMA_PORTADA.png", video: "https://www.youtube.com/embed/Hy_YV8yKmjo?si=axx30qHu2a7in8h-", span: "lg:col-span-6", note: "Vídeo corporativo de identidad y servicio." },
-  { slug: "mwc2025", title: "MWC2025", type: "Reportaje | Netherlands Pavilion", client: "Netherlands Pavilion", year: "2025", category: "Eventos", image: "/laprodu/portada/MWC2024_2.png", video: "", span: "lg:col-span-4", note: "Cobertura internacional para comunicación de evento." },
-  { slug: "cal-blay", title: "CAL BLAY", type: "Vídeo Promocional", client: "Cal Blay", year: "2024", category: "Corporativo", image: "/laprodu/portada/CALBLAY_PORTADA.png", video: "https://www.youtube.com/embed/vkMuAq0XouI", span: "lg:col-span-4", note: "Pieza promocional para marca gastronómica." },
-  { slug: "sonisord", title: "SONISORD", type: "Spot | Publicidad", client: "Sonisord", year: "2024", category: "Publicidad", image: "/laprodu/portada/SONISORD_PORTADA.png", video: "https://www.youtube.com/embed/EQ80BqQ0dZc", span: "lg:col-span-4", note: "Spot de campaña con tono directo." },
-  { slug: "optica-2000", title: "ÓPTICA 2000", type: "Vídeo Promocional", client: "Óptica 2000", year: "2024", category: "Publicidad", image: "/laprodu/portada/OPTICA2000_PORTADA.png", video: "https://www.youtube.com/embed/bXEbq0dtDD4", span: "lg:col-span-4", note: "Vídeo promocional de producto y marca." },
-  { slug: "cedec-casos-exito", title: "CEDEC", type: "Casos de Éxito | Teaser", client: "Consultora empresarial", year: "2024", category: "Corporativo", image: "/laprodu/portada/CASOS_EXITOS_PORTADA.png", video: "https://www.youtube.com/embed/tDyq1wZD9Co", span: "lg:col-span-4", note: "Pieza testimonial para consultora empresarial." },
-  { slug: "norai-corporativo", title: "Proyecto NORAI", type: "Corporativo | Social", client: "Impulsem - Museu Marítim Barcelona", year: "2024", category: "Social", image: "/laprodu/portada/IMPULSEM_PORTADA.png", video: "https://www.youtube.com/embed/2V3AwRKewN8", span: "lg:col-span-4", note: "Proyecto social narrado desde cocina, inclusión y territorio." },
-  { slug: "norai-director-mmb", title: "NORAI | Director MMB", type: "Entrevista | Social", client: "Impulsem - Museu Marítim Barcelona", year: "2024", category: "Social", image: "/laprodu/portada/ENRIC_NORAI_PORTADA.png", video: "https://www.youtube.com/embed/pF6HhLZYS9w?si=Zr5xV2vpA5Iauonc", span: "lg:col-span-4", note: "Entrevista para ampliar el contexto del proyecto NORAI." },
-  { slug: "norai-chef", title: "NORAI | Chef", type: "Entrevista | Social", client: "Impulsem - Museu Marítim Barcelona", year: "2024", category: "Social", image: "/laprodu/portada/XAVI_NORAI_PORTADA.png", video: "https://www.youtube.com/embed/Z9WCzwnwZsA", span: "lg:col-span-4", note: "Testimonio de cocina y oficio dentro del proyecto social." },
-  { slug: "mwc2024", title: "MWC2024", type: "Reportaje | Netherlands Pavilion", client: "Netherlands Pavilion", year: "2024", category: "Eventos", image: "/laprodu/portada/MWC2024_PORTADA.png", video: "https://www.youtube.com/embed/7GU3-GUretk?si=ud687kJSojSjR3ri", span: "lg:col-span-4", note: "Cobertura MWC para Netherlands Pavilion." },
-  { slug: "mwc2023", title: "MWC2023", type: "Promo | MWC2023", client: "Netherlands Pavilion", year: "2023", category: "Eventos", image: "/laprodu/portada/MWC2023_PORTADA.png", video: "https://www.youtube.com/embed/6nQUFAsEhVk?si=W2Po3MbQWqnFM2i1", span: "lg:col-span-4", note: "Promo de evento internacional." },
-  { slug: "cedec-consultora", title: "CEDEC", type: "Vídeo Consultora", client: "CEDEC", year: "2024", category: "Corporativo", image: "/laprodu/portada/ESTIBALIZ_PORTADA.png", video: "https://www.youtube.com/embed/gGxyG1vaWRU?si=TWmpzClN87ayDP6z", span: "lg:col-span-4", note: "Vídeo corporativo para consultora." },
-  { slug: "valldaura-labs", title: "VALLDAURA LABS", type: "Reportaje TV | Valldaura IAAC", client: "RTVE La 2 Catalunya", year: "2024", category: "Televisión", image: "/laprodu/portada/VALLDAURA_PORTADA.png", video: "https://www.youtube.com/embed/WVTuF6wYGAU?si=-0xdn-0VPlGRanBh", span: "lg:col-span-6", note: "Reportaje sobre innovación y territorio." },
-  { slug: "rcr-arquitectes", title: "RCR ARQUITECTES", type: "Reportaje TV", client: "RTVE La 2 Catalunya", year: "2024", category: "Televisión", image: "/laprodu/portada/RCR_PORTADA.png", video: "https://www.youtube.com/embed/HNk1MjTHhSM?si=TDSP7qI8J-ozVJa1", span: "lg:col-span-6", note: "Reportaje televisivo de arquitectura y proceso." },
-  { slug: "secundaris-capitulo-6", title: "SECUNDARIS | Capítulo 6", type: "Serie Documental TV", client: "RTVE La 2 Catalunya", year: "2025", category: "Televisión", image: "/laprodu/portada/ROSALES_PORTADA.png", video: "", span: "lg:col-span-4", note: "Capítulo de la serie documental SECUNDARIS." },
+  { slug: "secundaris", title: "SECUNDARIS", type: "Serie Documental TV | Teaser", client: "RTVE La 2 Catalunya", year: "2025", category: "Televisión", image: "/laprodu/portada/secundaris-serie-documental-rtve-laprodu-films.png", video: "https://www.youtube.com/embed/0lL1hoBhZ4o", span: "lg:col-span-7", note: "Serie documental de retratos y oficios con mirada humana." },
+  { slug: "inspira", title: "INSPIRA", type: "Serie Documental TV | Teaser", client: "RTVE La 2 Catalunya", year: "2025", category: "Televisión", image: "/laprodu/portada/inspira-serie-documental-rtve-laprodu-films.png", video: "https://www.youtube.com/embed/u9bkYrMcHGg", span: "lg:col-span-5", note: "Conversaciones culturales con un tratamiento visual sobrio." },
+  { slug: "la-nit-de-reis", title: "LA NIT DE REIS", type: "Documental TV", client: "RTVE La 2 Catalunya", year: "2025", category: "Documental", image: "/laprodu/portada/la-nit-de-reis-documental-tv-laprodu-films.png", video: "https://www.youtube.com/embed/VIOS9JBA2-k", span: "lg:col-span-4", note: "Documental televisivo para emisión cultural." },
+  { slug: "martina-matencio", title: "MARTINA MATENCIO", type: "Reportaje TV | Secundaris", client: "RTVE La 2 Catalunya", year: "2025", category: "Televisión", image: "/laprodu/portada/martina-matencio-reportaje-tv-secundaris-laprodu-films.png", video: "https://www.youtube.com/embed/5tWH5UoYkfk", span: "lg:col-span-4", note: "Reportaje de la serie Secundaris." },
+  { slug: "guillermina-baeza", title: "GUILLERMINA BAEZA", type: "Reportaje TV | Secundaris", client: "RTVE La 2 Catalunya", year: "2025", category: "Televisión", image: "/laprodu/portada/guillermina-baeza-reportaje-tv-laprodu-films.png", video: "https://www.youtube.com/embed/jx8hI4ZWnUI", span: "lg:col-span-4", note: "Retrato televisivo de autora y trayectoria." },
+  { slug: "bofill", title: "BOFILL", type: "Reportaje TV | Inspira", client: "RTVE La 2 Catalunya", year: "2025", category: "Televisión", image: "/laprodu/portada/bofill-reportaje-tv-inspira-laprodu-films.png", video: "https://www.youtube.com/embed/wIECrDeaDxo", span: "lg:col-span-6", note: "Arquitectura, memoria e imagen para Inspira." },
+  { slug: "chroma", title: "CHROMA", type: "Corporativo", client: "Chroma", year: "2024", category: "Corporativo", image: "/laprodu/portada/chroma-video-corporativo-laprodu-films.png", video: "https://www.youtube.com/embed/Hy_YV8yKmjo?si=axx30qHu2a7in8h-", span: "lg:col-span-6", note: "Vídeo corporativo de identidad y servicio." },
+  { slug: "mwc2025", title: "MWC2025", type: "Reportaje | Netherlands Pavilion", client: "Netherlands Pavilion", year: "2025", category: "Eventos", image: "/laprodu/portada/mwc-2025-netherlands-pavilion-laprodu-films.png", video: "", span: "lg:col-span-4", note: "Cobertura internacional para comunicación de evento." },
+  { slug: "cal-blay", title: "CAL BLAY", type: "Vídeo Promocional", client: "Cal Blay", year: "2024", category: "Corporativo", image: "/laprodu/portada/cal-blay-video-promocional-laprodu-films.png", video: "https://www.youtube.com/embed/vkMuAq0XouI", span: "lg:col-span-4", note: "Pieza promocional para marca gastronómica." },
+  { slug: "sonisord", title: "SONISORD", type: "Spot | Publicidad", client: "Sonisord", year: "2024", category: "Publicidad", image: "/laprodu/portada/sonisord-spot-publicitario-laprodu-films.png", video: "https://www.youtube.com/embed/EQ80BqQ0dZc", span: "lg:col-span-4", note: "Spot de campaña con tono directo." },
+  { slug: "optica-2000", title: "ÓPTICA 2000", type: "Vídeo Promocional", client: "Óptica 2000", year: "2024", category: "Publicidad", image: "/laprodu/portada/optica-2000-video-promocional-laprodu-films.png", video: "https://www.youtube.com/embed/bXEbq0dtDD4", span: "lg:col-span-4", note: "Vídeo promocional de producto y marca." },
+  { slug: "cedec-casos-exito", title: "CEDEC", type: "Casos de Éxito | Teaser", client: "Consultora empresarial", year: "2024", category: "Corporativo", image: "/laprodu/portada/cedec-casos-exito-video-testimonial-laprodu-films.png", video: "https://www.youtube.com/embed/tDyq1wZD9Co", span: "lg:col-span-4", note: "Pieza testimonial para consultora empresarial." },
+  { slug: "norai-corporativo", title: "Proyecto NORAI", type: "Corporativo | Social", client: "Impulsem - Museu Marítim Barcelona", year: "2024", category: "Social", image: "/laprodu/portada/proyecto-norai-video-corporativo-social-laprodu-films.png", video: "https://www.youtube.com/embed/2V3AwRKewN8", span: "lg:col-span-4", note: "Proyecto social narrado desde cocina, inclusión y territorio." },
+  { slug: "norai-director-mmb", title: "NORAI | Director MMB", type: "Entrevista | Social", client: "Impulsem - Museu Marítim Barcelona", year: "2024", category: "Social", image: "/laprodu/portada/norai-director-museu-maritim-entrevista-laprodu-films.png", video: "https://www.youtube.com/embed/pF6HhLZYS9w?si=Zr5xV2vpA5Iauonc", span: "lg:col-span-4", note: "Entrevista para ampliar el contexto del proyecto NORAI." },
+  { slug: "norai-chef", title: "NORAI | Chef", type: "Entrevista | Social", client: "Impulsem - Museu Marítim Barcelona", year: "2024", category: "Social", image: "/laprodu/portada/norai-chef-entrevista-social-laprodu-films.png", video: "https://www.youtube.com/embed/Z9WCzwnwZsA", span: "lg:col-span-4", note: "Testimonio de cocina y oficio dentro del proyecto social." },
+  { slug: "mwc2024", title: "MWC2024", type: "Reportaje | Netherlands Pavilion", client: "Netherlands Pavilion", year: "2024", category: "Eventos", image: "/laprodu/portada/mwc-2024-netherlands-pavilion-laprodu-films.png", video: "https://www.youtube.com/embed/7GU3-GUretk?si=ud687kJSojSjR3ri", span: "lg:col-span-4", note: "Cobertura MWC para Netherlands Pavilion." },
+  { slug: "mwc2023", title: "MWC2023", type: "Promo | MWC2023", client: "Netherlands Pavilion", year: "2023", category: "Eventos", image: "/laprodu/portada/mwc-2023-netherlands-pavilion-laprodu-films.png", video: "https://www.youtube.com/embed/6nQUFAsEhVk?si=W2Po3MbQWqnFM2i1", span: "lg:col-span-4", note: "Promo de evento internacional." },
+  { slug: "cedec-consultora", title: "CEDEC", type: "Vídeo Consultora", client: "CEDEC", year: "2024", category: "Corporativo", image: "/laprodu/portada/cedec-video-consultora-laprodu-films.png", video: "https://www.youtube.com/embed/gGxyG1vaWRU?si=TWmpzClN87ayDP6z", span: "lg:col-span-4", note: "Vídeo corporativo para consultora." },
+  { slug: "valldaura-labs", title: "VALLDAURA LABS", type: "Reportaje TV | Valldaura IAAC", client: "RTVE La 2 Catalunya", year: "2024", category: "Televisión", image: "/laprodu/portada/valldaura-labs-reportaje-tv-laprodu-films.png", video: "https://www.youtube.com/embed/WVTuF6wYGAU?si=-0xdn-0VPlGRanBh", span: "lg:col-span-6", note: "Reportaje sobre innovación y territorio." },
+  { slug: "rcr-arquitectes", title: "RCR ARQUITECTES", type: "Reportaje TV", client: "RTVE La 2 Catalunya", year: "2024", category: "Televisión", image: "/laprodu/portada/rcr-arquitectes-reportaje-tv-laprodu-films.png", video: "https://www.youtube.com/embed/HNk1MjTHhSM?si=TDSP7qI8J-ozVJa1", span: "lg:col-span-6", note: "Reportaje televisivo de arquitectura y proceso." },
+  { slug: "secundaris-capitulo-6", title: "SECUNDARIS | Capítulo 6", type: "Serie Documental TV", client: "RTVE La 2 Catalunya", year: "2025", category: "Televisión", image: "/laprodu/portada/secundaris-capitulo-6-rosales-laprodu-films.png", video: "", span: "lg:col-span-4", note: "Capítulo de la serie documental SECUNDARIS." },
 ];
 
 const projects = {
@@ -280,7 +281,7 @@ const posts = {
       category: "Documental",
       date: "15 enero 2026",
       read: "7 min",
-      image: "/laprodu/fotos/rodatge_3.jpg",
+      image: "/laprodu/fotos/rodaje-documental-entrevista-laprodu-films.jpg",
       content: [
         "Una entrevista documental empieza mucho antes de colocar la cámara. El trabajo importante está en entender qué historia sostiene el personaje, qué tensión narrativa puede aparecer y qué necesita saber el equipo para no improvisar lo esencial en rodaje.",
         "Antes de grabar conviene cerrar una escaleta de temas, no un guion rígido. La conversación debe tener dirección, pero también espacio para escuchar. En paralelo se revisan localización, ruido ambiente, disponibilidad de luz, permisos de imagen y posibles materiales de archivo.",
@@ -294,7 +295,7 @@ const posts = {
       category: "Eventos",
       date: "12 marzo 2026",
       read: "6 min",
-      image: "/laprodu/fotos/eventos 3.jpg",
+      image: "/laprodu/fotos/cobertura-evento-monitor-video-laprodu-films.jpg",
       content: [
         "Un evento puede convertirse en mucho más que un aftermovie. Si se prepara bien, una sola cobertura puede generar resumen principal, cápsulas verticales, entrevistas, fotografías, piezas para prensa y material para comunicación interna.",
         "La clave está en diseñar entregables antes del evento. No se rueda igual si solo se necesita una pieza de dos minutos que si también hay que capturar declaraciones, ambiente, producto, ponencias y momentos para redes sociales.",
@@ -308,7 +309,7 @@ const posts = {
       category: "Brief",
       date: "8 abril 2026",
       read: "8 min",
-      image: "/laprodu/fotos/rodatge_2.jpg",
+      image: "/laprodu/fotos/video-corporativo-rodaje-empresa-laprodu-films.jpg",
       content: [
         "Un buen briefing no tiene que ser largo, pero sí concreto. La productora necesita entender qué debe conseguir el vídeo, a quién habla, dónde se va a publicar y qué acción espera provocar.",
         "La información mínima incluye objetivo, público, mensajes clave, referencias visuales, duración aproximada, formatos de entrega, fechas importantes, localizaciones, personas que aparecen y rango de presupuesto. Con eso se puede diseñar una propuesta comparable y realista.",
@@ -322,7 +323,7 @@ const posts = {
       category: "Redes",
       date: "21 mayo 2026",
       read: "6 min",
-      image: "/laprodu/fotos/xarxa_4.jpg",
+      image: "/laprodu/fotos/contenido-redes-sociales-video-laprodu-films.jpg",
       content: [
         "El contenido para redes no debería decidirse cuando el vídeo principal ya está montado. Si se piensa desde preproducción, el equipo puede capturar planos verticales, frases cortas, recursos, detalles y fotografías que luego multiplican la vida útil de la pieza.",
         "La planificación empieza definiendo canales: Instagram, TikTok, LinkedIn, YouTube Shorts o web no piden el mismo ritmo ni el mismo encuadre. También conviene decidir si habrá subtítulos quemados, versiones sin música, cortes por idioma y miniaturas específicas.",
@@ -336,7 +337,7 @@ const posts = {
       category: "Postproducción",
       date: "10 junio 2026",
       read: "7 min",
-      image: "/laprodu/fotos/pospo_1.jpg",
+      image: "/laprodu/fotos/postproduccion-entregables-video-laprodu-films.jpg",
       content: [
         "La postproducción no termina cuando el montaje emociona. Antes de entregar, hay que revisar color, mezcla de sonido, niveles, grafismos, subtítulos, derechos musicales, logos, nombres propios y formatos de exportación.",
         "Un buen control final evita problemas en publicación o emisión. Es importante comprobar que los textos no tienen errores, que las versiones verticales conservan información relevante, que los subtítulos son legibles y que cada archivo responde al canal donde se va a usar.",
@@ -350,7 +351,7 @@ const posts = {
       category: "Televisión",
       date: "2 julio 2026",
       read: "8 min",
-      image: "/laprodu/fotos/televiso_1.png",
+      image: "/laprodu/fotos/produccion-audiovisual-television-marcas-laprodu-films.png",
       content: [
         "Una pieza para televisión y una pieza para marca pueden compartir equipo, cámara y oficio, pero no siempre comparten objetivo. La televisión suele pedir claridad editorial, ritmo narrativo y una estructura que funcione dentro de una parrilla o programa.",
         "La pieza de marca, en cambio, necesita responder a una estrategia concreta: explicar un servicio, activar confianza, presentar un caso o alimentar una campaña. El mensaje suele estar más definido y las validaciones internas tienen más peso.",
@@ -364,7 +365,7 @@ const posts = {
       category: "Fotografía",
       date: "18 agosto 2026",
       read: "7 min",
-      image: "/laprodu/fotos/foto_1.jpg",
+      image: "/laprodu/fotos/fotografia-corporativa-barcelona-laprodu-films.jpg",
       content: [
         "Una sesión de fotografía corporativa funciona mejor cuando no se piensa solo como un retrato de equipo. Para una marca, las imágenes deben servir para web, notas de prensa, LinkedIn, propuestas comerciales, dossiers, campañas y comunicación interna.",
         "Antes de la sesión conviene definir qué piezas necesita la empresa: retratos individuales, foto de equipo, recursos de oficina, proceso de trabajo, detalles de producto o imágenes de dirección. Esa lista evita improvisar y ayuda a elegir localización, vestuario, fondos y tiempos.",
@@ -378,7 +379,7 @@ const posts = {
       category: "Fotografía",
       date: "9 septiembre 2026",
       read: "6 min",
-      image: "/laprodu/fotos/eventos_1.jpg",
+      image: "/laprodu/fotos/fotografia-evento-corporativo-laprodu-films.jpg",
       content: [
         "La fotografía de eventos corporativos no consiste solo en documentar lo que ocurre. Una buena cobertura debe anticipar qué imágenes necesitará el equipo de comunicación después: prensa, resumen web, redes sociales, newsletters, patrocinadores y memoria del evento.",
         "Para lograrlo, el fotógrafo necesita conocer agenda, ponentes, momentos clave, marcas visibles, zonas de networking y entregables esperados. No se trabaja igual una conferencia institucional que una activación de marca, una feria internacional o una presentación de producto.",
@@ -392,7 +393,7 @@ const posts = {
       category: "Luz",
       date: "24 septiembre 2026",
       read: "7 min",
-      image: "/laprodu/fotos/rodatge_5.jpg",
+      image: "/laprodu/fotos/iluminacion-rodaje-video-corporativo-laprodu-films.webp",
       content: [
         "La iluminación de un vídeo corporativo influye directamente en la confianza que transmite una marca. Una entrevista bien iluminada parece más clara, más cercana y más profesional; una mala luz puede hacer que incluso un buen mensaje pierda fuerza.",
         "No siempre hace falta un gran despliegue. A veces basta con controlar la luz natural, elegir bien la orientación de la sala y reforzar suavemente el rostro. En otros casos, cuando hay varias entrevistas o una estética muy definida, conviene montar un esquema de luz más preciso.",
@@ -406,7 +407,7 @@ const posts = {
       category: "Luz",
       date: "15 octubre 2026",
       read: "8 min",
-      image: "/laprodu/fotos/rodatge_6.jpg",
+      image: "/laprodu/fotos/iluminacion-video-corporativo-laprodu-films.jpg",
       content: [
         "En una entrevista documental, la luz debe acompañar al personaje sin imponerse sobre él. La imagen tiene que sentirse verdadera, pero eso no significa renunciar al control técnico. El equilibrio está en respetar el espacio y dirigir la mirada del espectador.",
         "La preparación empieza observando la localización: entrada de luz, fondo, reflejos, ruido visual, colores dominantes y movimiento de personas. A partir de ahí se decide si conviene trabajar con luz disponible, suavizar una ventana o construir una atmósfera más cinematográfica.",
@@ -420,7 +421,7 @@ const posts = {
       category: "Audio",
       date: "3 noviembre 2026",
       read: "7 min",
-      image: "/laprodu/fotos/rodatge_1.jpg",
+      image: "/laprodu/fotos/rodaje-produccion-audiovisual-barcelona-laprodu-films.jpg",
       content: [
         "El audio suele recibir menos atención que la imagen, hasta que falla. Una entrevista con ruido, eco o niveles inestables puede arruinar una pieza aunque la cámara y la luz estén perfectamente resueltas.",
         "El primer paso es escuchar la localización antes de rodar: aire acondicionado, neveras, tráfico, obras, salas con mucha reverberación o espacios compartidos. Después se elige microfonía adecuada, posición, grabación de seguridad y control de ambiente.",
@@ -434,7 +435,7 @@ const posts = {
       category: "Audio",
       date: "19 noviembre 2026",
       read: "6 min",
-      image: "/laprodu/fotos/eventos 2.jpg",
+      image: "/laprodu/fotos/audio-evento-entrevista-laprodu-films.jpg",
       content: [
         "En entrevistas y eventos, el sonido depende tanto de la técnica como de la coordinación. Saber quién habla, dónde se mueve, qué sistema de sonido hay en sala y qué momentos son irrepetibles permite preparar una cobertura más segura.",
         "Antes de grabar conviene hacer prueba de micro, revisar baterías, grabadores, frecuencias, cables, entradas de mesa y posibles backups. En eventos, además, es importante coordinarse con el equipo técnico del espacio para acceder a señal limpia cuando sea posible.",
@@ -448,7 +449,7 @@ const posts = {
       category: "Presupuesto",
       date: "4 diciembre 2026",
       read: "8 min",
-      image: "/laprodu/fotos/corporatiu_1.jpg",
+      image: "/laprodu/fotos/presupuesto-produccion-audiovisual-corporativa-laprodu-films.jpg",
       content: [
         "Buscar “productora audiovisual Barcelona precio” suele llevar a una respuesta incómoda: depende. Y es verdad, pero no debería quedarse ahí. El precio cambia según objetivo, duración, equipo, localizaciones, número de entrevistas, necesidades de luz y sonido, postproducción, grafismo, música, subtítulos y versiones finales.",
         "Un trabajo pequeño puede ser una pieza sencilla, una sesión de fotografía, un clip social o una edición concreta. Una producción más completa puede incluir tratamiento, guion, jornada de rodaje, equipo técnico, dirección, entrevistas, montaje, color, mezcla, subtítulos y entregables para varios canales.",
@@ -462,7 +463,7 @@ const posts = {
       category: "Corporativo",
       date: "11 diciembre 2026",
       read: "8 min",
-      image: "/laprodu/fotos/rodatge_2.jpg",
+      image: "/laprodu/fotos/video-corporativo-empresa-set-entrevista-laprodu-films.webp",
       content: [
         "Un vídeo corporativo para empresa no debería ser una presentación larga con frases genéricas. Funciona cuando ayuda a entender qué hace la compañía, por qué importa, quién está detrás y qué problema resuelve para sus clientes.",
         "En Barcelona, muchas empresas necesitan piezas que vivan en varios lugares: web, LinkedIn, presentaciones comerciales, ferias, newsletters o campañas. Eso obliga a pensar el vídeo como un sistema: pieza principal, teaser, clips cortos, subtítulos, miniaturas y versiones por idioma si el mercado es internacional.",
@@ -476,7 +477,7 @@ const posts = {
       category: "Documental",
       date: "18 diciembre 2026",
       read: "9 min",
-      image: "/laprodu/fotos/televiso_2.png",
+      image: "/laprodu/fotos/produccion-documental-television-espana-laprodu-films.png",
       content: [
         "La producción documental para televisión en España exige una mezcla de mirada narrativa y orden técnico. No basta con tener una buena historia: hay que transformarla en tratamiento, estructura, plan de rodaje, entrevistas, archivo, derechos y entrega final preparada para emisión.",
         "El proceso suele empezar con investigación y enfoque editorial. Después llegan permisos, localizaciones, personajes, calendario, necesidades de sonido, luz y cámara. En televisión también pesan la duración, el ritmo, la claridad de contexto y la convivencia con la línea editorial del programa o canal.",
@@ -490,7 +491,7 @@ const posts = {
       category: "SEO",
       date: "22 diciembre 2026",
       read: "9 min",
-      image: "/laprodu/fotos/xarxa_4.jpg",
+      image: "/laprodu/fotos/auditoria-seo-web-contenidos-laprodu-films.webp",
       ctaLanding: "auditoria-seo-web",
       ctaLabel: "Ver packs de auditoría SEO",
       content: [
@@ -1078,7 +1079,7 @@ const landingPages = {
       bullets: ["Diagnóstico técnico y de contenidos", "Prioridades accionables, no informes eternos", "Recomendaciones para SEO orgánico y campañas"],
       related: [],
       proofVideos: [],
-      heroImage: "/laprodu/fotos/xarxa_4.jpg",
+      heroImage: "/laprodu/fotos/auditoria-seo-web-contenidos-laprodu-films.webp",
       blogSlug: "auditoria-seo-web-2026",
       hideRelatedWork: true,
       problemLabel: "Problema habitual",
@@ -2312,7 +2313,7 @@ function ContactSection({ t, lang }) {
     <section id="contacto" className="px-4 py-20 md:px-8 md:py-28">
       <div className="mx-auto grid max-w-[1440px] gap-6 lg:grid-cols-[1fr_.85fr]">
         <div data-reveal className="relative overflow-hidden border border-[#DED8CE] bg-[#EFEAE2] p-8 text-[#24231f] md:p-12">
-          <div className="absolute right-0 top-0 h-full w-1/2 bg-[url('/laprodu/fotos/rodatge_1.jpg')] bg-cover bg-center opacity-[0.10]" />
+          <div className="absolute right-0 top-0 h-full w-1/2 bg-[url('/laprodu/fotos/rodaje-produccion-audiovisual-barcelona-laprodu-films.jpg')] bg-cover bg-center opacity-[0.10]" />
           <div className="relative">
           <SectionLabel>{t.contactLabel}</SectionLabel>
           <h2 className="balanced-text font-editorial mt-8 max-w-[11ch] text-5xl leading-[0.94] tracking-[-0.05em] md:text-7xl">{t.contactTitle}</h2>
@@ -3185,15 +3186,50 @@ function videoIdFromEmbed(url) {
   return url?.match(/embed\/([^?]+)/)?.[1];
 }
 
+function metaDescription(lang, key) {
+  return byLang(lang, {
+    es: {
+      home: "Productora audiovisual en Barcelona para documentales, televisión, vídeo corporativo, eventos, publicidad, fotografía y postproducción.",
+      servicios: "Servicios de producción audiovisual en Barcelona: documentales, televisión, vídeo corporativo, eventos, fotografía, redes, publicidad y postproducción.",
+      portfolio: "Portfolio audiovisual de LAPRODU FILMS: documentales, reportajes de televisión, vídeos corporativos, eventos, publicidad y proyectos sociales.",
+      blog: "Blog de producción audiovisual con guías sobre vídeo corporativo, documentales, fotografía, iluminación, audio, eventos, SEO y Google Ads.",
+      contacto: "Contacta con LAPRODU FILMS para producir documentales, vídeos corporativos, eventos, publicidad, fotografía o contenido audiovisual en Barcelona.",
+      faq: "Preguntas frecuentes sobre producción audiovisual, vídeo corporativo, documentales, eventos, redes sociales, fotografía y postproducción.",
+    },
+    ca: {
+      home: "Productora audiovisual a Barcelona per a documentals, televisió, vídeo corporatiu, esdeveniments, publicitat, fotografia i postproducció.",
+      servicios: "Serveis de producció audiovisual a Barcelona: documentals, televisió, vídeo corporatiu, esdeveniments, fotografia, xarxes, publicitat i postproducció.",
+      portfolio: "Portfolio audiovisual de LAPRODU FILMS: documentals, reportatges de televisió, vídeos corporatius, esdeveniments, publicitat i projectes socials.",
+      blog: "Blog de producció audiovisual amb guies sobre vídeo corporatiu, documentals, fotografia, il·luminació, àudio, esdeveniments, SEO i Google Ads.",
+      contacto: "Contacta amb LAPRODU FILMS per produir documentals, vídeos corporatius, esdeveniments, publicitat, fotografia o contingut audiovisual a Barcelona.",
+      faq: "Preguntes freqüents sobre producció audiovisual, vídeo corporatiu, documentals, esdeveniments, xarxes socials, fotografia i postproducció.",
+    },
+    en: {
+      home: "Audiovisual production company in Barcelona for documentaries, television, corporate video, events, advertising, photography and postproduction.",
+      servicios: "Audiovisual production services in Barcelona: documentaries, television, corporate video, events, photography, social media, advertising and postproduction.",
+      portfolio: "LAPRODU FILMS audiovisual portfolio: documentaries, television reports, corporate videos, events, advertising and social impact projects.",
+      blog: "Production blog with practical guides on corporate video, documentaries, photography, lighting, audio, events, SEO and Google Ads.",
+      contacto: "Contact LAPRODU FILMS to produce documentaries, corporate videos, events, advertising, photography or audiovisual content in Barcelona.",
+      faq: "Frequently asked questions about audiovisual production, corporate video, documentaries, events, social media, photography and postproduction.",
+    },
+  })[key];
+}
+
 function baseSchema(lang) {
+  const description = metaDescription(lang, "home");
   return {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": ["LocalBusiness", "ProfessionalService"],
+    "@id": BUSINESS_ID,
     name: "LAPRODU FILMS",
+    alternateName: "La Produ Films",
+    description,
     url: SITE_URL,
-    logo: absoluteUrl("/laprodu/img/LAPRODUFILMS.png"),
+    logo: absoluteUrl("/laprodu/img/laprodu-films-logo.png"),
+    image: absoluteUrl("/laprodu/portada/secundaris-serie-documental-rtve-laprodu-films.png"),
     email: "produccion@laprodufilms.com",
     telephone: "+34722387590",
+    priceRange: "€€",
     sameAs: ["https://www.youtube.com/@laprodufilms", "https://www.instagram.com/laprodu_films/"],
     address: {
       "@type": "PostalAddress",
@@ -3202,6 +3238,36 @@ function baseSchema(lang) {
       addressCountry: "ES",
     },
     areaServed: byLang(lang, { es: "España e internacional", ca: "Espanya i internacional", en: "Spain and international" }),
+    contactPoint: {
+      "@type": "ContactPoint",
+      contactType: byLang(lang, { es: "producción audiovisual", ca: "producció audiovisual", en: "audiovisual production" }),
+      email: "produccion@laprodufilms.com",
+      telephone: "+34722387590",
+      availableLanguage: ["es", "ca", "en"],
+    },
+    knowsAbout: byLang(lang, {
+      es: ["producción audiovisual", "productora audiovisual Barcelona", "vídeo corporativo", "documentales", "reportajes de televisión", "fotografía corporativa", "postproducción", "eventos", "publicidad audiovisual"],
+      ca: ["producció audiovisual", "productora audiovisual Barcelona", "vídeo corporatiu", "documentals", "reportatges de televisió", "fotografia corporativa", "postproducció", "esdeveniments", "publicitat audiovisual"],
+      en: ["audiovisual production", "audiovisual production company Barcelona", "corporate video", "documentaries", "television reports", "corporate photography", "postproduction", "events", "video advertising"],
+    }),
+    makesOffer: [
+      "Documentales",
+      "Televisión",
+      "Vídeos corporativos",
+      "Eventos",
+      "Fotografía",
+      "Redes sociales",
+      "Publicidad",
+      "Postproducción",
+    ].map((name) => ({
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Service",
+        name,
+        provider: { "@id": BUSINESS_ID },
+        areaServed: byLang(lang, { es: "Barcelona, España e internacional", ca: "Barcelona, Espanya i internacional", en: "Barcelona, Spain and international" }),
+      },
+    })),
   };
 }
 
@@ -3226,17 +3292,17 @@ function seoForRoute({ lang, section, slug, project, post, landingPage, legalPag
   const t = copy[lang];
   const baseTitle = "LAPRODU FILMS";
   let title = `${baseTitle} | ${t.heroKicker}`;
-  let description = t.heroSubtitle;
-  let image = absoluteUrl("/laprodu/portada/SECUNDARIS_PORTADA.png");
+  let description = metaDescription(lang, "home");
+  let image = absoluteUrl("/laprodu/portada/secundaris-serie-documental-rtve-laprodu-films.png");
   let canonicalPath = pathFor(lang, section, slug);
   const jsonLd = [baseSchema(lang)];
 
   if (section === "servicios") {
     title = `${t.servicesTitle} | ${baseTitle}`;
-    description = t.servicesIntro;
+    description = metaDescription(lang, "servicios");
   } else if (section === "portfolio" && !slug) {
     title = `Portfolio audiovisual | ${baseTitle}`;
-    description = t.portfolioIntro;
+    description = metaDescription(lang, "portfolio");
   } else if (section === "portfolio" && project) {
     title = `${project.title} - ${project.type} | ${baseTitle}`;
     description = `${project.note} Cliente: ${project.client}.`;
@@ -3256,7 +3322,7 @@ function seoForRoute({ lang, section, slug, project, post, landingPage, legalPag
     }
   } else if (section === "blog" && !slug) {
     title = `${t.blogTitle} | ${baseTitle}`;
-    description = t.blogIntro;
+    description = metaDescription(lang, "blog");
   } else if (section === "blog" && post) {
     title = `${post.title} | ${baseTitle}`;
     description = post.excerpt;
@@ -3268,13 +3334,13 @@ function seoForRoute({ lang, section, slug, project, post, landingPage, legalPag
       description: post.excerpt,
       image,
       author: { "@type": "Organization", name: "LAPRODU FILMS" },
-      publisher: { "@type": "Organization", name: "LAPRODU FILMS", logo: { "@type": "ImageObject", url: absoluteUrl("/laprodu/img/LAPRODUFILMS.png") } },
+      publisher: { "@type": "Organization", name: "LAPRODU FILMS", logo: { "@type": "ImageObject", url: absoluteUrl("/laprodu/img/laprodu-films-logo.png") } },
       datePublished: "2026-01-15",
       mainEntityOfPage: absoluteUrl(canonicalPath),
     });
   } else if (section === "faq") {
     title = `${t.faqTitle} | ${baseTitle}`;
-    description = byLang(lang, { es: "Preguntas frecuentes sobre producción audiovisual, vídeo corporativo, documentales, eventos, redes sociales y postproducción.", ca: "Preguntes freqüents sobre producció audiovisual, vídeo corporatiu, documentals, esdeveniments, xarxes socials i postproducció.", en: "Frequently asked questions about audiovisual production, corporate video, documentaries, events, social media and postproduction." });
+    description = metaDescription(lang, "faq");
     jsonLd.push({
       "@context": "https://schema.org",
       "@type": "FAQPage",
@@ -3286,7 +3352,7 @@ function seoForRoute({ lang, section, slug, project, post, landingPage, legalPag
     });
   } else if (section === "contacto") {
     title = `${t.contactTitle} | ${baseTitle}`;
-    description = t.contactText;
+    description = metaDescription(lang, "contacto");
   } else if (landingPage) {
     const featured = landingPage.featuredProject ? projects[lang].find((item) => item.slug === landingPage.featuredProject) : null;
     const proofVideos = (landingPage.proofVideos || (featured ? [featured.slug] : []))
@@ -3294,14 +3360,14 @@ function seoForRoute({ lang, section, slug, project, post, landingPage, legalPag
       .filter((item) => item?.video);
     title = `${landingPage.title} | LAPRODU FILMS`;
     description = landingPage.intro;
-    image = absoluteUrl(featured?.image || landingPage.heroImage || "/laprodu/portada/CASOS_EXITOS_PORTADA.png");
+    image = absoluteUrl(featured?.image || landingPage.heroImage || "/laprodu/portada/cedec-casos-exito-video-testimonial-laprodu-films.png");
     canonicalPath = pathFor(lang, section);
     jsonLd.push({
       "@context": "https://schema.org",
       "@type": "Service",
       name: landingPage.title,
       description: landingPage.intro,
-      provider: { "@type": "Organization", name: "LAPRODU FILMS", url: SITE_URL },
+      provider: { "@id": BUSINESS_ID },
       areaServed: byLang(lang, { es: "Barcelona, España e internacional", ca: "Barcelona, Espanya i internacional", en: "Barcelona, Spain and international" }),
       serviceType: landingPage.serviceType || landingPage.title,
       url: absoluteUrl(canonicalPath),
