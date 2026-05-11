@@ -2197,8 +2197,6 @@ function MethodFilmStrip({ lang }) {
 }
 
 function HomePage({ lang, t, serviceItems, projectItems, postItems, faqItems }) {
-  const years = useMemo(() => ["RTVE", "MWC", "Social", "Marca", "2026"], []);
-
   return (
     <>
       <section id="inicio" className="relative px-4 pb-20 pt-16 md:px-8 md:pb-28 md:pt-24">
@@ -2242,13 +2240,6 @@ function HomePage({ lang, t, serviceItems, projectItems, postItems, faqItems }) 
                   <ArrowIcon className="h-4 w-4" />
                 </a>
               </div>
-            </div>
-            <div className="grid grid-cols-5 border border-[#E4E0D8] bg-[#FBFAF7]/80 text-center">
-              {years.map((item) => (
-                <div key={item} className="border-r border-[#E4E0D8] p-4 last:border-r-0">
-                  <p className="font-mono text-xs uppercase tracking-[0.16em] text-[#6F6B63]">{item}</p>
-                </div>
-              ))}
             </div>
           </div>
         </div>
@@ -3037,7 +3028,7 @@ function BlogDetailPage({ post, lang, postItems }) {
             <ul className="mt-6 space-y-4 text-base leading-7 text-[#5E5A52]">
               {experience.questions.map((item) => (
                 <li key={item} className="flex gap-3">
-                  <span className="font-mono text-xs uppercase tracking-[0.14em] text-[#8C4F3B]">Q</span>
+                  <span className="mt-1 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#8C4F3B] text-[11px] font-bold leading-none text-white" aria-hidden="true">✓</span>
                   <span>{item}</span>
                 </li>
               ))}
