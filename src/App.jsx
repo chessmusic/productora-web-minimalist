@@ -1753,6 +1753,13 @@ function handleSectionNav(event, target, lang) {
 }
 
 function AppShell({ lang, setLang, t, route, activeSection, children }) {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const mobileMenuLabel = byLang(lang, { es: "Menú", ca: "Menú", en: "Menu" });
+
+  useEffect(() => {
+    setMobileMenuOpen(false);
+  }, [route.path, lang]);
+
   return (
     <main id="contenido" className="min-h-[100dvh] bg-transparent text-[#24231f] antialiased selection:bg-[#24231f] selection:text-white">
       <style>{`
@@ -1798,12 +1805,54 @@ function AppShell({ lang, setLang, t, route, activeSection, children }) {
             })}
           </div>
           <div className="flex items-center gap-3">
-            <LanguageSwitch lang={lang} setLang={setLang} route={route} />
+            <div className="hidden sm:block">
+              <LanguageSwitch lang={lang} setLang={setLang} route={route} />
+            </div>
             <a href={pathFor(lang, "contacto")} onClick={(event) => handleSectionNav(event, "contacto", lang)} className="hidden border border-[#24231f] bg-[#24231f] px-4 py-2.5 text-sm font-semibold text-white transition hover:border-[#8C4F3B] hover:bg-[#8C4F3B] active:scale-[0.98] sm:inline-flex">
               {t.contactCta}
             </a>
+            <button
+              type="button"
+              className="inline-flex items-center gap-2 border border-[#24231f] bg-[#24231f] px-3 py-2.5 text-sm font-semibold text-white transition hover:border-[#8C4F3B] hover:bg-[#8C4F3B] active:scale-[0.98] lg:hidden"
+              aria-expanded={mobileMenuOpen}
+              aria-controls="mobile-menu"
+              onClick={() => setMobileMenuOpen((open) => !open)}
+            >
+              <span>{mobileMenuLabel}</span>
+              <span className="relative h-3.5 w-4" aria-hidden="true">
+                <span className={`absolute left-0 top-0 h-0.5 w-4 bg-current transition ${mobileMenuOpen ? "translate-y-[6px] rotate-45" : ""}`} />
+                <span className={`absolute left-0 top-[6px] h-0.5 w-4 bg-current transition ${mobileMenuOpen ? "opacity-0" : ""}`} />
+                <span className={`absolute left-0 top-3 h-0.5 w-4 bg-current transition ${mobileMenuOpen ? "-translate-y-[6px] -rotate-45" : ""}`} />
+              </span>
+            </button>
           </div>
         </nav>
+        <div id="mobile-menu" className={`border-t border-[#E4E0D8] bg-[#FBFAF7] px-4 shadow-[0_18px_42px_rgba(73,59,45,0.10)] md:px-8 lg:hidden ${mobileMenuOpen ? "block" : "hidden"}`}>
+          <div className="mx-auto grid max-w-[1440px] gap-4 py-4">
+            <div className="grid grid-cols-2 gap-2 sm:hidden">
+              <LanguageSwitch lang={lang} setLang={setLang} route={route} />
+              <a href={pathFor(lang, "contacto")} onClick={(event) => handleSectionNav(event, "contacto", lang)} className="inline-flex items-center justify-center border border-[#24231f] bg-[#24231f] px-3 py-2 text-sm font-semibold text-white transition hover:border-[#8C4F3B] hover:bg-[#8C4F3B] active:scale-[0.98]">
+                {t.contactCta}
+              </a>
+            </div>
+            <div className="grid gap-1 text-base font-semibold text-[#24231f] sm:grid-cols-2">
+              {t.nav.map((item) => {
+                const target = navTargets[item];
+                const isActive = target === activeSection || (activeSection === "politica-privacidad" && target === "inicio") || (activeSection === "aviso-legal" && target === "inicio") || (activeSection === "cookies" && target === "inicio");
+                return (
+                  <a
+                    key={item}
+                    href={pathFor(lang, target)}
+                    onClick={(event) => handleSectionNav(event, target, lang)}
+                    className={`border border-[#E4E0D8] px-4 py-3 transition active:scale-[0.98] ${isActive ? "bg-[#24231f] text-white" : "bg-white hover:bg-[#EFEAE2]"}`}
+                  >
+                    {item}
+                  </a>
+                );
+              })}
+            </div>
+          </div>
+        </div>
       </header>
 
       <div key={`${lang}-${route.path}`}>
