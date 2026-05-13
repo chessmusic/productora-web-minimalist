@@ -1898,19 +1898,13 @@ function AppShell({ lang, setLang, t, route, activeSection, children }) {
         .font-mono { font-family: 'JetBrains Mono', 'SF Mono', monospace; }
         [data-reveal] { opacity: 0; transform: translate3d(0, 12px, 0); transition: opacity 600ms cubic-bezier(.16,1,.3,1), transform 600ms cubic-bezier(.16,1,.3,1); transition-delay: calc(var(--index, 0) * 80ms); }
         [data-reveal].is-visible { opacity: 1; transform: translate3d(0,0,0); }
-        @keyframes drift { 0%, 100% { transform: translate3d(-2%, 0, 0); } 50% { transform: translate3d(2%, -1%, 0); } }
         @keyframes softPulse { 0%,100% { opacity: .55; transform: translate3d(0,0,0); } 50% { opacity: 1; transform: translate3d(4px,0,0); } }
-        .ambient { animation: drift 24s ease-in-out infinite; }
         .animate-soft-pulse { animation: softPulse 1.15s ease-in-out infinite; }
         @media (prefers-reduced-motion: reduce) {
-          [data-reveal], .ambient, .animate-soft-pulse { animation: none; transition: none; opacity: 1; transform: none; }
+          [data-reveal], .animate-soft-pulse { animation: none; transition: none; opacity: 1; transform: none; }
         }
       `}</style>
       <a href="#contenido" className="skip-link">{byLang(lang, { es: "Saltar al contenido", ca: "Saltar al contingut", en: "Skip to content" })}</a>
-
-      <div className="pointer-events-none fixed inset-0 -z-0 overflow-hidden">
-        <div className="ambient absolute left-[6vw] top-[8vh] h-[34rem] w-[34rem] rounded-full bg-[#D9B59C] opacity-20 blur-3xl" />
-      </div>
 
       <header className="sticky top-0 z-20 border-b border-[#E4E0D8] bg-[#FBFAF7]/88 backdrop-blur-md">
         <nav className="mx-auto flex max-w-[1440px] items-center justify-between gap-5 px-4 py-4 md:px-8">
@@ -2351,7 +2345,6 @@ function HomePage({ lang, t, serviceItems, projectItems, postItems, faqItems }) 
 
           <div data-reveal style={{ "--index": 2 }} className="grid gap-4 lg:pt-6">
             <div className="relative border border-[#DED8CE] bg-[#FBFAF7] p-3 shadow-[0_24px_70px_rgba(73,59,45,0.10)]">
-              <div className="absolute -right-4 -top-4 hidden h-24 w-24 border border-[#D8D2C7] bg-[#EFEAE2] md:block" />
               <div className="relative flex h-9 items-center gap-2 border-b border-[#E4E0D8] px-2">
                 <span className="h-2.5 w-2.5 rounded-full bg-[#D8D2C7]" />
                 <span className="h-2.5 w-2.5 rounded-full bg-[#D8D2C7]" />
@@ -2517,12 +2510,11 @@ function PortfolioListPage({ t, lang, projectItems }) {
           <ArrowIcon className="h-4 w-4 rotate-180" />
           {byLang(lang, { es: "Volver al inicio", ca: "Tornar a l'inici", en: "Back home" })}
         </a>
-        <div data-reveal className="mb-12 flex flex-col justify-between gap-7 md:flex-row md:items-end">
+        <div data-reveal className="mb-12">
           <div>
             <SectionLabel>Portfolio</SectionLabel>
             <h1 className="font-editorial mt-5 text-6xl leading-[0.95] tracking-[-0.04em] text-[#111111] md:text-8xl">{t.portfolioTitle}</h1>
           </div>
-          <p className="max-w-xl text-base leading-7 text-[#787774]">{byLang(lang, { es: "Todos los trabajos disponibles en la nueva web.", ca: "Tots els treballs disponibles a la nova web.", en: "All work available on the new site." })}</p>
         </div>
         <PortfolioGrid projects={projectItems} lang={lang} />
       </div>
