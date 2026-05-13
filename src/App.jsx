@@ -4,6 +4,10 @@ const SITE_URL = "https://www.laprodufilms.com";
 const LANGS = ["es", "ca", "en"];
 const DEFAULT_LANG = "es";
 const BUSINESS_ID = `${SITE_URL}/#laprodu-films`;
+const GOOGLE_ADS_ID = import.meta.env.VITE_GOOGLE_ADS_ID || "";
+const GA_MEASUREMENT_ID = import.meta.env.VITE_GA_ID || "";
+const GOOGLE_TAG_ID = GOOGLE_ADS_ID || GA_MEASUREMENT_ID;
+const CONSENT_STORAGE_KEY = "laprodu-cookie-consent";
 
 const reelUrl =
   "https://player.vimeo.com/video/1035928354?h=da15957380&badge=0&autopause=0&player_id=0&app_id=58479&title=0&byline=0&portrait=0&dnt=1";
@@ -54,6 +58,12 @@ const copy = {
     formSuccessText: "Se ha abierto tu correo con la información del proyecto. Solo falta revisar y enviar el email.",
     formNewBrief: "Nuevo mensaje",
     footer: "Productora audiovisual para televisión, marcas, instituciones y cultura.",
+    cookieBannerTitle: "Cookies y medición",
+    cookieBannerText:
+      "Usamos cookies técnicas y, si aceptas, medición para Google Ads/Analytics. Nos ayuda a saber qué campañas funcionan y mejorar la web.",
+    cookieAccept: "Aceptar medición",
+    cookieReject: "Solo necesarias",
+    cookieSettings: "Gestionar cookies",
   },
   en: {
     nav: ["Home", "Services", "Work", "Method", "Blog", "FAQ", "Contact"],
@@ -100,6 +110,12 @@ const copy = {
     formSuccessText: "Your email client has opened with the project information. Just review it and send the email.",
     formNewBrief: "New message",
     footer: "Audiovisual production for television, brands, institutions and culture.",
+    cookieBannerTitle: "Cookies and measurement",
+    cookieBannerText:
+      "We use technical cookies and, if you accept, measurement for Google Ads/Analytics. This helps us understand which campaigns work and improve the website.",
+    cookieAccept: "Accept measurement",
+    cookieReject: "Necessary only",
+    cookieSettings: "Manage cookies",
   },
   ca: {
     nav: ["Inici", "Serveis", "Portfolio", "Mètode", "Blog", "FAQ", "Contacte"],
@@ -146,6 +162,12 @@ const copy = {
     formSuccessText: "S'ha obert el teu correu amb la informació del projecte. Només falta revisar i enviar l'email.",
     formNewBrief: "Nou missatge",
     footer: "Productora audiovisual per a televisió, marques, institucions i cultura.",
+    cookieBannerTitle: "Cookies i mesurament",
+    cookieBannerText:
+      "Fem servir cookies tècniques i, si acceptes, mesurament per a Google Ads/Analytics. Ens ajuda a saber quines campanyes funcionen i millorar la web.",
+    cookieAccept: "Acceptar mesurament",
+    cookieReject: "Només necessàries",
+    cookieSettings: "Gestionar cookies",
   },
 };
 
@@ -1723,6 +1745,113 @@ function trackEvent(eventName, params = {}) {
   window.gtag?.("event", eventName, params);
 }
 
+function readConsentStatus() {
+  if (typeof window === "undefined") return null;
+  return window.localStorage.getItem(CONSENT_STORAGE_KEY);
+}
+
+function updateGoogleConsent(status) {
+  if (typeof window === "undefined" || !window.gtag) return;
+  const granted = status === "accepted" ? "granted" : "denied";
+  window.gtag("consent", "update", {
+    ad_storage: granted,
+    ad_user_data: granted,
+    ad_personalization: granted,
+    analytics_storage: granted,
+  });
+}
+
+function loadGoogleTag() {
+  if (typeof window === "undefined" || !GOOGLE_TAG_ID || document.getElementById("laprodu-google-tag")) return;
+
+  window.dataLayer = window.dataLayer || [];
+  window.gtag =
+    window.gtag ||
+    function gtag() {
+      window.dataLayer.push(arguments);
+    };
+
+  window.gtag("js", new Date());
+  if (GOOGLE_ADS_ID) window.gtag("config", GOOGLE_ADS_ID);
+  if (GA_MEASUREMENT_ID && GA_MEASUREMENT_ID !== GOOGLE_ADS_ID) window.gtag("config", GA_MEASUREMENT_ID);
+
+  const script = document.createElement("script");
+  script.id = "laprodu-google-tag";
+  script.async = true;
+  script.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(GOOGLE_TAG_ID)}`;
+  document.head.appendChild(script);
+}
+
+function CookieConsentBanner({ lang, t }) {
+  const [status, setStatus] = useState(() => readConsentStatus());
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    window.dataLayer = window.dataLayer || [];
+    window.gtag =
+      window.gtag ||
+      function gtag() {
+        window.dataLayer.push(arguments);
+      };
+
+    window.gtag("consent", "default", {
+      ad_storage: "denied",
+      ad_user_data: "denied",
+      ad_personalization: "denied",
+      analytics_storage: "denied",
+      wait_for_update: 500,
+    });
+
+    if (status) {
+      updateGoogleConsent(status);
+      if (status === "accepted") loadGoogleTag();
+    }
+  }, [status]);
+
+  const setConsent = (nextStatus) => {
+    window.localStorage.setItem(CONSENT_STORAGE_KEY, nextStatus);
+    setStatus(nextStatus);
+    updateGoogleConsent(nextStatus);
+    if (nextStatus === "accepted") loadGoogleTag();
+    trackEvent(nextStatus === "accepted" ? "cookie_consent_accept" : "cookie_consent_reject", { event_category: "privacy" });
+  };
+
+  if (status) {
+    return (
+      <button
+        type="button"
+        onClick={() => setStatus(null)}
+        className="fixed bottom-4 left-4 z-40 border border-[#E4E0D8] bg-white px-3 py-2 text-xs font-semibold text-[#24231f] shadow-[0_12px_30px_rgba(73,59,45,0.12)] transition hover:border-[#24231f]"
+      >
+        {t.cookieSettings}
+      </button>
+    );
+  }
+
+  return (
+    <aside className="fixed inset-x-4 bottom-4 z-40 mx-auto max-w-3xl border border-[#E4E0D8] bg-white p-4 shadow-[0_18px_50px_rgba(73,59,45,0.18)] md:p-5" aria-label={t.cookieBannerTitle}>
+      <div className="grid gap-4 md:grid-cols-[1fr_auto] md:items-center">
+        <div>
+          <p className="text-sm font-bold text-[#24231f]">{t.cookieBannerTitle}</p>
+          <p className="mt-1 text-sm leading-6 text-[#6F6B63]">{t.cookieBannerText}</p>
+          <a href={pathFor(lang, "cookies")} className="mt-2 inline-flex text-xs font-semibold text-[#8C4F3B] underline underline-offset-4">
+            {t.cookiesLabel}
+          </a>
+        </div>
+        <div className="grid gap-2 sm:grid-cols-2 md:min-w-72">
+          <button type="button" onClick={() => setConsent("rejected")} className="border border-[#E4E0D8] bg-white px-4 py-3 text-sm font-semibold text-[#24231f] transition hover:border-[#24231f]">
+            {t.cookieReject}
+          </button>
+          <button type="button" onClick={() => setConsent("accepted")} className="border border-[#24231f] bg-[#24231f] px-4 py-3 text-sm font-semibold text-white transition hover:border-[#8C4F3B] hover:bg-[#8C4F3B]">
+            {t.cookieAccept}
+          </button>
+        </div>
+      </div>
+    </aside>
+  );
+}
+
 function LanguageSwitch({ lang, setLang, route }) {
   return (
     <div className="grid grid-cols-3 border border-[#E4E0D8] bg-[#FBFAF7] text-xs font-semibold shadow-[0_1px_0_rgba(36,35,31,0.04)]" aria-label="Language switcher">
@@ -1754,7 +1883,7 @@ function handleSectionNav(event, target, lang) {
 
 function AppShell({ lang, setLang, t, route, activeSection, children }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const mobileMenuLabel = byLang(lang, { es: "Menú", ca: "Menú", en: "Menu" });
+  const mobileMenuLabel = byLang(lang, { es: "Abrir menú", ca: "Obrir menú", en: "Open menu" });
 
   useEffect(() => {
     setMobileMenuOpen(false);
@@ -1813,12 +1942,12 @@ function AppShell({ lang, setLang, t, route, activeSection, children }) {
             </a>
             <button
               type="button"
-              className="inline-flex items-center gap-2 border border-[#24231f] bg-[#24231f] px-3 py-2.5 text-sm font-semibold text-white transition hover:border-[#8C4F3B] hover:bg-[#8C4F3B] active:scale-[0.98] lg:hidden"
+              className="inline-flex h-10 w-10 items-center justify-center border border-[#24231f] bg-[#24231f] text-white transition hover:border-[#8C4F3B] hover:bg-[#8C4F3B] active:scale-[0.98] lg:hidden"
               aria-expanded={mobileMenuOpen}
               aria-controls="mobile-menu"
+              aria-label={mobileMenuLabel}
               onClick={() => setMobileMenuOpen((open) => !open)}
             >
-              <span>{mobileMenuLabel}</span>
               <span className="relative h-3.5 w-4" aria-hidden="true">
                 <span className={`absolute left-0 top-0 h-0.5 w-4 bg-current transition ${mobileMenuOpen ? "translate-y-[6px] rotate-45" : ""}`} />
                 <span className={`absolute left-0 top-[6px] h-0.5 w-4 bg-current transition ${mobileMenuOpen ? "opacity-0" : ""}`} />
@@ -1858,6 +1987,8 @@ function AppShell({ lang, setLang, t, route, activeSection, children }) {
       <div key={`${lang}-${route.path}`}>
         {children}
       </div>
+
+      <CookieConsentBanner lang={lang} t={t} />
 
       <footer className="border-t border-[#EAEAEA] bg-white px-4 py-8 md:px-8">
         <div className="mx-auto grid max-w-[1440px] gap-6 text-sm text-[#787774] lg:grid-cols-[1fr_auto] lg:items-center">
@@ -3103,12 +3234,13 @@ const legalPages = {
     cookies: {
       label: "Legal",
       title: "Política de cookies",
-      intro: "Esta página describe el uso general de cookies y tecnologías similares en la web de LAPRODU FILMS.",
+      intro: "Esta página describe el uso de cookies y tecnologías similares en la web de LAPRODU FILMS, especialmente de cara a medición de campañas de Google Ads y analítica.",
       sections: [
         ["Qué son las cookies", "Las cookies son pequeños archivos que se almacenan en el dispositivo de la persona usuaria y permiten recordar información técnica, preferencias o datos de navegación."],
-        ["Tipos de cookies", "Esta web puede utilizar cookies técnicas necesarias para su funcionamiento y, en su caso, cookies de terceros asociadas a contenidos incrustados, como reproductores de vídeo o servicios externos."],
+        ["Cookies necesarias", "La web puede utilizar tecnologías necesarias para su funcionamiento, como recordar la preferencia de idioma o mantener decisiones básicas de privacidad. Estas no se usan para publicidad."],
+        ["Cookies de medición y publicidad", "Si aceptas la medición, podremos activar herramientas como Google Ads o Google Analytics para entender el rendimiento de campañas, medir conversiones y mejorar la web. Si no aceptas, estas cookies permanecerán desactivadas."],
         ["Cookies de terceros", "Al reproducir vídeos o acceder a plataformas externas, proveedores como YouTube, Vimeo u otros servicios pueden instalar sus propias cookies conforme a sus políticas."],
-        ["Gestión de cookies", "Puedes aceptar, bloquear o eliminar cookies desde la configuración de tu navegador. La desactivación de algunas cookies puede afectar a la reproducción de vídeos o a determinadas funciones de la web."],
+        ["Gestión de cookies", "Puedes aceptar o rechazar la medición desde el aviso de cookies de la web. También puedes bloquear o eliminar cookies desde la configuración de tu navegador. La desactivación de algunas cookies puede afectar a la reproducción de vídeos o a determinadas funciones."],
         ["Actualizaciones", "Esta política puede actualizarse si cambian las herramientas utilizadas en la web o los requisitos legales aplicables."],
       ],
     },
@@ -3142,12 +3274,13 @@ const legalPages = {
     cookies: {
       label: "Legal",
       title: "Política de cookies",
-      intro: "Aquesta pàgina descriu l'ús general de cookies i tecnologies similars a la web de LAPRODU FILMS.",
+      intro: "Aquesta pàgina descriu l'ús de cookies i tecnologies similars a la web de LAPRODU FILMS, especialment de cara al mesurament de campanyes de Google Ads i analítica.",
       sections: [
         ["Què són les cookies", "Les cookies són petits arxius que s'emmagatzemen al dispositiu de la persona usuària i permeten recordar informació tècnica, preferències o dades de navegació."],
-        ["Tipus de cookies", "Aquesta web pot utilitzar cookies tècniques necessàries per al seu funcionament i, si escau, cookies de tercers associades a continguts incrustats, com reproductors de vídeo o serveis externs."],
+        ["Cookies necessàries", "La web pot utilitzar tecnologies necessàries per al seu funcionament, com recordar la preferència d'idioma o mantenir decisions bàsiques de privacitat. Aquestes no s'utilitzen per a publicitat."],
+        ["Cookies de mesurament i publicitat", "Si acceptes el mesurament, podrem activar eines com Google Ads o Google Analytics per entendre el rendiment de campanyes, mesurar conversions i millorar la web. Si no acceptes, aquestes cookies romandran desactivades."],
         ["Cookies de tercers", "En reproduir vídeos o accedir a plataformes externes, proveïdors com YouTube, Vimeo o altres serveis poden instal·lar les seves pròpies cookies d'acord amb les seves polítiques."],
-        ["Gestió de cookies", "Pots acceptar, bloquejar o eliminar cookies des de la configuració del navegador. La desactivació d'algunes cookies pot afectar la reproducció de vídeos o determinades funcions de la web."],
+        ["Gestió de cookies", "Pots acceptar o rebutjar el mesurament des de l'avís de cookies de la web. També pots bloquejar o eliminar cookies des de la configuració del navegador. La desactivació d'algunes cookies pot afectar la reproducció de vídeos o determinades funcions."],
         ["Actualitzacions", "Aquesta política es pot actualitzar si canvien les eines utilitzades a la web o els requisits legals aplicables."],
       ],
     },
@@ -3181,12 +3314,13 @@ const legalPages = {
     cookies: {
       label: "Legal",
       title: "Cookie policy",
-      intro: "This page describes the general use of cookies and similar technologies on the LAPRODU FILMS website.",
+      intro: "This page describes the use of cookies and similar technologies on the LAPRODU FILMS website, especially for Google Ads campaign measurement and analytics.",
       sections: [
         ["What cookies are", "Cookies are small files stored on the user's device that make it possible to remember technical information, preferences or browsing data."],
-        ["Types of cookies", "This website may use technical cookies required for its operation and, where applicable, third-party cookies associated with embedded content, such as video players or external services."],
+        ["Necessary cookies", "The website may use technologies required for its operation, such as remembering language preference or basic privacy choices. These are not used for advertising."],
+        ["Measurement and advertising cookies", "If you accept measurement, we may activate tools such as Google Ads or Google Analytics to understand campaign performance, measure conversions and improve the website. If you do not accept, these cookies remain disabled."],
         ["Third-party cookies", "When playing videos or accessing external platforms, providers such as YouTube, Vimeo or other services may install their own cookies according to their policies."],
-        ["Managing cookies", "You can accept, block or delete cookies from your browser settings. Disabling some cookies may affect video playback or certain website features."],
+        ["Managing cookies", "You can accept or reject measurement from the website cookie notice. You can also block or delete cookies from your browser settings. Disabling some cookies may affect video playback or certain website features."],
         ["Updates", "This policy may be updated if the tools used on the website or applicable legal requirements change."],
       ],
     },
