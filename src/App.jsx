@@ -1892,9 +1892,9 @@ function AppShell({ lang, setLang, t, route, activeSection, children }) {
   return (
     <main id="contenido" className="min-h-[100dvh] bg-transparent text-[#24231f] antialiased selection:bg-[#24231f] selection:text-white">
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&display=swap');
-        main { font-family: 'Roboto', 'SF Pro Display', 'Helvetica Neue', sans-serif; }
-        .font-editorial { font-family: 'Roboto', 'SF Pro Display', 'Helvetica Neue', sans-serif; font-weight: 700; }
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap');
+        main { font-family: 'Outfit', 'SF Pro Display', 'Helvetica Neue', sans-serif; }
+        .font-editorial { font-family: 'Outfit', 'SF Pro Display', 'Helvetica Neue', sans-serif; font-weight: 700; }
         .font-mono { font-family: 'JetBrains Mono', 'SF Mono', monospace; }
         [data-reveal] { opacity: 0; transform: translate3d(0, 12px, 0); transition: opacity 600ms cubic-bezier(.16,1,.3,1), transform 600ms cubic-bezier(.16,1,.3,1); transition-delay: calc(var(--index, 0) * 80ms); }
         [data-reveal].is-visible { opacity: 1; transform: translate3d(0,0,0); }
