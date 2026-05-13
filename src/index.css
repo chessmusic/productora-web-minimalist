@@ -15,7 +15,7 @@ body {
   margin: 0;
   min-width: 320px;
   background:
-    radial-gradient(circle at 14% 10%, rgba(255, 255, 255, 0.78), transparent 30rem),
+    radial-gradient(circle at 14% 10%, rgba(239, 234, 226, 0.55), transparent 30rem),
     linear-gradient(180deg, #fbfaf7 0%, #f6f5f2 48%, #fbfaf7 100%);
 }
 
