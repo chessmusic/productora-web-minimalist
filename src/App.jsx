@@ -2177,7 +2177,7 @@ function AppShell({ lang, setLang, t, route, activeSection, children }) {
 
   useEffect(() => {
     setMobileMenuOpen(false);
-  }, [route.path, lang]);
+  }, [route, lang]);
 
   return (
     <main id="contenido" className="min-h-[100dvh] bg-transparent text-[#24231f] antialiased selection:bg-[#24231f] selection:text-white">
@@ -4104,7 +4104,7 @@ export default function LaProduFilmsEditorial({ initialRoute = null }) {
     });
 
     return () => window.cancelAnimationFrame(frame);
-  }, [normalizedSection, slug, lang]);
+  }, [normalizedSection, slug, lang, route]);
 
   return (
     <AppShell lang={lang} setLang={setLang} t={t} route={route} activeSection={normalizedSection}>
