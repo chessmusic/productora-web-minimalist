@@ -205,31 +205,349 @@ const services = {
 };
 
 const projectData = [
-  { slug: "secundaris", title: "SECUNDARIS", type: "Serie Documental TV | Teaser", client: "RTVE La 2 Catalunya", year: "2025", category: "Televisión", image: "/laprodu/portada/secundaris-serie-documental-rtve-laprodu-films.png", video: "https://www.youtube.com/embed/0lL1hoBhZ4o", span: "lg:col-span-7", note: "Serie documental de retratos y oficios con mirada humana." },
-  { slug: "inspira", title: "INSPIRA", type: "Serie Documental TV | Teaser", client: "RTVE La 2 Catalunya", year: "2025", category: "Televisión", image: "/laprodu/portada/inspira-serie-documental-rtve-laprodu-films.png", video: "https://www.youtube.com/embed/u9bkYrMcHGg", span: "lg:col-span-5", note: "Conversaciones culturales con un tratamiento visual sobrio." },
-  { slug: "la-nit-de-reis", title: "LA NIT DE REIS", type: "Documental TV", client: "RTVE La 2 Catalunya", year: "2025", category: "Documental", image: "/laprodu/portada/la-nit-de-reis-documental-tv-laprodu-films.png", video: "https://www.youtube.com/embed/VIOS9JBA2-k", span: "lg:col-span-4", note: "Documental televisivo para emisión cultural." },
-  { slug: "martina-matencio", title: "MARTINA MATENCIO", type: "Reportaje TV | Secundaris", client: "RTVE La 2 Catalunya", year: "2025", category: "Televisión", image: "/laprodu/portada/martina-matencio-reportaje-tv-secundaris-laprodu-films.png", video: "https://www.youtube.com/embed/5tWH5UoYkfk", span: "lg:col-span-4", note: "Reportaje de la serie Secundaris." },
-  { slug: "guillermina-baeza", title: "GUILLERMINA BAEZA", type: "Reportaje TV | Secundaris", client: "RTVE La 2 Catalunya", year: "2025", category: "Televisión", image: "/laprodu/portada/guillermina-baeza-reportaje-tv-laprodu-films.png", video: "https://www.youtube.com/embed/jx8hI4ZWnUI", span: "lg:col-span-4", note: "Retrato televisivo de autora y trayectoria." },
-  { slug: "bofill", title: "BOFILL", type: "Reportaje TV | Inspira", client: "RTVE La 2 Catalunya", year: "2025", category: "Televisión", image: "/laprodu/portada/bofill-reportaje-tv-inspira-laprodu-films.png", video: "https://www.youtube.com/embed/wIECrDeaDxo", span: "lg:col-span-6", note: "Arquitectura, memoria e imagen para Inspira." },
-  { slug: "chroma", title: "CHROMA", type: "Corporativo", client: "Chroma", year: "2024", category: "Corporativo", image: "/laprodu/portada/chroma-video-corporativo-laprodu-films.png", video: "https://www.youtube.com/embed/Hy_YV8yKmjo?si=axx30qHu2a7in8h-", span: "lg:col-span-6", note: "Vídeo corporativo de identidad y servicio." },
-  { slug: "mwc2025", title: "MWC2025", type: "Reportaje | Netherlands Pavilion", client: "Netherlands Pavilion", year: "2025", category: "Eventos", image: "/laprodu/portada/mwc-2025-netherlands-pavilion-laprodu-films.png", video: "", span: "lg:col-span-4", note: "Cobertura internacional para comunicación de evento." },
-  { slug: "cal-blay", title: "CAL BLAY", type: "Vídeo Promocional", client: "Cal Blay", year: "2024", category: "Corporativo", image: "/laprodu/portada/cal-blay-video-promocional-laprodu-films.png", video: "https://www.youtube.com/embed/vkMuAq0XouI", span: "lg:col-span-4", note: "Pieza promocional para marca gastronómica." },
-  { slug: "sonisord", title: "SONISORD", type: "Spot | Publicidad", client: "Sonisord", year: "2024", category: "Publicidad", image: "/laprodu/portada/sonisord-spot-publicitario-laprodu-films.png", video: "https://www.youtube.com/embed/EQ80BqQ0dZc", span: "lg:col-span-4", note: "Spot de campaña con tono directo." },
-  { slug: "optica-2000", title: "ÓPTICA 2000", type: "Vídeo Promocional", client: "Óptica 2000", year: "2024", category: "Publicidad", image: "/laprodu/portada/optica-2000-video-promocional-laprodu-films.png", video: "https://www.youtube.com/embed/bXEbq0dtDD4", span: "lg:col-span-4", note: "Vídeo promocional de producto y marca." },
-  { slug: "cedec-casos-exito", title: "CEDEC", type: "Casos de Éxito | Teaser", client: "Consultora empresarial", year: "2024", category: "Corporativo", image: "/laprodu/portada/cedec-casos-exito-video-testimonial-laprodu-films.png", video: "https://www.youtube.com/embed/tDyq1wZD9Co", span: "lg:col-span-4", note: "Pieza testimonial para consultora empresarial." },
-  { slug: "norai-corporativo", title: "Proyecto NORAI", type: "Corporativo | Social", client: "Impulsem - Museu Marítim Barcelona", year: "2024", category: "Social", image: "/laprodu/portada/proyecto-norai-video-corporativo-social-laprodu-films.png", video: "https://www.youtube.com/embed/2V3AwRKewN8", span: "lg:col-span-4", note: "Proyecto social narrado desde cocina, inclusión y territorio." },
-  { slug: "norai-director-mmb", title: "NORAI | Director MMB", type: "Entrevista | Social", client: "Impulsem - Museu Marítim Barcelona", year: "2024", category: "Social", image: "/laprodu/portada/norai-director-museu-maritim-entrevista-laprodu-films.png", video: "https://www.youtube.com/embed/pF6HhLZYS9w?si=Zr5xV2vpA5Iauonc", span: "lg:col-span-4", note: "Entrevista para ampliar el contexto del proyecto NORAI." },
-  { slug: "norai-chef", title: "NORAI | Chef", type: "Entrevista | Social", client: "Impulsem - Museu Marítim Barcelona", year: "2024", category: "Social", image: "/laprodu/portada/norai-chef-entrevista-social-laprodu-films.png", video: "https://www.youtube.com/embed/Z9WCzwnwZsA", span: "lg:col-span-4", note: "Testimonio de cocina y oficio dentro del proyecto social." },
-  { slug: "mwc2024", title: "MWC2024", type: "Reportaje | Netherlands Pavilion", client: "Netherlands Pavilion", year: "2024", category: "Eventos", image: "/laprodu/portada/mwc-2024-netherlands-pavilion-laprodu-films.png", video: "https://www.youtube.com/embed/7GU3-GUretk?si=ud687kJSojSjR3ri", span: "lg:col-span-4", note: "Cobertura MWC para Netherlands Pavilion." },
-  { slug: "mwc2023", title: "MWC2023", type: "Promo | MWC2023", client: "Netherlands Pavilion", year: "2023", category: "Eventos", image: "/laprodu/portada/mwc-2023-netherlands-pavilion-laprodu-films.png", video: "https://www.youtube.com/embed/6nQUFAsEhVk?si=W2Po3MbQWqnFM2i1", span: "lg:col-span-4", note: "Promo de evento internacional." },
-  { slug: "cedec-consultora", title: "CEDEC", type: "Vídeo Consultora", client: "CEDEC", year: "2024", category: "Corporativo", image: "/laprodu/portada/cedec-video-consultora-laprodu-films.png", video: "https://www.youtube.com/embed/gGxyG1vaWRU?si=TWmpzClN87ayDP6z", span: "lg:col-span-4", note: "Vídeo corporativo para consultora." },
-  { slug: "valldaura-labs", title: "VALLDAURA LABS", type: "Reportaje TV | Valldaura IAAC", client: "RTVE La 2 Catalunya", year: "2024", category: "Televisión", image: "/laprodu/portada/valldaura-labs-reportaje-tv-laprodu-films.png", video: "https://www.youtube.com/embed/WVTuF6wYGAU?si=-0xdn-0VPlGRanBh", span: "lg:col-span-6", note: "Reportaje sobre innovación y territorio." },
-  { slug: "rcr-arquitectes", title: "RCR ARQUITECTES", type: "Reportaje TV", client: "RTVE La 2 Catalunya", year: "2024", category: "Televisión", image: "/laprodu/portada/rcr-arquitectes-reportaje-tv-laprodu-films.png", video: "https://www.youtube.com/embed/HNk1MjTHhSM?si=TDSP7qI8J-ozVJa1", span: "lg:col-span-6", note: "Reportaje televisivo de arquitectura y proceso." },
-  { slug: "secundaris-capitulo-6", title: "SECUNDARIS | Capítulo 6", type: "Serie Documental TV", client: "RTVE La 2 Catalunya", year: "2025", category: "Televisión", image: "/laprodu/portada/secundaris-capitulo-6-rosales-laprodu-films.png", video: "", span: "lg:col-span-4", note: "Capítulo de la serie documental SECUNDARIS." },
+  {
+    slug: "secundaris",
+    title: "SECUNDARIS",
+    type: "Serie Documental TV | Teaser",
+    client: "RTVE La 2 Catalunya",
+    year: "2025",
+    category: "Televisión",
+    image: "/laprodu/portada/secundaris-serie-documental-rtve-laprodu-films.png",
+    video: "https://www.youtube.com/embed/0lL1hoBhZ4o",
+    span: "lg:col-span-7",
+    note: {
+      es: "Serie documental de retratos y oficios con mirada humana producida para RTVE La 2 Catalunya. La producción sigue la vida y el día a día de profesionales apasionados que trabajan en roles secundarios pero esenciales en el mundo de la cultura, el arte y el espectáculo.",
+      ca: "Sèrie documental de retrats i oficis amb mirada humana produïda per a RTVE La 2 Catalunya. La producció segueix la vida i el dia a dia de professionals apassionats que treballen en rols secundaris però essencials en el món de la cultura, l'art i l'espectacle.",
+      en: "TV documentary series of portraits and trades with a human perspective produced for RTVE La 2 Catalunya. The production follows the daily lives of passionate professionals working in secondary but essential roles in the world of culture, art, and entertainment."
+    }
+  },
+  {
+    slug: "inspira",
+    title: "INSPIRA",
+    type: "Serie Documental TV | Teaser",
+    client: "RTVE La 2 Catalunya",
+    year: "2025",
+    category: "Televisión",
+    image: "/laprodu/portada/inspira-serie-documental-rtve-laprodu-films.png",
+    video: "https://www.youtube.com/embed/u9bkYrMcHGg",
+    span: "lg:col-span-5",
+    note: {
+      es: "Teaser de la serie documental 'Inspira' para RTVE La 2 Catalunya, producida por Laprodu Films. Una producción con un tratamiento visual sobrio y cuidado que explora el paisajismo urbano, la arquitectura contemporánea, el diseño y la sostenibilidad, mostrando cómo las intervenciones de profesionales y creadores influyen en nuestro entorno y en nuestra relación con el medio ambiente.",
+      ca: "Teaser de la sèrie documental 'Inspira' per a RTVE La 2 Catalunya, produïda per Laprodu Films. Una producció amb un tractament visual sobri i cuidat que explora el paisatgisme urbà, l'arquitectura contemporània, el disseny i la sostenibilitat, mostrant com les intervencions de professionals i creadors influeixen en el nostre entorn i en la nostra relació amb el medi ambient.",
+      en: "Teaser for the TV documentary series 'Inspira' on RTVE La 2 Catalunya, produced by Laprodu Films. Featuring a sober and refined visual style, the production explores urban landscaping, contemporary architecture, design, and sustainability, demonstrating how the interventions of designers and creators shape our environment and our relationship with nature."
+    }
+  },
+  {
+    slug: "la-nit-de-reis",
+    title: "LA NIT DE REIS",
+    type: "Documental TV",
+    client: "RTVE La 2 Catalunya",
+    year: "2025",
+    category: "Documental",
+    image: "/laprodu/portada/la-nit-de-reis-documental-tv-laprodu-films.png",
+    video: "https://www.youtube.com/embed/VIOS9JBA2-k",
+    span: "lg:col-span-4",
+    note: {
+      es: "Documental de televisión emitido en RTVE La 2 Catalunya. La pieza ofrece un retrato íntimo y cinematográfico del proceso de preparación, la magia y los detalles detrás de la tradicional noche de Reyes, capturando la ilusión colectiva y el trabajo organizativo desde una perspectiva artística y humana.",
+      ca: "Documental de televisió emès a RTVE La 2 Catalunya. La peça ofereix un retrat íntim i cinematogràfic del procés de preparació, la màgia i els detalls darrere de la tradicional nit de Reis, capturant la il·lusió col·lectiva i el treball organitzatiu des d'una perspectiva artística i humana.",
+      en: "TV documentary broadcast on RTVE La 2 Catalunya. The piece offers an intimate and cinematic portrait of the preparation, magic, and behind-the-scenes details of the traditional Three Kings night, capturing collective hope and organizational work from an artistic and human perspective."
+    }
+  },
+  {
+    slug: "martina-matencio",
+    title: "MARTINA MATENCIO",
+    type: "Reportaje TV | Secundaris",
+    client: "RTVE La 2 Catalunya",
+    year: "2025",
+    category: "Televisión",
+    image: "/laprodu/portada/martina-matencio-reportaje-tv-secundaris-laprodu-films.png",
+    video: "https://www.youtube.com/embed/5tWH5UoYkfk",
+    span: "lg:col-span-4",
+    note: {
+      es: "Retrato íntimo y profesional de la fotógrafa y artista visual catalana Martina Matencio (conocida en redes como @lalovenenoso) para la serie documental 'Secundaris' de RTVE La 2 Catalunya. La pieza muestra su proceso creativo cotidiano, su mirada artística melancólica centrada en la luz natural y el cuerpo femenino, y cómo construye su reconocible identidad visual detrás de la cámara.",
+      ca: "Retrat íntim i professional de la fotògrafa i artista visual catalana Martina Matencio (coneguda a xarxes com @lalovenenoso) per a la sèrie documental 'Secundaris' de RTVE La 2 Catalunya. La peça mostra el seu procés creatiu quotidià, la seva mirada artística melancòlica centrada en la llum natural i el cos femení, i com construeix la seva reconeixible identitat visual darrere de la càmera.",
+      en: "An intimate and professional portrait of the Catalan photographer and visual artist Martina Matencio (known online as @lalovenenoso) for the TV documentary series 'Secundaris' on RTVE La 2 Catalunya. The piece showcases her daily creative process, her nostalgic artistic vision focused on natural light and the female body, and how she builds her recognizable visual identity behind the lens."
+    }
+  },
+  {
+    slug: "guillermina-baeza",
+    title: "GUILLERMINA BAEZA",
+    type: "Reportaje TV | Secundaris",
+    client: "RTVE La 2 Catalunya",
+    year: "2025",
+    category: "Televisión",
+    image: "/laprodu/portada/guillermina-baeza-reportaje-tv-laprodu-films.png",
+    video: "https://www.youtube.com/embed/jx8hI4ZWnUI",
+    span: "lg:col-span-4",
+    note: {
+      es: "Retrato televisivo de la prestigiosa diseñadora de moda Guillermina Baeza para la serie documental 'Secundaris' de RTVE La 2 Catalunya. Un recorrido visual por su taller, su trayectoria profesional en la moda de baño y su proceso creativo, destacando la dedicación, la elegancia y la mirada artesanal que definen su marca de prestigio.",
+      ca: "Retrat televisiu de la prestigiosa dissenyadora de moda Guillermina Baeza per a la sèrie documental 'Secundaris' de RTVE La 2 Catalunya. Un recorregut visual pel seu taller, la seva trajectòria professional en la moda de bany i el seu procés creatiu, destacant la dedicació, l'elegància i la mirada artesanal que defineixen la seva marca de prestigi.",
+      en: "TV documentary portrait of the prestigious fashion designer Guillermina Baeza for the series 'Secundaris' on RTVE La 2 Catalunya. A visual journey through her workshop, her professional career in swimwear, and her creative process, highlighting the dedication, elegance, and craftsmanship that define her prestigious brand."
+    }
+  },
+  {
+    slug: "bofill",
+    title: "BOFILL",
+    type: "Reportaje TV | Inspira",
+    client: "RTVE La 2 Catalunya",
+    year: "2025",
+    category: "Televisión",
+    image: "/laprodu/portada/bofill-reportaje-tv-inspira-laprodu-films.png",
+    video: "https://www.youtube.com/embed/wIECrDeaDxo",
+    span: "lg:col-span-6",
+    note: {
+      es: "Reportaje dedicado al legado arquitectónico y creativo de Ricardo Bofill para la serie documental 'Inspira' de RTVE La 2 Catalunya. A través de un tratamiento visual cuidado y cinematográfico, la pieza explora sus obras emblemáticas, la memoria del espacio y su concepción de la arquitectura como art integrado en el paisaje y la comunidad.",
+      ca: "Reportatge dedicat al llegat arquitectònic i creatiu de Ricardo Bofill per a la sèrie documental 'Inspira' de RTVE La 2 Catalunya. A través d'un tractament visual cuidat i cinematogràfic, la peça explora les seves obres emblemàtiques, la memòria de l'espai i la seva concepció de l'arquitectura com a art integrat en el paisatge i la comunitat.",
+      en: "Report dedicated to the architectural and creative legacy of Ricardo Bofill for the TV documentary series 'Inspira' on RTVE La 2 Catalunya. Through carefully crafted visual and cinematic treatment, the piece explores his iconic works, spatial memory, and his concept of architecture as an art integrated into landscape and community."
+    }
+  },
+  {
+    slug: "chroma",
+    title: "CHROMA",
+    type: "Corporativo",
+    client: "Chroma",
+    year: "2024",
+    category: "Corporativo",
+    image: "/laprodu/portada/chroma-video-corporativo-laprodu-films.png",
+    video: "https://www.youtube.com/embed/Hy_YV8yKmjo?si=axx30qHu2a7in8h-",
+    span: "lg:col-span-6",
+    note: {
+      es: "Vídeo corporativo de identidad y posicionamiento de servicios para Chroma. Una producción audiovisual ágil y elegante diseñada para presentar la metodología, los valores diferenciales de la compañía y generar confianza en el sector B2B mediante una narrativa empresarial clara y un acabado visual premium.",
+      ca: "Vídeo corporatiu d'identitat i posicionament de serveis per a Chroma. Una producció audiovisual àgil i elegant dissenyada per presentar la metodologia, els valors diferencials de la companyia i generar confiança en el sector B2B mitjançant una narrativa empresarial clara i un acabat visual premium.",
+      en: "Corporate identity and service positioning video for Chroma. An agile and elegant audiovisual production designed to present the company's methodology, differential values, and build trust in the B2B sector through a clear business narrative and a premium visual finish."
+    }
+  },
+  {
+    slug: "mwc2025",
+    title: "MWC2025",
+    type: "Reportaje | Netherlands Pavilion",
+    client: "Netherlands Pavilion",
+    year: "2025",
+    category: "Eventos",
+    image: "/laprodu/portada/mwc-2025-netherlands-pavilion-laprodu-films.png",
+    video: "",
+    span: "lg:col-span-4",
+    note: {
+      es: "Reportaje de cobertura internacional y comunicación estratégica para el Netherlands Pavilion durante el Mobile World Congress 2025 en Barcelona. Producción orientada a captar la actividad, las innovaciones tecnológicas y las entrevistas de las empresas del pabellón holandés para su difusión institucional y en redes sociales.",
+      ca: "Reportatge de cobertura internacional i comunicació estratègica per al Netherlands Pavilion durant el Mobile World Congress 2025 a Barcelona. Producció orientada a captar l'activitat, les innovacions tecnològiques i les entrevistes de les empreses del pavelló holandès per a la seva difusió institucional i a xarxes socials.",
+      en: "International coverage report and strategic communication for the Netherlands Pavilion during the Mobile World Congress 2025 in Barcelona. A production oriented to capture the activity, technological innovations, and interviews of Dutch companies for institutional and social media distribution."
+    }
+  },
+  {
+    slug: "cal-blay",
+    title: "CAL BLAY",
+    type: "Vídeo Promocional",
+    client: "Cal Blay",
+    year: "2024",
+    category: "Corporativo",
+    image: "/laprodu/portada/cal-blay-video-promocional-laprodu-films.png",
+    video: "https://www.youtube.com/embed/vkMuAq0XouI",
+    span: "lg:col-span-4",
+    note: {
+      es: "Pieza promocional de alta calidad visual para la prestigiosa marca gastronómica Cal Blay. Un vídeo diseñado para transmitir la experiencia culinaria, la elegancia de sus eventos, el cuidado del producto y la pasión por el servicio, conectando emocionalmente con futuros clientes y parejas.",
+      ca: "Peça promocional d'alta qualitat visual per a la prestigiosa marca gastronòmica Cal Blay. Un vídeo dissenyat per transmetre l'experiència culinària, l'elegància dels seus esdeveniments, la cura del producte i la passió pel servei, connectant emocionalment amb futurs clients i parelles.",
+      en: "High-visual-quality promotional video for the prestigious gastronomy brand Cal Blay. A video designed to convey the culinary experience, the elegance of their events, the care of the product, and the passion for service, emotionally connecting with future clients and couples."
+    }
+  },
+  {
+    slug: "sonisord",
+    title: "SONISORD",
+    type: "Spot | Publicidad",
+    client: "Sonisord",
+    year: "2024",
+    category: "Publicidad",
+    image: "/laprodu/portada/sonisord-spot-publicitario-laprodu-films.png",
+    video: "https://www.youtube.com/embed/EQ80BqQ0dZc",
+    span: "lg:col-span-4",
+    note: {
+      es: "Spot de campaña publicitaria con tono directo y cercano para Sonisord. Una producción pensada para capturar la atención del espectador desde el primer segundo, comunicando los beneficios de sus soluciones auditivas y fomentando la confianza a través de una realización polida y un mensaje comercial claro.",
+      ca: "Spot de campanya publicitària amb to directe i proper per a Sonisord. Una producció pensada per capturar l'atenció de l'espectador des del primer segon, comunicant els beneficis de les seves solucions auditives i fomentant la confiança a través d'una realització polida i un missatge comercial clar.",
+      en: "Advertising campaign spot with a direct and warm tone for Sonisord. A production designed to capture the viewer's attention from the very first second, communicating the benefits of their hearing solutions and fostering trust through polished direction and a clear commercial message."
+    }
+  },
+  {
+    slug: "optica-2000",
+    title: "ÓPTICA 2000",
+    type: "Vídeo Promocional",
+    client: "Óptica 2000",
+    year: "2024",
+    category: "Publicidad",
+    image: "/laprodu/portada/optica-2000-video-promocional-laprodu-films.png",
+    video: "https://www.youtube.com/embed/bXEbq0dtDD4",
+    span: "lg:col-span-4",
+    note: {
+      es: "Vídeo promocional de producto y marca para Óptica 2000. Realización centrada en destacar la calidad de las monturas, el rigor profesional de los servicios ópticos y la experiencia de cliente, utilizando una estética visual limpia, moderna y alineada con la identidad corporativa de la marca.",
+      ca: "Vídeo promocional de producte i marca per a Óptica 2000. Realització centrada en destacar la qualitat de les muntures, el rigor professional dels serveis òptics i l'experiència de client, fent servir una estètica visual neta, moderna i alineada amb la identitat corporativa de la marca.",
+      en: "Promotional product and brand video for Óptica 2000. Production focused on highlighting the quality of the frames, the professional rigor of optical services, and the customer experience, using a clean, modern aesthetic aligned with the brand's corporate identity."
+    }
+  },
+  {
+    slug: "cedec-casos-exito",
+    title: "CEDEC",
+    type: "Casos de Éxito | Teaser",
+    client: "Consultora empresarial",
+    year: "2024",
+    category: "Corporativo",
+    image: "/laprodu/portada/cedec-casos-exito-video-testimonial-laprodu-films.png",
+    video: "https://www.youtube.com/embed/tDyq1wZD9Co",
+    span: "lg:col-span-4",
+    note: {
+      es: "Vídeo de caso de éxito en formato teaser testimonial para la consultora empresarial CEDEC. Un caso real donde el cliente explica los resultados obtenidos, estructurado narrativamente para superar objeciones, generar credibilidad comercial inmediata y servir como herramienta de captación B2B de alto impacto.",
+      ca: "Vídeo de cas d'èxit en format teaser testimonial per a la consultora empresarial CEDEC. Un cas real on el client explica els resultats obtinguts, estructurat narrativament per superar objeccions, generar credibilitat comercial immediata i servir com a eina de captació B2B d'alt impacte.",
+      en: "Success story video in a testimonial teaser format for the business consultancy CEDEC. A real case where the client explains the results obtained, structured narratively to overcome objections, build immediate commercial credibility, and serve as a high-impact B2B acquisition tool."
+    }
+  },
+  {
+    slug: "norai-corporativo",
+    title: "Proyecto NORAI",
+    type: "Corporativo | Social",
+    client: "Impulsem - Museu Marítim Barcelona",
+    year: "2024",
+    category: "Social",
+    image: "/laprodu/portada/proyecto-norai-video-corporativo-social-laprodu-films.png",
+    video: "https://www.youtube.com/embed/2V3AwRKewN8",
+    span: "lg:col-span-4",
+    note: {
+      es: "Vídeo corporativo con enfoque social sobre el Proyecto NORAI, una iniciativa de inserción sociolaboral en el Raval impulsada por Impulsem y el Museu Marítim de Barcelona. La pieza narra cómo la gastronomía y la cocina se convierten en motores de inclusión, comunidad y futuro para jóvenes en situación de vulnerabilidad.",
+      ca: "Vídeo corporatiu amb enfocament social sobre el Projecte NORAI, una iniciativa d'inserció sociolaboral al Raval impulsada per Impulsem i el Museu Marítim de Barcelona. La peça narra com la gastronomia i la cuina es converteixen en motors d'inclusió, comunitat i futur per a joves en situació de vulnerabilitat.",
+      en: "Corporate video with a social impact focus on the NORAI Project, a socio-labor integration initiative in Raval promoted by Impulsem and the Maritime Museum of Barcelona. The piece narrates how gastronomy and cooking become drivers of inclusion, community, and future opportunities for vulnerable youth."
+    }
+  },
+  {
+    slug: "norai-director-mmb",
+    title: "NORAI | Director MMB",
+    type: "Entrevista | Social",
+    client: "Impulsem - Museu Marítim Barcelona",
+    year: "2024",
+    category: "Social",
+    image: "/laprodu/portada/norai-director-museu-maritim-entrevista-laprodu-films.png",
+    video: "https://www.youtube.com/embed/pF6HhLZYS9w?si=Zr5xV2vpA5Iauonc",
+    span: "lg:col-span-4",
+    note: {
+      es: "Entrevista con el director del Museu Marítim de Barcelona para ampliar el contexto institucional del proyecto social NORAI. Una conversación estructurada para explicar el rol integrador del museo en el barrio del Raval, la importancia de las sinergias entre entidades y el impacto real del proyecto en el territorio.",
+      ca: "Entrevista amb el director del Museu Marítim de Barcelona per ampliar el context institucional del projecte social NORAI. Una conversa estructurada per explicar el rol integrador del museu al barri del Raval, la importància de les sinergies entre entitats i l'impacte real del projecte en el territori.",
+      en: "Interview with the director of the Maritime Museum of Barcelona to expand on the institutional context of the NORAI social project. A structured conversation explaining the museum's integration role in the Raval neighborhood, the importance of synergies between entities, and the project's real impact on the local area."
+    }
+  },
+  {
+    slug: "norai-chef",
+    title: "NORAI | Chef",
+    type: "Entrevista | Social",
+    client: "Impulsem - Museu Marítim Barcelona",
+    year: "2024",
+    category: "Social",
+    image: "/laprodu/portada/norai-chef-entrevista-social-laprodu-films.png",
+    video: "https://www.youtube.com/embed/Z9WCzwnwZsA",
+    span: "lg:col-span-4",
+    note: {
+      es: "Testimonio y entrevista del chef formador del Proyecto NORAI, capturando el día a día en las cocinas del Museu Marítim. El vídeo destaca la transmisión del oficio de cocinero, el esfuerzo diario de los estudiantes y el valor de la cocina como lenguaje universal para la superación personal y la inserción laboral.",
+      ca: "Testimoni i entrevista del xef formador del Projecte NORAI, capturant el dia a dia a les cuines del Museu Marítim. El vídeo destaca la transmissió de l'ofici de cuiner, l'esforç diari dels estudiants i el valor de la cuina com a llenguatge universal per a la superació personal i la inserció laboral.",
+      en: "Testimonial and interview with the training chef of the NORAI Project, capturing the daily life in the Maritime Museum kitchens. The video highlights the transmission of the culinary trade, the students' daily effort, and the value of cooking as a universal language for personal growth and job integration."
+    }
+  },
+  {
+    slug: "mwc2024",
+    title: "MWC2024",
+    type: "Reportaje | Netherlands Pavilion",
+    client: "Netherlands Pavilion",
+    year: "2024",
+    category: "Eventos",
+    image: "/laprodu/portada/mwc-2024-netherlands-pavilion-laprodu-films.png",
+    video: "https://www.youtube.com/embed/7GU3-GUretk?si=ud687kJSojSjR3ri",
+    span: "lg:col-span-4",
+    note: {
+      es: "Reportaje de cobertura oficial y entrevistas para el pabellón de los Países Bajos (Netherlands Pavilion) durante el Mobile World Congress 2024 en Barcelona. Una producción ágil que documenta las visitas institucionales, el networking empresarial y los proyectos clave de innovación tecnológica de las empresas holandesas.",
+      ca: "Reportatge de cobertura oficial i entrevistes per al pavelló dels Països Baixos (Netherlands Pavilion) durant el Mobile World Congress 2024 a Barcelona. Una producció àgil que documenta les visites institucionals, el networking empresarial i els projectes clau d'innovació tecnològica de les empreses holandeses.",
+      en: "Official coverage report and interviews for the Netherlands Pavilion during the Mobile World Congress 2024 in Barcelona. An agile production documenting institutional visits, corporate networking, and key technological innovation projects of Dutch companies."
+    }
+  },
+  {
+    slug: "mwc2023",
+    title: "MWC2023",
+    type: "Promo | MWC2023",
+    client: "Netherlands Pavilion",
+    year: "2023",
+    category: "Eventos",
+    image: "/laprodu/portada/mwc-2023-netherlands-pavilion-laprodu-films.png",
+    video: "https://www.youtube.com/embed/6nQUFAsEhVk?si=W2Po3MbQWqnFM2i1",
+    span: "lg:col-span-4",
+    note: {
+      es: "Vídeo promocional y dinámico de evento para el Netherlands Pavilion en el Mobile World Congress 2023. Realización enérgica con enfoque en el ambiente de innovación, testimonios rápidos y momentos destacados del pabellón, diseñado para la promoción de futuras ediciones y la comunicación institucional.",
+      ca: "Vídeo promocional i dinàmic d'esdeveniment per al Netherlands Pavilion al Mobile World Congress 2023. Realització enèrgica amb enfocament en l'ambient d'innovació, testimonis ràpids i moments destacats del pavelló, dissenyat per a la promoció de futures edicions i la comunicació institucional.",
+      en: "Promotional and dynamic event video for the Netherlands Pavilion at the Mobile World Congress 2023. An energetic production focused on the innovative atmosphere, quick testimonials, and highlight moments of the pavilion, designed for future edition promotion and corporate communication."
+    }
+  },
+  {
+    slug: "cedec-consultora",
+    title: "CEDEC",
+    type: "Vídeo Consultora",
+    client: "CEDEC",
+    year: "2024",
+    category: "Corporativo",
+    image: "/laprodu/portada/cedec-video-consultora-laprodu-films.png",
+    video: "https://www.youtube.com/embed/gGxyG1vaWRU?si=TWmpzClN87ayDP6z",
+    span: "lg:col-span-4",
+    note: {
+      es: "Vídeo corporativo institucional para la consultora estratégica CEDEC. Una producción de corte sobrio y profesional que detalla su trayectoria, metodología de asesoramiento empresarial y compromiso con el crecimiento y la sostenibilidad de las pymes familiares en toda España.",
+      ca: "Vídeo corporatiu institucional per a la consultora estratègica CEDEC. Una producció de tall sobri i professional que detalla la seva trajectòria, metodologia d'assessorament empresarial i compromís amb el creixement i la sostenibilitat de les pimes familiars a tota Espanya.",
+      en: "Institutional corporate video for the strategic consulting firm CEDEC. A sober and professional production detailing their track record, business advisory methodology, and commitment to the growth and sustainability of family-owned SMEs across Spain."
+    }
+  },
+  {
+    slug: "valldaura-labs",
+    title: "VALLDAURA LABS",
+    type: "Reportaje TV | Valldaura IAAC",
+    client: "RTVE La 2 Catalunya",
+    year: "2024",
+    category: "Televisión",
+    image: "/laprodu/portada/valldaura-labs-reportaje-tv-laprodu-films.png",
+    video: "https://www.youtube.com/embed/WVTuF6wYGAU?si=-0xdn-0VPlGRanBh",
+    span: "lg:col-span-6",
+    note: {
+      es: "Reportaje de televisión enfocado en Valldaura Labs (IAAC) para RTVE La 2 Catalunya. La pieza muestra la investigación en bioarquitectura, robótica aplicada y tecnologías de fabricación ecológica, explorando un modelo pionero de autosuficiencia y de interacción armónica entre naturaleza y tecnología.",
+      ca: "Reportatge de televisió enfocat en Valldaura Labs (IAAC) per a RTVE La 2 Catalunya. La peça mostra la recerca en bioarquitectura, robòtica aplicada i tecnologies de fabricació ecològica, explorant un model pioner d'autosuficiència i d'interacció harmònica entre natura i tecnologia.",
+      en: "TV report focused on Valldaura Labs (IAAC) for RTVE La 2 Catalunya. The piece showcases research in bioarchitecture, applied robotics, and ecological fabrication technologies, exploring a pioneering model of self-sufficiency and harmonic interaction between nature and technology."
+    }
+  },
+  {
+    slug: "rcr-arquitectes",
+    title: "RCR ARQUITECTES",
+    type: "Reportaje TV",
+    client: "RTVE La 2 Catalunya",
+    year: "2024",
+    category: "Televisión",
+    image: "/laprodu/portada/rcr-arquitectes-reportaje-tv-laprodu-films.png",
+    video: "https://www.youtube.com/embed/HNk1MjTHhSM?si=TDSP7qI8J-ozVJa1",
+    span: "lg:col-span-6",
+    note: {
+      es: "Reportaje de televisión dedicado al estudio RCR Arquitectes (ganadores del Premio Pritzker) para RTVE La 2 Catalunya. Un recorrido poético y visual por sus obras e instalaciones, explorando su proceso de diseño donde la arquitectura dialoga intensamente con el paisaje y la materia.",
+      ca: "Reportatge de televisió dedicat a l'estudi RCR Arquitectes (guanyadors del Premi Pritzker) per a RTVE La 2 Catalunya. Un recorregut poètic i visual per les seves obres i instal·lacions, explorant el seu procés de disseny on l'arquitectura dialoga intensament amb el paisatge i la matèria.",
+      en: "TV report dedicated to RCR Arquitectes (Pritzker Prize laureates) for RTVE La 2 Catalunya. A poetic and visual journey through their works and facilities, exploring their design process where architecture enters into an intense dialogue with landscape and matter."
+    }
+  },
+  {
+    slug: "secundaris-capitulo-6",
+    title: "SECUNDARIS | Capítulo 6",
+    type: "Serie Documental TV",
+    client: "RTVE La 2 Catalunya",
+    year: "2025",
+    category: "Televisión",
+    image: "/laprodu/portada/secundaris-capitulo-6-rosales-laprodu-films.png",
+    video: "",
+    span: "lg:col-span-4",
+    note: {
+      es: "Capítulo 6 de la serie documental 'Secundaris' de RTVE La 2 Catalunya. Un episodio centrado en las historias de vida de profesionales artesanos que, desde el anonimato de sus talleres, mantienen vivos oficios tradicionales y contribuyen al desarrollo cultural de la sociedad.",
+      ca: "Capítol 6 de la sèrie documental 'Secundaris' de RTVE La 2 Catalunya. Un episodi centrat en les històries de vida de professionals artesans que, des de l'anonimat dels seus tallers, mantenen vius oficis tradicionals i contribueixen al desenvolupament cultural de la societat.",
+      en: "Episode 6 of the TV documentary series 'Secundaris' on RTVE La 2 Catalunya. An episode focused on the life stories of artisan professionals who, from the anonymity of their workshops, keep traditional trades alive and contribute to society's cultural development."
+    }
+  }
 ];
 
 const projects = {
-  es: projectData,
+  es: projectData.map((project) => ({
+    ...project,
+    note: project.note.es
+  })),
   en: projectData.map((project) => ({
     ...project,
     category: project.category
@@ -249,6 +567,7 @@ const projects = {
       .replace("Entrevista", "Interview")
       .replace("Vídeo Consultora", "Consultancy Video")
       .replace("Casos de Éxito", "Success Cases"),
+    note: project.note.en || project.note.es
   })),
   ca: projectData.map((project) => ({
     ...project,
@@ -269,29 +588,8 @@ const projects = {
       .replace("Entrevista", "Entrevista")
       .replace("Vídeo Consultora", "Vídeo consultora")
       .replace("Casos de Éxito", "Casos d'èxit"),
-    note: project.note
-      .replace("Serie documental de retratos y oficios con mirada humana.", "Sèrie documental de retrats i oficis amb mirada humana.")
-      .replace("Conversaciones culturales con un tratamiento visual sobrio.", "Converses culturals amb un tractament visual sobri.")
-      .replace("Documental televisivo para emisión cultural.", "Documental televisiu per a emissió cultural.")
-      .replace("Reportaje de la serie Secundaris.", "Reportatge de la sèrie Secundaris.")
-      .replace("Retrato televisivo de autora y trayectoria.", "Retrat televisiu d'autora i trajectòria.")
-      .replace("Arquitectura, memoria e imagen para Inspira.", "Arquitectura, memòria i imatge per a Inspira.")
-      .replace("Vídeo corporativo de identidad y servicio.", "Vídeo corporatiu d'identitat i servei.")
-      .replace("Cobertura internacional para comunicación de evento.", "Cobertura internacional per a comunicació d'esdeveniment.")
-      .replace("Pieza promocional para marca gastronómica.", "Peça promocional per a marca gastronòmica.")
-      .replace("Spot de campaña con tono directo.", "Spot de campanya amb to directe.")
-      .replace("Vídeo promocional de producto y marca.", "Vídeo promocional de producte i marca.")
-      .replace("Pieza testimonial para consultora empresarial.", "Peça testimonial per a consultora empresarial.")
-      .replace("Proyecto social narrado desde cocina, inclusión y territorio.", "Projecte social narrat des de cuina, inclusió i territori.")
-      .replace("Entrevista para ampliar el contexto del proyecto NORAI.", "Entrevista per ampliar el context del projecte NORAI.")
-      .replace("Testimonio de cocina y oficio dentro del proyecto social.", "Testimoni de cuina i ofici dins del projecte social.")
-      .replace("Cobertura MWC para Netherlands Pavilion.", "Cobertura MWC per a Netherlands Pavilion.")
-      .replace("Promo de evento internacional.", "Promo d'esdeveniment internacional.")
-      .replace("Vídeo corporativo para consultora.", "Vídeo corporatiu per a consultora.")
-      .replace("Reportaje sobre innovación y territorio.", "Reportatge sobre innovació i territori.")
-      .replace("Reportaje televisivo de arquitectura y proceso.", "Reportatge televisiu d'arquitectura i procés.")
-      .replace("Capítulo de la serie documental SECUNDARIS.", "Capítol de la sèrie documental SECUNDARIS."),
-  })),
+    note: project.note.ca || project.note.es
+  }))
 };
 
 const posts = {
@@ -1818,35 +2116,27 @@ function CookieConsentBanner({ lang, t }) {
   };
 
   if (status) {
-    return (
-      <button
-        type="button"
-        onClick={() => setStatus(null)}
-        className="fixed bottom-4 left-4 z-40 border border-[#E4E0D8] bg-white px-3 py-2 text-xs font-semibold text-[#24231f] shadow-[0_12px_30px_rgba(73,59,45,0.12)] transition hover:border-[#24231f]"
-      >
-        {t.cookieSettings}
-      </button>
-    );
+    return null;
   }
 
   return (
-    <aside className="fixed inset-x-4 bottom-4 z-40 mx-auto max-w-3xl border border-[#E4E0D8] bg-white p-4 shadow-[0_18px_50px_rgba(73,59,45,0.18)] md:p-5" aria-label={t.cookieBannerTitle}>
-      <div className="grid gap-4 md:grid-cols-[1fr_auto] md:items-center">
-        <div>
-          <p className="text-sm font-bold text-[#24231f]">{t.cookieBannerTitle}</p>
-          <p className="mt-1 text-sm leading-6 text-[#6F6B63]">{t.cookieBannerText}</p>
-          <a href={pathFor(lang, "cookies")} className="mt-2 inline-flex text-xs font-semibold text-[#8C4F3B] underline underline-offset-4">
+    <aside className="fixed bottom-4 right-4 left-4 md:left-auto md:max-w-md z-40 border border-[#E4E0D8] bg-white p-4 shadow-[0_12px_36px_rgba(73,59,45,0.12)]" aria-label={t.cookieBannerTitle}>
+      <div>
+        <p className="text-xs font-bold text-[#24231f]">{t.cookieBannerTitle}</p>
+        <p className="mt-1 text-xs leading-relaxed text-[#6F6B63]">
+          {t.cookieBannerText}{" "}
+          <a href={pathFor(lang, "cookies")} className="inline-flex font-semibold text-[#8C4F3B] underline underline-offset-4">
             {t.cookiesLabel}
           </a>
-        </div>
-        <div className="grid gap-2 sm:grid-cols-2 md:min-w-72">
-          <button type="button" onClick={() => setConsent("rejected")} className="border border-[#E4E0D8] bg-white px-4 py-3 text-sm font-semibold text-[#24231f] transition hover:border-[#24231f]">
-            {t.cookieReject}
-          </button>
-          <button type="button" onClick={() => setConsent("accepted")} className="border border-[#24231f] bg-[#24231f] px-4 py-3 text-sm font-semibold text-white transition hover:border-[#8C4F3B] hover:bg-[#8C4F3B]">
-            {t.cookieAccept}
-          </button>
-        </div>
+        </p>
+      </div>
+      <div className="mt-3 grid grid-cols-2 gap-2">
+        <button type="button" onClick={() => setConsent("rejected")} className="border border-[#E4E0D8] bg-white px-3 py-2 text-xs font-semibold text-[#24231f] transition hover:border-[#24231f] cursor-pointer">
+          {t.cookieReject}
+        </button>
+        <button type="button" onClick={() => setConsent("accepted")} className="border border-[#24231f] bg-[#24231f] px-3 py-2 text-xs font-semibold text-white transition hover:border-[#8C4F3B] hover:bg-[#8C4F3B] cursor-pointer">
+          {t.cookieAccept}
+        </button>
       </div>
     </aside>
   );
@@ -2099,7 +2389,6 @@ function PostCard({ post, index, lang }) {
         <div className="p-6 md:p-8">
           <div className="mb-10 flex items-center justify-between gap-4">
             <Tag bg={index === 0 ? "#EDF3EC" : index === 1 ? "#FBF3DB" : "#E1F3FE"} color={index === 0 ? "#346538" : index === 1 ? "#956400" : "#1F6C9F"}>{post.category}</Tag>
-            <span className="font-mono text-xs uppercase tracking-[0.14em] text-[#787774]">{post.read}</span>
           </div>
           <p className="mb-4 font-mono text-xs uppercase tracking-[0.14em] text-[#787774]">{post.date}</p>
           <h3 className="balanced-text text-3xl font-semibold leading-tight tracking-[-0.04em] text-[#24231f]">{post.title}</h3>
@@ -2163,31 +2452,81 @@ function FAQ({ items }) {
   );
 }
 
-function ContactForm({ t }) {
+function ContactForm({ t, lang }) {
   const [status, setStatus] = useState("idle");
   const [form, setForm] = useState({ name: "", email: "", project: "" });
+  const [errors, setErrors] = useState({ name: "", email: "", project: "" });
   const [error, setError] = useState("");
+
+  const handleInputChange = (field, value) => {
+    setForm({ ...form, [field]: value });
+    if (errors[field]) {
+      setErrors({ ...errors, [field]: "" });
+    }
+  };
 
   function submit(event) {
     event.preventDefault();
-    const valid = form.name.trim() && form.email.includes("@") && form.project.trim().length > 16;
-    if (!valid) {
+    const newErrors = { name: "", email: "", project: "" };
+    let hasError = false;
+
+    if (!form.name.trim()) {
+      newErrors.name = byLang(lang, { es: "El nombre es obligatorio.", ca: "El nom és obligatori.", en: "Name is required." });
+      hasError = true;
+    }
+    if (!form.email.includes("@")) {
+      newErrors.email = byLang(lang, { es: "Introduce un email válido.", ca: "Introdueix un email vàlid.", en: "Enter a valid email." });
+      hasError = true;
+    }
+    if (form.project.trim().length <= 16) {
+      newErrors.project = byLang(lang, { 
+        es: "Describe el proyecto con un poco más de detalle (mínimo 16 caracteres).", 
+        ca: "Descriu el projecte amb una mica més de detall (mínim 16 caràcters).", 
+        en: "Describe the project with a bit more detail (minimum 16 characters)." 
+      });
+      hasError = true;
+    }
+
+    setErrors(newErrors);
+
+    if (hasError) {
       setStatus("error");
       setError(t.formError);
       return;
     }
+
     setStatus("loading");
     trackEvent("brief_submit", { event_category: "lead" });
-    const subject = `Nuevo proyecto audiovisual - ${form.name.trim()}`;
-    const body = [
-      `${t.formName}: ${form.name.trim()}`,
-      `${t.formEmail}: ${form.email.trim()}`,
-      "",
-      `${t.formProject}:`,
-      form.project.trim(),
-    ].join("\n");
-    window.location.href = `mailto:produccion@laprodufilms.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    window.setTimeout(() => setStatus("success"), 350);
+
+    fetch("/api/send-email", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: form.name.trim(),
+        email: form.email.trim(),
+        project: form.project.trim(),
+      }),
+    })
+      .then((res) => {
+        if (res.ok) {
+          setStatus("success");
+          setForm({ name: "", email: "", project: "" });
+        } else {
+          throw new Error("Server error");
+        }
+      })
+      .catch(() => {
+        setStatus("error");
+        setError(
+          byLang(lang, {
+            es: "Error al enviar el mensaje. Inténtalo de nuevo más tarde o escríbenos directamente por email.",
+            ca: "Error en enviar el missatge. Intenta-ho de nou més tard o escriu-nos directament per email.",
+            en: "Error sending message. Please try again later or write to us directly by email."
+          })
+        );
+      });
   }
 
   if (status === "success") {
@@ -2216,15 +2555,18 @@ function ContactForm({ t }) {
           <div className="grid gap-5">
             <label className="grid gap-2">
               <span className="text-sm font-medium text-[#111111]">{t.formName}</span>
-              <input name="name" autoComplete="name" value={form.name} onFocus={() => trackEvent("form_start", { form_name: "contact" })} onChange={(event) => setForm({ ...form, name: event.target.value })} className="border border-[#EAEAEA] bg-[#FBFBFA] px-3 py-3 text-sm outline-none transition focus:border-[#111111]" placeholder="Marina Soldevila" />
+              <input name="name" autoComplete="name" value={form.name} onFocus={() => trackEvent("form_start", { form_name: "contact" })} onChange={(event) => handleInputChange("name", event.target.value)} className={`border bg-[#FBFBFA] px-3 py-3 text-sm outline-none transition ${errors.name ? "border-[#9F2F2D] focus:border-[#9F2F2D]" : "border-[#EAEAEA] focus:border-[#111111]"}`} placeholder="Marina Soldevila" />
+              {errors.name && <span className="text-xs text-[#9F2F2D]">{errors.name}</span>}
             </label>
             <label className="grid gap-2">
               <span className="text-sm font-medium text-[#111111]">{t.formEmail}</span>
-              <input name="email" type="email" autoComplete="email" value={form.email} onChange={(event) => setForm({ ...form, email: event.target.value })} className="border border-[#EAEAEA] bg-[#FBFBFA] px-3 py-3 text-sm outline-none transition focus:border-[#111111]" placeholder="produccion@empresa.com" />
+              <input name="email" type="email" autoComplete="email" value={form.email} onChange={(event) => handleInputChange("email", event.target.value)} className={`border bg-[#FBFBFA] px-3 py-3 text-sm outline-none transition ${errors.email ? "border-[#9F2F2D] focus:border-[#9F2F2D]" : "border-[#EAEAEA] focus:border-[#111111]"}`} placeholder="produccion@empresa.com" />
+              {errors.email && <span className="text-xs text-[#9F2F2D]">{errors.email}</span>}
             </label>
             <label className="grid gap-2">
               <span className="text-sm font-medium text-[#111111]">{t.formProject}</span>
-              <textarea name="project" value={form.project} onChange={(event) => setForm({ ...form, project: event.target.value })} rows={5} className="resize-none border border-[#EAEAEA] bg-[#FBFBFA] px-3 py-3 text-sm outline-none transition focus:border-[#111111]" placeholder="Documental corto, reportaje de evento, campaña social, spot o pieza corporativa." />
+              <textarea name="project" value={form.project} onChange={(event) => handleInputChange("project", event.target.value)} rows={5} className={`resize-none border bg-[#FBFBFA] px-3 py-3 text-sm outline-none transition ${errors.project ? "border-[#9F2F2D] focus:border-[#9F2F2D]" : "border-[#EAEAEA] focus:border-[#111111]"}`} placeholder="Documental corto, reportaje de evento, campaña social, spot o pieza corporativa." />
+              {errors.project && <span className="text-xs text-[#9F2F2D]">{errors.project}</span>}
             </label>
           </div>
           {status === "error" && <p className="mt-5 border border-[#FDEBEC] bg-[#FDEBEC] px-3 py-3 text-sm text-[#9F2F2D]">{error}</p>}
@@ -2495,7 +2837,7 @@ function ContactSection({ t, lang }) {
           </div>
         </div>
         <div data-reveal style={{ "--index": 1 }}>
-          <ContactForm t={t} />
+          <ContactForm t={t} lang={lang} />
         </div>
       </div>
     </section>
@@ -2523,7 +2865,9 @@ function PortfolioListPage({ t, lang, projectItems }) {
 }
 
 function ProjectDetailPage({ project, lang, projectItems }) {
-  const related = projectItems.filter((item) => item.slug !== project.slug && item.category === project.category).slice(0, 3);
+  const sameCategory = projectItems.filter((item) => item.slug !== project.slug && item.category === project.category);
+  const otherCategories = projectItems.filter((item) => item.slug !== project.slug && item.category !== project.category);
+  const related = [...sameCategory, ...otherCategories].slice(0, 3);
 
   return (
     <section className="px-4 py-16 md:px-8 md:py-24">
@@ -3105,7 +3449,6 @@ function BlogDetailPage({ post, lang, postItems }) {
           <h1 className="font-editorial mt-5 text-6xl leading-[0.92] tracking-[-0.045em] text-[#111111] md:text-8xl">{post.title}</h1>
           <div className="mt-8 flex flex-wrap gap-2">
             <Tag>{post.date}</Tag>
-            <Tag bg="#E1F3FE" color="#1F6C9F">{post.read}</Tag>
           </div>
         </div>
         <div data-reveal style={{ "--index": 1 }} className="mt-10 aspect-[16/9] overflow-hidden border border-[#EAEAEA] bg-[#F7F6F3]">
