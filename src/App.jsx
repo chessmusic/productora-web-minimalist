@@ -2497,7 +2497,7 @@ function ContactForm({ t, lang }) {
     setStatus("loading");
     trackEvent("brief_submit", { event_category: "lead" });
 
-    fetch("/api/send-email", {
+    fetch("/api/send-email/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
