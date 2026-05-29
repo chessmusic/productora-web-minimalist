@@ -74,3 +74,12 @@ for (const pathname of paths) {
 
 const home = render("/es/");
 await writeFile(path.join(distDir, "index.html"), injectHtml({ pathname: "/es/", rendered: home }));
+
+// Generate 404.html for Vercel to serve with a real HTTP 404 status
+const notFound = render("/es/404-not-found/");
+const notFoundHtml = injectHtml({ pathname: "/es/404-not-found/", rendered: notFound })
+  .replace(
+    '<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />',
+    '<meta name="robots" content="noindex" />'
+  );
+await writeFile(path.join(distDir, "404.html"), notFoundHtml);

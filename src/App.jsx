@@ -2182,7 +2182,6 @@ function AppShell({ lang, setLang, t, route, activeSection, children }) {
   return (
     <main id="contenido" className="min-h-[100dvh] bg-transparent text-[#24231f] antialiased selection:bg-[#24231f] selection:text-white">
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap');
         main { font-family: 'Outfit', 'SF Pro Display', 'Helvetica Neue', sans-serif; }
         .font-editorial { font-family: 'Outfit', 'SF Pro Display', 'Helvetica Neue', sans-serif; font-weight: 700; }
         .font-mono { font-family: 'JetBrains Mono', 'SF Mono', monospace; }
@@ -2898,7 +2897,7 @@ function ProjectDetailPage({ project, lang, projectItems }) {
               {project.video ? (
                 <iframe src={project.video} title={project.title} loading="lazy" className="absolute inset-0 h-full w-full" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
               ) : (
-                <img src={project.image} alt={projectImageAlt(project, lang)} loading="lazy" decoding="async" className="h-full w-full object-cover" />
+                <img src={project.image} alt={projectImageAlt(project, lang)} loading="eager" fetchPriority="high" decoding="async" className="h-full w-full object-cover" />
               )}
             </div>
           </div>
@@ -2976,7 +2975,7 @@ function SuccessCasesLandingPage({ page, lang, projectItems, t }) {
               {featured?.video ? (
                 <iframe src={featured.video} title={`${featured.title} - ${featured.type}`} loading="lazy" className="absolute inset-0 h-full w-full" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
               ) : (
-                <img src={heroImage} alt={featured ? projectImageAlt(featured, lang) : page.title} loading="lazy" decoding="async" className="h-full w-full object-cover" />
+                <img src={heroImage} alt={featured ? projectImageAlt(featured, lang) : page.title} loading="eager" fetchPriority="high" decoding="async" className="h-full w-full object-cover" />
               )}
             </div>
             {featured && (
@@ -3452,7 +3451,7 @@ function BlogDetailPage({ post, lang, postItems }) {
           </div>
         </div>
         <div data-reveal style={{ "--index": 1 }} className="mt-10 aspect-[16/9] overflow-hidden border border-[#EAEAEA] bg-[#F7F6F3]">
-          <img src={post.image} alt={postImageAlt(post, lang)} loading="lazy" decoding="async" className="h-full w-full object-cover" />
+          <img src={post.image} alt={postImageAlt(post, lang)} loading="eager" fetchPriority="high" decoding="async" className="h-full w-full object-cover" />
         </div>
         <div className="mx-auto mt-12 max-w-3xl space-y-7 text-lg leading-8 text-[#2F3437]">
           {post.content.map((paragraph) => (
@@ -4092,6 +4091,8 @@ export default function LaProduFilmsEditorial({ initialRoute = null }) {
     page = <SuccessCasesLandingPage page={landingPage} lang={lang} projectItems={projectItems} t={t} />;
   } else if (legalPage) {
     page = <LegalPage page={legalPage} lang={lang} />;
+  } else if (normalizedSection !== "inicio" && !sectionRoutes.includes(normalizedSection)) {
+    page = <NotFoundPage lang={lang} />;
   }
 
   useEffect(() => {

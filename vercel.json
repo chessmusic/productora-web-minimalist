@@ -9,9 +9,8 @@
       "permanent": true
     }
   ],
-  "rewrites": [
-    { "source": "/((?!api|assets|laprodu|favicon.jpg|favicon.svg|icons.svg|robots.txt|sitemap.xml).*)", "destination": "/index.html" }
-  ],
+  "cleanUrls": true,
+  "trailingSlash": true,
   "headers": [
     {
       "source": "/assets/(.*)",

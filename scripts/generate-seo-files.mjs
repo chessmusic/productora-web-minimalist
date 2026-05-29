@@ -88,10 +88,6 @@ Allow: /
 Sitemap: ${site}/sitemap.xml
 `;
 
-const redirects = `/* /index.html 200
-`;
-
 await mkdir("public", { recursive: true });
 await writeFile("public/sitemap.xml", sitemap);
 await writeFile("public/robots.txt", robots);
-await writeFile("public/_redirects", redirects);
