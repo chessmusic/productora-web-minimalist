@@ -1,4 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
+import { corporateVideoArticle } from "./content/corporate-video-article.js";
+import CorporateVideoArticle from "./components/CorporateVideoArticle.jsx";
 
 const SITE_URL = "https://www.laprodufilms.com";
 const LANGS = ["es", "ca", "en"];
@@ -40,6 +42,9 @@ const copy = {
     methodLabel: "Método",
     contactLabel: "Contacto",
     footerLine: "© 2026 LAPRODU FILMS — Producción nacional e internacional.",
+    studioTitle: "Tu producción, dentro de una estrategia de marca.",
+    studioText: "Con Laprodu Studio ampliamos nuestros servicios con campañas de televisión, diseño web, SEO y visibilidad en IA. Conectamos el contenido audiovisual con los canales donde tus clientes te encuentran.",
+    studioCta: "Conoce Laprodu Studio",
     privacyLabel: "Política de privacidad",
     legalLabel: "Aviso legal",
     cookiesLabel: "Cookies",
@@ -92,6 +97,9 @@ const copy = {
     methodLabel: "Method",
     contactLabel: "Contact",
     footerLine: "© 2026 LAPRODU FILMS — National and international production.",
+    studioTitle: "Your production, as part of your brand strategy.",
+    studioText: "Through Laprodu Studio, we extend our services to TV campaigns, web design, SEO and AI visibility. We connect audiovisual content with the channels where your customers find you.",
+    studioCta: "Discover Laprodu Studio",
     privacyLabel: "Privacy policy",
     legalLabel: "Legal notice",
     cookiesLabel: "Cookies",
@@ -144,6 +152,9 @@ const copy = {
     methodLabel: "Mètode",
     contactLabel: "Contacte",
     footerLine: "© 2026 LAPRODU FILMS — Producció nacional i internacional.",
+    studioTitle: "La teva producció, dins d'una estratègia de marca.",
+    studioText: "Amb Laprodu Studio ampliem els nostres serveis amb campanyes de televisió, disseny web, SEO i visibilitat en IA. Connectem el contingut audiovisual amb els canals on els teus clients et troben.",
+    studioCta: "Coneix Laprodu Studio",
     privacyLabel: "Política de privacitat",
     legalLabel: "Avís legal",
     cookiesLabel: "Cookies",
@@ -175,7 +186,7 @@ const services = {
   es: [
     { title: "Documentales", text: "Desarrollo, guion, entrevistas, rodaje, montaje y master para historias con mirada propia.", image: "/laprodu/fotos/rodaje-documental-entrevista-laprodu-films.jpg", deliverable: "Series documentales, teasers y piezas web" },
     { title: "Televisión", text: "Reportajes, programas, cápsulas y contenido pensado para emisión, archivo y continuidad editorial.", image: "/laprodu/fotos/reportaje-television-rtve-rosales-laprodu-films.png", deliverable: "RTVE La 2 Catalunya, reportaje y magazine" },
-    { title: "Vídeos corporativos", text: "Piezas de empresa, testimonios, casos de éxito y presentaciones con tono cercano y narrativo.", image: "/laprodu/fotos/video-corporativo-rodaje-empresa-laprodu-films.jpg", deliverable: "Corporativo, consultora, social y marca", cta: "Ver enfoque para vídeo corporativo", landingSlug: "video-corporativo-auditado-2026" },
+    { title: "Vídeos corporativos", text: "Piezas de empresa, testimonios, casos de éxito y presentaciones con tono cercano y narrativo.", image: "/laprodu/fotos/video-corporativo-rodaje-empresa-laprodu-films.jpg", deliverable: "Corporativo, consultora, social y marca", cta: "Qué es un vídeo corporativo", landingSlug: "que-es-un-video-corporativo" },
     { title: "Eventos", text: "Cobertura, entrevistas, aftermovie, fotografía y entregas rápidas para comunicar durante y después del evento.", image: "/laprodu/fotos/cobertura-eventos-aftermovie-laprodu-films.jpg", deliverable: "Aftermovie, clips, fotos y reels" },
     { title: "Fotografía", text: "Retrato, backstage, producto, prensa y bancos de imagen para campañas y comunicación recurrente.", image: "/laprodu/fotos/fotografia-corporativa-rodaje-laprodu-films.jpg", deliverable: "Selección editada y archivo final" },
     { title: "Redes sociales", text: "Formatos verticales, teasers, subtítulos y adaptaciones por canal desde la planificación del rodaje.", image: "/laprodu/fotos/contenido-redes-sociales-video-laprodu-films.jpg", deliverable: "Reels, shorts, stories y social ads" },
@@ -185,7 +196,7 @@ const services = {
   en: [
     { title: "Documentaries", text: "Development, script, interviews, shooting, editing and mastering for stories with a clear point of view.", image: "/laprodu/fotos/rodaje-documental-entrevista-laprodu-films.jpg", deliverable: "Documentary series, teasers and web pieces" },
     { title: "Television", text: "Reports, programmes, capsules and content designed for broadcast, archive and editorial continuity.", image: "/laprodu/fotos/reportaje-television-rtve-rosales-laprodu-films.png", deliverable: "RTVE La 2 Catalunya, reports and magazines" },
-    { title: "Corporate videos", text: "Company films, testimonials, success cases and presentations with a close narrative tone.", image: "/laprodu/fotos/video-corporativo-rodaje-empresa-laprodu-films.jpg", deliverable: "Corporate, consultancy, social and brand", cta: "View corporate video approach", landingSlug: "video-corporativo-auditado-2026" },
+    { title: "Corporate videos", text: "Company films, testimonials, success cases and presentations with a close narrative tone.", image: "/laprodu/fotos/video-corporativo-rodaje-empresa-laprodu-films.jpg", deliverable: "Corporate, consultancy, social and brand", cta: "What is a corporate video?", landingSlug: "que-es-un-video-corporativo" },
     { title: "Events", text: "Coverage, interviews, aftermovies, photography and fast delivery for communication during and after the event.", image: "/laprodu/fotos/cobertura-eventos-aftermovie-laprodu-films.jpg", deliverable: "Aftermovie, clips, photos and reels" },
     { title: "Photography", text: "Portrait, backstage, product, press and image banks for campaigns and ongoing communication.", image: "/laprodu/fotos/fotografia-corporativa-rodaje-laprodu-films.jpg", deliverable: "Edited selection and final archive" },
     { title: "Social media", text: "Vertical formats, teasers, subtitles and channel adaptations planned from the shoot.", image: "/laprodu/fotos/contenido-redes-sociales-video-laprodu-films.jpg", deliverable: "Reels, shorts, stories and social ads" },
@@ -195,7 +206,7 @@ const services = {
   ca: [
     { title: "Documentals", text: "Desenvolupament, guió, entrevistes, rodatge, muntatge i màster per a històries amb mirada pròpia.", image: "/laprodu/fotos/rodaje-documental-entrevista-laprodu-films.jpg", deliverable: "Sèries documentals, teasers i peces web" },
     { title: "Televisió", text: "Reportatges, programes, càpsules i contingut pensat per a emissió, arxiu i continuïtat editorial.", image: "/laprodu/fotos/reportaje-television-rtve-rosales-laprodu-films.png", deliverable: "RTVE La 2 Catalunya, reportatge i magazín" },
-    { title: "Vídeos corporatius", text: "Peces d'empresa, testimonis, casos d'èxit i presentacions amb un to proper i narratiu.", image: "/laprodu/fotos/video-corporativo-rodaje-empresa-laprodu-films.jpg", deliverable: "Corporatiu, consultora, social i marca", cta: "Veure enfocament per a vídeo corporatiu", landingSlug: "video-corporativo-auditado-2026" },
+    { title: "Vídeos corporatius", text: "Peces d'empresa, testimonis, casos d'èxit i presentacions amb un to proper i narratiu.", image: "/laprodu/fotos/video-corporativo-rodaje-empresa-laprodu-films.jpg", deliverable: "Corporatiu, consultora, social i marca", cta: "Què és un vídeo corporatiu", landingSlug: "que-es-un-video-corporativo" },
     { title: "Esdeveniments", text: "Cobertura, entrevistes, aftermovie, fotografia i lliuraments ràpids per comunicar durant i després de l'esdeveniment.", image: "/laprodu/fotos/cobertura-eventos-aftermovie-laprodu-films.jpg", deliverable: "Aftermovie, clips, fotos i reels" },
     { title: "Fotografia", text: "Retrat, backstage, producte, premsa i bancs d'imatge per a campanyes i comunicació recurrent.", image: "/laprodu/fotos/fotografia-corporativa-rodaje-laprodu-films.jpg", deliverable: "Selecció editada i arxiu final" },
     { title: "Xarxes socials", text: "Formats verticals, teasers, subtítols i adaptacions per canal des de la planificació del rodatge.", image: "/laprodu/fotos/contenido-redes-sociales-video-laprodu-films.jpg", deliverable: "Reels, shorts, stories i social ads" },
@@ -302,6 +313,23 @@ const projectData = [
     }
   },
   {
+    slug: "arquitectos-madrid-20",
+    title: "ARQUITECTOS MADRID 2.0",
+    type: "Reportaje TV",
+    client: "TELEMADRID",
+    year: "",
+    uploadDate: "2026-09-17T03:02:15-07:00",
+    category: "Televisión",
+    image: "/laprodu/portada/arquitectos-madrid-20-reportaje-tv-laprodu-films.jpg",
+    video: "https://www.youtube.com/embed/yd_Zc_GDy1I",
+    span: "lg:col-span-6",
+    note: {
+      es: "Vídeo corporativo de Arquitectos Madrid 2.0, estudio especializado en arquitectura, interiorismo y reformas integrales de viviendas en Madrid. Producida por Laprodu Films, la pieza presenta su actividad y su propuesta de transformar viviendas combinando diseño, funcionalidad y criterio técnico.",
+      ca: "Vídeo corporatiu d'Arquitectos Madrid 2.0, estudi especialitzat en arquitectura, interiorisme i reformes integrals d'habitatges a Madrid. Produïda per Laprodu Films, la peça presenta la seva activitat i la seva proposta de transformar habitatges combinant disseny, funcionalitat i criteri tècnic.",
+      en: "Corporate video for Arquitectos Madrid 2.0, a studio specialising in architecture, interior design and complete home renovations in Madrid. Produced by Laprodu Films, the film introduces its work and its approach to transforming homes through design, functionality and technical expertise."
+    }
+  },
+  {
     slug: "chroma",
     title: "CHROMA",
     type: "Corporativo",
@@ -318,6 +346,39 @@ const projectData = [
     }
   },
   {
+    slug: "cecilia-caro",
+    title: "CECILIA CARO",
+    type: "Reportaje TV",
+    client: "TELEMADRID",
+    year: "2024",
+    category: "Televisión",
+    image: "/laprodu/portada/cecilia-caro-video-corporativo-laprodu-films.jpg",
+    video: "https://www.youtube.com/embed/-bLWCCvbpaA",
+    span: "lg:col-span-6",
+    note: {
+      es: "Vídeo corporativo de Cecilia Caro centrado en identidad profesional, marca personal y posicionamiento de marca. Una pieza elegante y cercana que combina presencia, personalidad y una narrativa visual cuidada para proyectar una imagen sólida, actual y coherente.",
+      ca: "Vídeo corporatiu de Cecilia Caro centrat en identitat professional, marca personal i posicionament de marca. Una peça elegant i propera que combina presència, personalitat i una narrativa visual cuidada per projectar una imatge sòlida, actual i coherent.",
+      en: "Corporate video for Cecilia Caro focused on professional identity, personal branding and brand positioning. An elegant and approachable film combining presence, personality and refined visual storytelling to project a strong, current and coherent image."
+    }
+  },
+  {
+    slug: "mwc2026",
+    title: "MWC2026",
+    type: "Aftermovie | Netherlands Pavilion",
+    client: "Netherlands Pavilion",
+    year: "2026",
+    uploadDate: "2026-05-13T11:25:22-07:00",
+    category: "Eventos",
+    image: "/laprodu/portada/mwc-2026-netherlands-pavilion-laprodu-films.jpg",
+    video: "https://www.youtube.com/embed/pPyex6O4K5A",
+    span: "lg:col-span-4",
+    note: {
+      es: "Aftermovie oficial del Netherlands Pavilion en el Mobile World Congress 2026 de Barcelona, producido por Laprodu Films. Un resumen audiovisual de la innovación de las empresas y startups neerlandesas, con tecnología, presentaciones, networking y ambiente ferial para acercar la energía del encuentro a nuevas audiencias.",
+      ca: "Aftermovie oficial del Netherlands Pavilion al Mobile World Congress 2026 de Barcelona, produït per Laprodu Films. Un resum audiovisual de la innovació de les empreses i startups neerlandeses, amb tecnologia, presentacions, networking i ambient firal per apropar l'energia de la trobada a noves audiències.",
+      en: "Official aftermovie for the Netherlands Pavilion at Mobile World Congress 2026 in Barcelona, produced by Laprodu Films. An audiovisual recap of innovation from Dutch companies and startups, featuring technology, presentations, networking and the atmosphere of the trade fair to share the event's energy with new audiences."
+    }
+  },
+  {
     slug: "mwc2025",
     title: "MWC2025",
     type: "Reportaje | Netherlands Pavilion",
@@ -325,7 +386,7 @@ const projectData = [
     year: "2025",
     category: "Eventos",
     image: "/laprodu/portada/mwc-2025-netherlands-pavilion-laprodu-films.png",
-    video: "",
+    video: "https://www.youtube.com/embed/NQbhEvul0oI",
     span: "lg:col-span-4",
     note: {
       es: "Reportaje de cobertura internacional y comunicación estratégica para el Netherlands Pavilion durante el Mobile World Congress 2025 en Barcelona. Producción orientada a captar la actividad, las innovaciones tecnológicas y las entrevistas de las empresas del pabellón holandés para su difusión institucional y en redes sociales.",
@@ -533,7 +594,7 @@ const projectData = [
     year: "2025",
     category: "Televisión",
     image: "/laprodu/portada/secundaris-capitulo-6-rosales-laprodu-films.png",
-    video: "",
+    video: "https://www.youtube.com/embed/laaa-OK4U3s",
     span: "lg:col-span-4",
     note: {
       es: "Capítulo 6 de la serie documental 'Secundaris' de RTVE La 2 Catalunya. Un episodio centrado en las historias de vida de profesionales artesanos que, desde el anonimato de sus talleres, mantienen vivos oficios tradicionales y contribuyen al desarrollo cultural de la sociedad.",
@@ -1342,53 +1403,7 @@ const landingPages = {
         ["¿Cuánto tarda?", "Una pieza estándar suele requerir entre 2 y 4 semanas desde el briefing hasta la entrega."],
       ],
     },
-    "video-corporativo-auditado-2026": {
-      title: "Vídeo corporativo 2026: de pieza única a sistema audiovisual",
-      kicker: "Vídeo corporativo / Auditoría",
-      intro: "Auditamos lo que ya tienes, definimos qué debe contar el nuevo vídeo y lo convertimos en piezas útiles para web, ventas, LinkedIn, YouTube, eventos y campañas.",
-      primary: "Solicitar diagnóstico",
-      secondary: "Ver ejemplo corporativo",
-      proof: "Una producción pensada desde el briefing para generar confianza, explicar mejor la empresa y multiplicar entregables sin rodar cada semana.",
-      bullets: ["Auditoría del vídeo actual y mensajes clave", "Guion modular para distintas audiencias", "Master principal, clips cortos y adaptaciones por canal"],
-      related: ["chroma", "cedec-consultora", "norai-corporativo", "mwc2025", "valldaura-labs", "rcr-arquitectes"],
-      hideRelatedWork: true,
-      featuredProject: "chroma",
-      proofVideos: ["chroma", "cedec-consultora", "norai-corporativo", "norai-director-mmb"],
-      problemTitle: "El problema no suele ser tener poco vídeo. Es tener una pieza que nadie sabe reutilizar.",
-      visualLabel: "Ejemplos aplicables",
-      visualTitle: "De la pieza bonita al contenido que ventas y marca sí usan.",
-      visualIntro: "La clave es producir pensando en contexto: qué verá una persona en la web, qué enviará ventas tras una reunión y qué puede funcionar como clip corto en LinkedIn o YouTube.",
-      whenTitle: "Cuando el vídeo actual ya no ayuda a vender, explicar o captar atención.",
-      processTitle: "Primero auditamos. Después producimos solo lo que tiene sentido.",
-      deliverablesTitle: "Una jornada de rodaje puede convertirse en varios activos.",
-      faqTitle: "Preguntas sobre vídeo corporativo 2026",
-      outcomes: [
-        ["Claridad", "Ordenamos el mensaje para que el vídeo explique qué haces, para quién y por qué importa sin sonar genérico."],
-        ["Reutilización", "Planificamos recursos, entrevistas y escenas para crear master principal, clips, teasers y piezas verticales."],
-        ["Medición", "Cada versión nace con un uso: web, ventas, anuncios, LinkedIn, YouTube, evento o comunicación interna."],
-      ],
-      pain: [
-        ["El vídeo institucional se queda en la home", "Se aprueba internamente, queda bien, pero después apenas se usa en ventas, campañas o comunicación recurrente."],
-        ["El mensaje intenta hablar a todo el mundo", "Clientes, talento, partners y dirección necesitan matices distintos. Una sola pieza generalista suele diluir el valor."],
-        ["Se rueda sin pensar en distribución", "Si no se decide antes qué formatos harán falta, luego adaptar el material sale más caro y queda menos natural."],
-      ],
-      when: ["Tienes un vídeo antiguo que ya no representa a la empresa", "Necesitas explicar un servicio B2B complejo", "Quieres contenido para web, LinkedIn, YouTube o campañas", "Vas a una feria, evento o ronda comercial con material poco concreto"],
-      process: [
-        ["01", "Auditoría", "Revisamos vídeo actual, web, mensajes comerciales, audiencia y canales para detectar qué funciona y qué sobra."],
-        ["02", "Mapa de formatos", "Definimos master principal, clips por objeción, piezas verticales, teaser y usos para ventas o paid media."],
-        ["03", "Guion y rodaje", "Preparamos entrevistas, escenas, recursos visuales y una planificación que permita reutilizar sin perder calidad."],
-        ["04", "Versiones y medición", "Entregamos piezas adaptadas por canal y recomendaciones sencillas para medir retención, clics, leads o uso comercial."],
-      ],
-      includes: ["Auditoría del vídeo y materiales existentes", "Propuesta narrativa y mensajes clave", "Guion o escaleta de entrevista", "Rodaje de equipo, producto, espacios o clientes", "Montaje, color, sonido, música y grafismo", "Subtítulos, miniaturas y versiones por canal"],
-      channels: ["Home y página de servicios", "LinkedIn y YouTube", "Google Ads, YouTube Ads y remarketing", "Presentaciones comerciales", "Ferias, eventos y newsletters", "Comunicación interna y employer branding"],
-      deliverables: ["Vídeo principal de empresa", "Teaser de 30-60 segundos", "Clips por servicio, objeción o audiencia", "Versiones verticales, cuadradas y subtituladas"],
-      faq: [
-        ["¿Tenemos que rehacer todo el vídeo corporativo?", "No siempre. Primero revisamos lo que ya existe. A veces conviene rescatar material, grabar nuevas entrevistas o crear versiones más útiles antes que repetir una gran pieza desde cero."],
-        ["¿Sirve si somos una empresa B2B con un servicio difícil de explicar?", "Sí. De hecho, es donde más ayuda: podemos dividir el mensaje en problema, solución, prueba, equipo y casos para que cada pieza resuelva una duda concreta."],
-        ["¿Podéis hacer contenido vertical sin que parezca improvisado?", "Sí. El vertical puede ser muy profesional si se piensa desde guion, luz, encuadre, subtítulos y ritmo. No es un recorte final: es un formato con intención propia."],
-        ["¿Cómo sabemos si el vídeo funciona?", "Definimos indicadores sencillos antes de producir: retención, clics, leads, reuniones, uso por ventas, visualizaciones cualificadas o reducción de dudas repetidas."],
-      ],
-    },
+    "que-es-un-video-corporativo": corporateVideoArticle.es,
     "auditoria-seo-web": {
       title: "Auditoría SEO para webs que necesitan vender mejor",
       kicker: "SEO / Auditoría web",
@@ -1566,50 +1581,7 @@ Object.assign(landingPages.en, {
     bullets: ["Briefing and narrative proposal", "Interviews, footage and direction", "Versions for web, LinkedIn, YouTube and presentations"],
     faq: [["What does a corporate video include?", "It usually includes development, script, shooting, editing, color, music, graphics and final deliverables."], ["How long does it take?", "A standard piece usually takes between 2 and 4 weeks from briefing to delivery."]],
   },
-  "video-corporativo-auditado-2026": {
-    ...landingPages.en["video-corporativo-auditado-2026"],
-    title: "Corporate video 2026: from one-off film to audiovisual system",
-    kicker: "Corporate video / Audit",
-    intro: "We audit what you already have, define what the new video needs to say and turn it into useful assets for website, sales, LinkedIn, YouTube, events and campaigns.",
-    primary: "Request a diagnosis",
-    secondary: "View corporate example",
-    proof: "A production planned from the briefing to build trust, explain the company better and multiply deliverables without filming every week.",
-    bullets: ["Audit of current video and key messages", "Modular script for different audiences", "Main film, short clips and channel adaptations"],
-    problemTitle: "The problem is usually not having too little video. It is having one piece nobody knows how to reuse.",
-    visualLabel: "Applicable examples",
-    visualTitle: "From a nice film to content that sales and brand teams actually use.",
-    visualIntro: "The key is to produce with context in mind: what someone will see on the website, what sales will send after a meeting and what can work as a short clip on LinkedIn or YouTube.",
-    whenTitle: "When the current video no longer helps sell, explain or capture attention.",
-    processTitle: "First we audit. Then we produce only what makes sense.",
-    deliverablesTitle: "One shoot can become several useful assets.",
-    faqTitle: "Questions about corporate video in 2026",
-    outcomes: [
-      ["Clarity", "We organize the message so the video explains what you do, for whom and why it matters without sounding generic."],
-      ["Reuse", "We plan footage, interviews and scenes to create a main film, clips, teasers and vertical pieces."],
-      ["Measurement", "Each version is created for a use case: website, sales, ads, LinkedIn, YouTube, event or internal communication."],
-    ],
-    pain: [
-      ["The institutional video stays on the homepage", "It gets approved internally and looks good, but is barely used in sales, campaigns or recurring communication."],
-      ["The message tries to speak to everyone", "Clients, talent, partners and leadership need different nuances. A single generic film often dilutes value."],
-      ["The shoot is not planned for distribution", "If required formats are not defined beforehand, adapting the material later is more expensive and less natural."],
-    ],
-    when: ["You have an old video that no longer represents the company", "You need to explain a complex B2B service", "You want content for website, LinkedIn, YouTube or campaigns", "You are preparing a trade fair, event or sales cycle with weak material"],
-    process: [
-      ["01", "Audit", "We review current video, website, commercial messages, audience and channels to detect what works and what should go."],
-      ["02", "Format map", "We define the main film, objection-based clips, vertical pieces, teaser and uses for sales or paid media."],
-      ["03", "Script and shoot", "We prepare interviews, scenes, supporting footage and a plan that allows reuse without losing quality."],
-      ["04", "Versions and measurement", "We deliver channel-specific assets and simple recommendations to measure retention, clicks, leads or commercial use."],
-    ],
-    includes: ["Audit of current video and materials", "Narrative proposal and key messages", "Script or interview outline", "Filming team, product, spaces or clients", "Editing, color, sound, music and graphics", "Subtitles, thumbnails and channel versions"],
-    channels: ["Homepage and service pages", "LinkedIn and YouTube", "Google Ads, YouTube Ads and remarketing", "Sales presentations", "Trade fairs, events and newsletters", "Internal communication and employer branding"],
-    deliverables: ["Main company video", "30-60 second teaser", "Clips by service, objection or audience", "Vertical, square and subtitled versions"],
-    faq: [
-      ["Do we need to redo the entire corporate video?", "Not always. First we review what already exists. Sometimes it is better to recover footage, record new interviews or create more useful versions before producing another large film from scratch."],
-      ["Does this work for a B2B company with a hard-to-explain service?", "Yes. That is where it helps most: we can split the message into problem, solution, proof, team and cases so each piece answers a specific doubt."],
-      ["Can vertical content still feel professional?", "Yes. Vertical can be very professional when script, light, framing, subtitles and pace are planned. It is not a final crop: it is a format with its own intention."],
-      ["How do we know whether the video works?", "We define simple indicators before production: retention, clicks, leads, meetings, sales usage, qualified views or fewer repeated questions."],
-    ],
-  },
+  "que-es-un-video-corporativo": corporateVideoArticle.en,
   "auditoria-seo-web": {
     ...landingPages.en["auditoria-seo-web"],
     title: "SEO audit for websites that need to sell better",
@@ -1742,50 +1714,7 @@ Object.assign(landingPages.ca, {
     bullets: ["Briefing i proposta narrativa", "Entrevistes, recursos i direcció", "Versions per a web, LinkedIn, YouTube i presentacions"],
     faq: [["Què inclou un vídeo corporatiu?", "Normalment inclou desenvolupament, guió, rodatge, edició, color, música, grafisme i entregables finals."], ["Quant tarda?", "Una peça estàndard sol requerir entre 2 i 4 setmanes des del briefing fins al lliurament."]],
   },
-  "video-corporativo-auditado-2026": {
-    ...landingPages.ca["video-corporativo-auditado-2026"],
-    title: "Vídeo corporatiu 2026: de peça única a sistema audiovisual",
-    kicker: "Vídeo corporatiu / Auditoria",
-    intro: "Auditem el que ja tens, definim què ha d'explicar el nou vídeo i el convertim en peces útils per a web, vendes, LinkedIn, YouTube, esdeveniments i campanyes.",
-    primary: "Demanar diagnòstic",
-    secondary: "Veure exemple corporatiu",
-    proof: "Una producció pensada des del briefing per generar confiança, explicar millor l'empresa i multiplicar entregables sense rodar cada setmana.",
-    bullets: ["Auditoria del vídeo actual i missatges clau", "Guió modular per a diferents audiències", "Màster principal, clips curts i adaptacions per canal"],
-    problemTitle: "El problema no sol ser tenir poc vídeo. És tenir una peça que ningú sap reutilitzar.",
-    visualLabel: "Exemples aplicables",
-    visualTitle: "De la peça bonica al contingut que vendes i marca sí que fan servir.",
-    visualIntro: "La clau és produir pensant en context: què veurà una persona a la web, què enviarà vendes després d'una reunió i què pot funcionar com a clip curt a LinkedIn o YouTube.",
-    whenTitle: "Quan el vídeo actual ja no ajuda a vendre, explicar o captar atenció.",
-    processTitle: "Primer auditem. Després produïm només el que té sentit.",
-    deliverablesTitle: "Una jornada de rodatge pot convertir-se en diversos actius.",
-    faqTitle: "Preguntes sobre vídeo corporatiu 2026",
-    outcomes: [
-      ["Claredat", "Ordenem el missatge perquè el vídeo expliqui què fas, per a qui i per què importa sense sonar genèric."],
-      ["Reutilització", "Planifiquem recursos, entrevistes i escenes per crear màster principal, clips, teasers i peces verticals."],
-      ["Mesura", "Cada versió neix amb un ús: web, vendes, anuncis, LinkedIn, YouTube, esdeveniment o comunicació interna."],
-    ],
-    pain: [
-      ["El vídeo institucional es queda a la home", "S'aprova internament, queda bé, però després gairebé no es fa servir en vendes, campanyes o comunicació recurrent."],
-      ["El missatge intenta parlar a tothom", "Clients, talent, partners i direcció necessiten matisos diferents. Una sola peça generalista sol diluir el valor."],
-      ["Es roda sense pensar en distribució", "Si no es decideix abans quins formats faran falta, adaptar el material després surt més car i queda menys natural."],
-    ],
-    when: ["Tens un vídeo antic que ja no representa l'empresa", "Necessites explicar un servei B2B complex", "Vols contingut per a web, LinkedIn, YouTube o campanyes", "Vas a una fira, esdeveniment o ronda comercial amb material poc concret"],
-    process: [
-      ["01", "Auditoria", "Revisem vídeo actual, web, missatges comercials, audiència i canals per detectar què funciona i què sobra."],
-      ["02", "Mapa de formats", "Definim màster principal, clips per objecció, peces verticals, teaser i usos per a vendes o paid media."],
-      ["03", "Guió i rodatge", "Preparem entrevistes, escenes, recursos visuals i una planificació que permeti reutilitzar sense perdre qualitat."],
-      ["04", "Versions i mesura", "Entreguem peces adaptades per canal i recomanacions senzilles per mesurar retenció, clics, leads o ús comercial."],
-    ],
-    includes: ["Auditoria del vídeo i materials existents", "Proposta narrativa i missatges clau", "Guió o escaleta d'entrevista", "Rodatge d'equip, producte, espais o clients", "Muntatge, color, so, música i grafisme", "Subtítols, miniatures i versions per canal"],
-    channels: ["Home i pàgina de serveis", "LinkedIn i YouTube", "Google Ads, YouTube Ads i remarketing", "Presentacions comercials", "Fires, esdeveniments i newsletters", "Comunicació interna i employer branding"],
-    deliverables: ["Vídeo principal d'empresa", "Teaser de 30-60 segons", "Clips per servei, objecció o audiència", "Versions verticals, quadrades i subtitulades"],
-    faq: [
-      ["Hem de refer tot el vídeo corporatiu?", "No sempre. Primer revisem el que ja existeix. De vegades convé rescatar material, gravar noves entrevistes o crear versions més útils abans de repetir una gran peça des de zero."],
-      ["Serveix si som una empresa B2B amb un servei difícil d'explicar?", "Sí. De fet, és on més ajuda: podem dividir el missatge en problema, solució, prova, equip i casos perquè cada peça resolgui un dubte concret."],
-      ["Podeu fer contingut vertical sense que sembli improvisat?", "Sí. El vertical pot ser molt professional si es pensa des de guió, llum, enquadrament, subtítols i ritme. No és un retall final: és un format amb intenció pròpia."],
-      ["Com sabem si el vídeo funciona?", "Definim indicadors senzills abans de produir: retenció, clics, leads, reunions, ús per vendes, visualitzacions qualificades o reducció de dubtes repetits."],
-    ],
-  },
+  "que-es-un-video-corporativo": corporateVideoArticle.ca,
   "auditoria-seo-web": {
     ...landingPages.ca["auditoria-seo-web"],
     title: "Auditoria SEO per a webs que necessiten vendre millor",
@@ -2276,8 +2205,11 @@ function AppShell({ lang, setLang, t, route, activeSection, children }) {
       <footer className="border-t border-[#EAEAEA] bg-white px-4 py-8 md:px-8">
         <div className="mx-auto grid max-w-[1440px] gap-6 text-sm text-[#787774] lg:grid-cols-[1fr_auto] lg:items-center">
           <p>{t.footerLine}</p>
-          <div className="flex flex-wrap gap-x-10 gap-y-3 lg:justify-end">
+          <div className="flex flex-wrap gap-x-5 gap-y-3 lg:justify-end">
             <nav className="flex flex-wrap gap-x-5 gap-y-2 text-[#111111]" aria-label="Social">
+              <a href="https://www.laprodustudio.com/" target="_blank" rel="noopener noreferrer" className="transition hover:text-[#787774]">
+                Laprodu Studio
+              </a>
               <a href="https://www.youtube.com/@laprodufilms" target="_blank" rel="noreferrer" className="transition hover:text-[#787774]">
                 YouTube
               </a>
@@ -2358,7 +2290,6 @@ function ProjectCard({ project, index, lang }) {
             className="h-full w-full object-cover grayscale transition duration-500 group-hover:scale-[1.035] group-hover:grayscale-0"
           />
           <div className="absolute left-4 top-4 flex flex-wrap gap-2">
-            <Tag bg="#F7F6F3" color="#2F3437">{project.year}</Tag>
             <Tag bg={categoryStyle.bg} color={categoryStyle.color}>{project.category}</Tag>
           </div>
         </div>
@@ -2402,7 +2333,7 @@ function PostCard({ post, index, lang }) {
   );
 }
 
-function PortfolioGrid({ projects, lang, limit = projects.length, showFilters = true }) {
+function PortfolioGrid({ projects, lang, limit = projects.length, showFilters = true, columns = 3 }) {
   const [filter, setFilter] = useState("Todo");
   const categories = useMemo(() => ["Todo", ...Array.from(new Set(projects.map((project) => project.category)))], [projects]);
   const activeFilter = categories.includes(filter) ? filter : "Todo";
@@ -2425,7 +2356,7 @@ function PortfolioGrid({ projects, lang, limit = projects.length, showFilters = 
           ))}
         </div>
       )}
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
+      <div className={`grid grid-cols-1 gap-4 md:grid-cols-2 ${columns === 4 ? "xl:grid-cols-4" : "xl:grid-cols-3"}`}>
         {visible.map((project, index) => (
           <ProjectCard key={`${project.title}-${index}`} project={project} index={index} lang={lang} />
         ))}
@@ -2743,6 +2674,18 @@ function HomePage({ lang, t, serviceItems, projectItems, postItems, faqItems }) 
               </article>
             ))}
           </div>
+          <aside id="studio-servicios" aria-labelledby="studio-services-title" className="mt-10 grid gap-8 border border-[#DED8CE] bg-white p-7 shadow-[0_12px_36px_rgba(73,59,45,0.04)] md:mt-12 md:p-10 lg:grid-cols-[.85fr_1.15fr] lg:items-center lg:gap-14">
+            <div>
+              <SectionLabel>Laprodu Studio</SectionLabel>
+              <h3 id="studio-services-title" className="balanced-text font-editorial mt-4 max-w-[24ch] text-3xl leading-[1.08] tracking-[-0.035em] text-[#24231f] md:text-4xl">{t.studioTitle}</h3>
+            </div>
+            <div>
+              <p className="pretty-text max-w-[64ch] text-base leading-7 text-[#6F6B63]">{t.studioText}</p>
+              <a href="https://www.laprodustudio.com/" target="_blank" rel="noopener noreferrer" className="mt-6 inline-flex items-center gap-3 border border-[#24231f] bg-[#24231f] px-5 py-3 text-sm font-semibold text-white transition hover:border-[#8C4F3B] hover:bg-[#8C4F3B] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#8C4F3B]">
+                {t.studioCta} <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </aside>
         </div>
       </section>
 
@@ -2761,7 +2704,7 @@ function HomePage({ lang, t, serviceItems, projectItems, postItems, faqItems }) 
               </a>
             </div>
           </div>
-          <PortfolioGrid projects={projectItems} lang={lang} limit={8} />
+          <PortfolioGrid projects={projectItems} lang={lang} limit={12} columns={4} />
         </div>
       </section>
 
@@ -2857,7 +2800,7 @@ function PortfolioListPage({ t, lang, projectItems }) {
             <h1 className="font-editorial mt-5 text-6xl leading-[0.95] tracking-[-0.04em] text-[#111111] md:text-8xl">{t.portfolioTitle}</h1>
           </div>
         </div>
-        <PortfolioGrid projects={projectItems} lang={lang} />
+        <PortfolioGrid projects={projectItems} lang={lang} columns={4} />
       </div>
     </section>
   );
@@ -2882,7 +2825,6 @@ function ProjectDetailPage({ project, lang, projectItems }) {
             <p className="mt-6 text-xl font-semibold leading-8 tracking-[-0.03em] text-[#111111]">{project.type}</p>
             <p className="mt-4 text-base leading-7 text-[#787774]">{project.note}</p>
             <div className="mt-8 flex flex-wrap gap-2">
-              <Tag>{project.year}</Tag>
               <Tag bg="#E1F3FE" color="#1F6C9F">{project.client}</Tag>
             </div>
             {project.slug === "cedec-casos-exito" && (
@@ -2895,7 +2837,7 @@ function ProjectDetailPage({ project, lang, projectItems }) {
           <div data-reveal style={{ "--index": 1 }} className="border border-[#EAEAEA] bg-white p-3">
             <div className="relative aspect-video overflow-hidden bg-[#111111]">
               {project.video ? (
-                <iframe src={project.video} title={project.title} loading="lazy" className="absolute inset-0 h-full w-full" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
+                <iframe src={project.video} title={project.title} loading="eager" className="absolute inset-0 h-full w-full" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
               ) : (
                 <img src={project.image} alt={projectImageAlt(project, lang)} loading="eager" fetchPriority="high" decoding="async" className="h-full w-full object-cover" />
               )}
@@ -3789,7 +3731,7 @@ function routeContext(route) {
   const projectItems = projects[lang];
   const postItems = posts[lang];
   const faqItems = faqs[lang];
-  const normalizedSection = route.section || "inicio";
+  const normalizedSection = route.section === "video-corporativo-auditado-2026" ? "que-es-un-video-corporativo" : route.section || "inicio";
   const slug = route.slug;
   const project = normalizedSection === "portfolio" && slug && slug !== "todos" ? projectItems.find((item) => item.slug === slug) : null;
   const post = normalizedSection === "blog" && slug && slug !== "todos" ? postItems.find((item) => item.slug === slug) : null;
@@ -3826,7 +3768,7 @@ function seoForRoute({ lang, section, slug, project, post, landingPage, legalPag
         name: `${project.title} - ${project.type}`,
         description,
         thumbnailUrl: [image],
-        uploadDate: `${project.year}-01-01T09:00:00+01:00`,
+        uploadDate: project.uploadDate || `${project.year}-01-01T09:00:00+01:00`,
         embedUrl: project.video,
         contentUrl: videoId ? `https://www.youtube.com/watch?v=${videoId}` : project.video,
       });
@@ -3882,6 +3824,22 @@ function seoForRoute({ lang, section, slug, project, post, landingPage, legalPag
   } else if (section === "contacto") {
     title = `${t.contactTitle} | ${baseTitle}`;
     description = metaDescription(lang, "contacto");
+  } else if (landingPage?.kind === "article") {
+    title = `${landingPage.title} | ${baseTitle}`;
+    description = landingPage.intro;
+    image = absoluteUrl(landingPage.heroImage);
+    jsonLd.push({
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "@id": `${absoluteUrl(canonicalPath)}#article`,
+      headline: landingPage.title,
+      description,
+      image,
+      inLanguage: lang,
+      author: { "@id": BUSINESS_ID },
+      publisher: { "@id": BUSINESS_ID },
+      mainEntityOfPage: absoluteUrl(canonicalPath),
+    });
   } else if (landingPage) {
     const featured = landingPage.featuredProject ? projects[lang].find((item) => item.slug === landingPage.featuredProject) : null;
     const proofVideos = (landingPage.proofVideos || (featured ? [featured.slug] : []))
@@ -3925,7 +3883,7 @@ function seoForRoute({ lang, section, slug, project, post, landingPage, legalPag
         name: `${item.title} - ${item.type}`,
         description: item.note,
         thumbnailUrl: [absoluteUrl(item.image)],
-        uploadDate: `${item.year}-01-01T09:00:00+01:00`,
+        uploadDate: item.uploadDate || `${item.year}-01-01T09:00:00+01:00`,
         embedUrl: item.video,
         contentUrl: videoId ? `https://www.youtube.com/watch?v=${videoId}` : item.video,
       });
@@ -4087,6 +4045,8 @@ export default function LaProduFilmsEditorial({ initialRoute = null }) {
     page = <BlogListPage t={t} lang={lang} postItems={postItems} />;
   } else if (normalizedSection === "blog" && slug) {
     page = post ? <BlogDetailPage post={post} lang={lang} postItems={postItems} /> : <NotFoundPage lang={lang} />;
+  } else if (landingPage?.kind === "article") {
+    page = <CorporateVideoArticle page={landingPage} lang={lang} />;
   } else if (landingPage) {
     page = <SuccessCasesLandingPage page={landingPage} lang={lang} projectItems={projectItems} t={t} />;
   } else if (legalPage) {

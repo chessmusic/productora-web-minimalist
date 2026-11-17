@@ -3,9 +3,22 @@
     {
       "source": "/:path*",
       "has": [
-        { "type": "host", "value": "laprodufilms.com" }
+        {
+          "type": "host",
+          "value": "laprodufilms.com"
+        }
       ],
       "destination": "https://www.laprodufilms.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:lang(es|ca|en)/video-corporativo-auditado-2026/",
+      "destination": "/:lang/que-es-un-video-corporativo/",
+      "permanent": true
+    },
+    {
+      "source": "/video-corporativo-auditado-2026/",
+      "destination": "/es/que-es-un-video-corporativo/",
       "permanent": true
     }
   ],
@@ -15,13 +28,19 @@
     {
       "source": "/assets/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
       ]
     },
     {
       "source": "/laprodu/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=604800" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800"
+        }
       ]
     }
   ]
